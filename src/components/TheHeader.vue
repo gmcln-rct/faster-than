@@ -4,25 +4,26 @@
       <h1>
         Faster Than...
       </h1>
+      <h2>Which animal is faster?</h2>
     </nav>
   </header>
 </template>
 
 <style scoped>
 header {
-  width: 100%;
-  height: 5rem;
-  background-color: #3d008d;
   display: flex;
   justify-content: center;
+  width: 100%;
+  /* height: 5rem; */
+  /* background-color: #3d008d; */
   align-items: center;
 }
 
 header a {
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
   color: #f391e3;
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
+  /* display: inline-block; */
   border: 1px solid transparent;
 }
 
@@ -34,6 +35,11 @@ a.router-link-active {
 
 h1 {
   margin: 0;
+  font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h2 {
+  font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h1 a {
@@ -51,20 +57,7 @@ header nav {
   width: 90%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-li {
-  margin: 0 0.5rem;
 }
 </style>
