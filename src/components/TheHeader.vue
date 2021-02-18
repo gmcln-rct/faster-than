@@ -40,11 +40,11 @@ a.router-link-active {
 h1 {
   margin: 0;
   padding: 2vmin 0;
-  font-family: apotek-extended, sans-serif;
+  font-family: bilo, sans-serif;
 
   font-weight: 700;
 
-  font-style: normal;
+  font-style: italic;
   font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1600 - 300)));
 }
 
