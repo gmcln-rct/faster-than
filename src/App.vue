@@ -1,12 +1,16 @@
 <template>
   <the-header></the-header>
+  <the-selector></the-selector>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
+import TheSelector from './components/TheSelector';
+
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    TheSelector
   }
 };
 </script>

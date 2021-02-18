@@ -1,7 +1,11 @@
 import { createStore } from 'vuex';
 
+import animalModule from './modules/animals';
+
 const store = createStore({
-  modules: {},
+  modules: {
+    animals: animalModule
+  },
   state() {
     return {};
   },

@@ -40,17 +40,17 @@ a.router-link-active {
 h1 {
   margin: 0;
   padding: 2vmin 0;
-  font-family: ivypresto-headline, serif;
+  font-family: apotek-extended, sans-serif;
+
   font-weight: 700;
-  font-style: italic;
+
+  font-style: normal;
   font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
   font-family: adobe-caslon-pro, serif;
-
   font-weight: 400;
-
   font-style: normal;
   font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
