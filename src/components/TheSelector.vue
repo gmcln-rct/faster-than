@@ -2,12 +2,13 @@
   <form @submit.prevent="submitForm">
     <!-- {{ $store.state.animals }} -->
     <!-- {{ animalList }} -->
+    <!-- {{ animals }} -->
     <section class="compare-selects">
       <span class="form-control">
         <label for="animal1">Choose Animal 1 </label>
         <select id="animal1" name="animal1" v-model="animal1">
           <option
-            v-for="animal in animalList"
+            v-for="animal in animals"
             v-bind:value="animal.commonName"
             v-bind:key="animal.id"
             >{{ animal.id }}</option
@@ -37,7 +38,11 @@ export default {
       animalList: this.$store.animals
     };
   },
-  computed: {},
+  computed: {
+    animals() {
+      return this.$store.state.animals;
+    }
+  },
 
   methods: {
     submitForm() {
