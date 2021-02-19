@@ -1,13 +1,17 @@
 <template>
   <form @submit.prevent="submitForm">
-    {{ store.state.animals }}
+    <!-- {{ $store.state.animals }} -->
+    <!-- {{ animalList }} -->
     <section class="compare-selects">
       <span class="form-control">
         <label for="animal1">Choose Animal 1 </label>
         <select id="animal1" name="animal1" v-model="animal1">
-          <option value="dog">Dog</option>
-          <option value="cat">Cat</option>
-          <option value="bat">Bat</option>
+          <option
+            v-for="animal in animalList"
+            v-bind:value="animal.commonName"
+            v-bind:key="animal.id"
+            >{{ animal.id }}</option
+          >
         </select>
       </span>
       <span class="form-control">
@@ -28,15 +32,18 @@
 export default {
   data() {
     return {
-      animal1: 'dog',
-      animal2: 'cat'
+      animal1: '',
+      animal2: '',
+      animalList: this.$store.animals
     };
   },
   computed: {},
+
   methods: {
     submitForm() {
-      console.log('Animal 1 ', this.animal1);
-      console.log('Animal 2 ', this.animal2);
+      // console.log('Animal 1 ', this.animal1);
+      // console.log('Animal 2 ', this.animal2);
+      // console.log(this.$store.animals);
     }
   }
 };

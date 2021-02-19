@@ -9,7 +9,6 @@ import BaseCard from './components/ui/BaseCard.vue';
 const app = createApp(App);
 
 app.use(store);
-console.log(store);
 
 app.component('base-card', BaseCard);
 
