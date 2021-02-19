@@ -31,6 +31,9 @@ export default {
       animal2: 'cat'
     };
   },
+  computed: {
+    animalSet: this.$store.state.animals
+  },
   methods: {
     submitForm() {
       console.log('Animal 1 ', this.animal1);
