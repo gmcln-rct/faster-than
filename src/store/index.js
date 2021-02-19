@@ -1,10 +1,10 @@
 import { createStore } from 'vuex';
 
-import animalModule from './modules/animals';
+import animalsModule from './modules/animals';
 
 const store = createStore({
   modules: {
-    animals: animalModule
+    animals: animalsModule
   },
   state() {
     return {};

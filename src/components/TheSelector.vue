@@ -1,5 +1,6 @@
 <template>
   <form @submit.prevent="submitForm">
+    {{ store.state.animals }}
     <section class="compare-selects">
       <span class="form-control">
         <label for="animal1">Choose Animal 1 </label>
@@ -31,9 +32,7 @@ export default {
       animal2: 'cat'
     };
   },
-  computed: {
-    animalSet: this.$store.state.animals
-  },
+  computed: {},
   methods: {
     submitForm() {
       console.log('Animal 1 ', this.animal1);
