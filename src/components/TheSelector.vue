@@ -1,6 +1,6 @@
 <template>
   <section>
-    <form>
+    <form @submit.prevent="submitForm">
       <div class="form-control">
         <label for="animal1">Choose Animal 1 </label>
         <select id="animal1" name="animal1" v-model="animal1">
@@ -10,7 +10,7 @@
         </select>
         <div class="form-control">
           <label for="animal2">Choose Animal 2 </label>
-          <select id="animal2" name="animal2">
+          <select id="animal2" name="animal2" v-model="animal2">
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
             <option value="newspaper">Bat</option>
@@ -31,6 +31,9 @@ export default {
       animal1: 'dog',
       animal2: 'cat'
     };
+  },
+  methods: {
+    submitForm() {}
   }
 };
 </script>
