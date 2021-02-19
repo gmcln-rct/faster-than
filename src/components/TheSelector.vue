@@ -1,27 +1,26 @@
 <template>
-  <section>
-    <form @submit.prevent="submitForm">
-      <div class="form-control">
+  <form @submit.prevent="submitForm">
+    <section class="compare-selects">
+      <span class="form-control">
         <label for="animal1">Choose Animal 1 </label>
         <select id="animal1" name="animal1" v-model="animal1">
           <option value="dog">Dog</option>
           <option value="cat">Cat</option>
-          <option value="newspaper">Bat</option>
+          <option value="bat">Bat</option>
         </select>
-        <div class="form-control">
-          <label for="animal2">Choose Animal 2 </label>
-          <select id="animal2" name="animal2" v-model="animal2">
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="newspaper">Bat</option>
-          </select>
-        </div>
-      </div>
-      <div>
-        <button>Compare</button>
-      </div>
-    </form>
-  </section>
+      </span>
+      <span class="form-control">
+        <label for="animal2">Choose Animal 2 </label>
+        <select id="animal2" name="animal2" v-model="animal2">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="bat">Bat</option>
+        </select>
+      </span>
+    </section>
+
+    <button>Compare</button>
+  </form>
 </template>
 
 <script>
@@ -33,23 +32,35 @@ export default {
     };
   },
   methods: {
-    submitForm() {}
+    submitForm() {
+      console.log('Animal 1 ', this.animal1);
+      console.log('Animal 2 ', this.animal2);
+    }
   }
 };
 </script>
 
-<style scoped>
+<style scoped scss>
 form {
+  /* max-width: 40rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 2rem auto;
-  max-width: 40rem;
+  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  padding: 2rem;
   background-color: #ffffff;
 }
 
+.compare-selects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-control {
-  margin: 0.5rem 0;
+  margin: 0 5vmin;
 }
 
 label {
