@@ -9,7 +9,11 @@ const store = createStore({
   state() {
     return {};
   },
-  getters: {}
+  getters: {
+    getAnimals(state) {
+      return state.animals;
+    }
+  }
 });
 
 export default store;

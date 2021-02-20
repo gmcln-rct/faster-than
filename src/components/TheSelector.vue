@@ -1,46 +1,92 @@
 <template>
-  <form @submit.prevent="submitForm">
-    <!-- {{ $store.state.animals }} -->
-    <!-- {{ animalList }} -->
-    <!-- {{ animals }} -->
-    <section class="compare-selects">
-      <span class="form-control">
-        <label for="animal1">Choose Animal 1 </label>
-        <select id="animal1" name="animal1" v-model="animal1">
-          <option
-            v-for="animal in animals"
-            v-bind:value="animal.commonName"
-            v-bind:key="animal.id"
-            >{{ animal.id }}</option
-          >
-        </select>
-      </span>
-      <span class="form-control">
-        <label for="animal2">Choose Animal 2 </label>
-        <select id="animal2" name="animal2" v-model="animal2">
-          <option value="dog">Dog</option>
-          <option value="cat">Cat</option>
-          <option value="bat">Bat</option>
-        </select>
-      </span>
-    </section>
+  <!-- {{ $store.state.animals }} -->
 
-    <button>Compare</button>
-  </form>
+  <!-- {{ animals }} -->
+  <section class="compare-selects">
+    <span class="form-control">
+      <label for="animal1">Choose Animal 1 </label>
+      <select id="animal1" v-model="animal1">
+        <option v-for="animal in animals" :value="animal.id" :key="animal.id">{{
+          animal.commonName
+        }}</option>
+      </select>
+      <p>Animal 1: {{ animal1 }}</p>
+    </span>
+    <span class="form-control">
+      <label for="animal2">Choose Animal 1 </label>
+      <select id="animal2" v-model="animal2">
+        <option v-for="animal in animals" :value="animal.id" :key="animal.id">{{
+          animal.commonName
+        }}</option>
+      </select>
+      <p>Animal 1: {{ animal2 }}</p>
+    </span>
+  </section>
+
+  <button v-on:click.stop="compareAnimals">Compare</button>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      animal1: '',
-      animal2: '',
-      animalList: this.$store.animals
+      animal1: 'noanimal',
+      animal2: 'noanimal',
+      animals: [
+        {
+          id: 'noanimal',
+          commonName: 'Choose Animal',
+          scientificName: '',
+          speed: '',
+          siteLink: '',
+          img: ''
+        },
+        {
+          id: 'animal001',
+          commonName: 'African wild dog',
+          scientificName: 'Lycaon pictus',
+          speed: 45,
+          siteLink: 'https://en.wikipedia.org/wiki/African_wild_dog',
+          img: 'https://faster-than.s3.amazonaws.com/animal-wilddog.png'
+        },
+        {
+          id: 'animal002',
+          commonName: "Anna's hummingbird",
+          scientificName: 'Calypte anna',
+          speed: 61.06,
+          siteLink: 'https://en.wikipedia.org/wiki/Anna%27s_hummingbird',
+          img: 'https://faster-than.s3.amazonaws.com/animal-annahummingbird.png'
+        },
+        {
+          id: 'animal003',
+          commonName: 'Atlantic bluefin tuna',
+          scientificName: 'Thunnus thynnus',
+          speed: 43.51,
+          siteLink: 'https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna',
+          img: 'https://faster-than.s3.amazonaws.com/animal-bluefin.png'
+        },
+        {
+          id: 'animal004',
+          commonName: 'Bison',
+          scientificName: 'Bison',
+          speed: 35,
+          siteLink: 'https://en.wikipedia.org/wiki/Bison',
+          img: 'https://faster-than.s3.amazonaws.com/animal-annahummingbird.png'
+        },
+        {
+          id: 'animal005',
+          commonName: 'Black mamba snake',
+          scientificName: 'Dendroaspis polylepis',
+          speed: 12.9,
+          siteLink: 'https://en.wikipedia.org/wiki/Black_mamba',
+          img: 'https://faster-than.s3.amazonaws.com/animal-blackmamba.png'
+        }
+      ]
     };
   },
   computed: {
-    animals() {
-      return this.$store.state.animals;
+    animalsList() {
+      return this.$store.getters.getAnimals;
     }
   },
 
@@ -49,6 +95,30 @@ export default {
       // console.log('Animal 1 ', this.animal1);
       // console.log('Animal 2 ', this.animal2);
       // console.log(this.$store.animals);
+    },
+    compareAnimals(event) {
+      console.log('Animal 1 ', this.animal1);
+      console.log('Animal 2 ', this.animal2);
+
+      let selectedAnimal1 = this.animals.find(x => x.id === this.animal1);
+      let selectedAnimal2 = this.animals.find(x => x.id === this.animal2);
+
+      let winner;
+
+      if (selectedAnimal1.speed > selectedAnimal2.speed) {
+        winner = selectedAnimal1;
+      } else {
+        winner = selectedAnimal2;
+      }
+
+      console.log('Winner: ' + winner.commonName);
+
+      let typeCheck = typeof selectedAnimal1.speed;
+      console.log('Type 1' + typeCheck);
+
+      if (event) {
+        console.log(event.target.tagName);
+      }
     }
   }
 };
