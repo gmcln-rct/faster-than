@@ -15,7 +15,7 @@
           >
         </select>
 
-        <p>Error message</p>
+        <p v-if="!animal1IsValid">Please select an animal</p>
       </span>
       <span class="form-control">
         <label for="animal2">Choose Animal 2 </label>
@@ -27,7 +27,7 @@
             >{{ animal.commonName }}</option
           >
         </select>
-        <p>Error message</p>
+        <p v-if="animal2IsValid">Please select an animal</p>
       </span>
     </div>
     <button v-on:click.stop="compareAnimals">Compare</button>
@@ -41,7 +41,9 @@ export default {
     return {
       animal1: 'noanimal',
       animal2: 'noanimal',
-      animals: animals
+      animals: animals,
+      animal1IsValid: true,
+      animal2IsValid: true
     };
   },
   computed: {
@@ -52,9 +54,6 @@ export default {
 
   methods: {
     compareAnimals(event) {
-      console.log('Animal 1 ', this.animal1);
-      console.log('Animal 2 ', this.animal2);
-
       let selectedAnimal1 = this.animals.find(x => x.id === this.animal1);
       let selectedAnimal2 = this.animals.find(x => x.id === this.animal2);
 
