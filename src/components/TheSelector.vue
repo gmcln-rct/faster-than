@@ -50,10 +50,16 @@ export default {
     // animalsList() {
     //   return this.$store.getters.getAnimals;
     // }
+    // let selectedAnimal1 = this.animals.find(x => x.id === this.animal1)
+    // let selectedAnimal2 = this.animals.find(x => x.id === this.animal2)
   },
 
   methods: {
+    validateSelects() {
+      console.log('This is validating');
+    },
     compareAnimals(event) {
+      this.validateSelects();
       let selectedAnimal1 = this.animals.find(x => x.id === this.animal1);
       let selectedAnimal2 = this.animals.find(x => x.id === this.animal2);
 
