@@ -8,16 +8,17 @@
         <label for="animal1">Choose Animal 1 </label>
         <select id="animal1" class="select-css" v-model="animal1">
           <option
-            v-for="(animal, index) in animalsList()"
+            v-for="(animal, index) in animals"
             :value="animal.id"
             :key="index"
             >{{ animal.commonName }}</option
           >
         </select>
+
         <p>Error message</p>
       </span>
       <span class="form-control">
-        <label for="animal2">Choose Animal 1 </label>
+        <label for="animal2">Choose Animal 2 </label>
         <select id="animal2" class="select-css" v-model="animal2">
           <option
             v-for="animal in animals"
@@ -34,7 +35,7 @@
 </template>
 
 <script>
-import animals from './data/animals.js';
+import { animals } from './data/animals.js';
 export default {
   data() {
     return {

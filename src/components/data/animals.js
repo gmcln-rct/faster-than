@@ -1,4 +1,4 @@
-export default animals = [
+export const animals = [
   {
     id: 'animal001',
     commonName: 'African wild dog',
