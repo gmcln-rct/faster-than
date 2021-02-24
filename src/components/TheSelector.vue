@@ -5,6 +5,7 @@
   <section class="compare">
     <div class="compare-selects">
       <span class="form-control">
+        <!-- <div>{{ animal1Img.img }}</div> -->
         <label for="animal1">Choose Animal 1 </label>
         <select id="animal1" class="select-css" v-model="animal1">
           <option
@@ -16,6 +17,7 @@
         </select>
 
         <p v-if="!animal1IsValid">Please select an animal</p>
+        <img v-if="animal1 !== 'noanimal'" :src="animal1Img.img" />
       </span>
       <span class="form-control">
         <label for="animal2">Choose Animal 2 </label>
@@ -27,7 +29,8 @@
             >{{ animal.commonName }}</option
           >
         </select>
-        <p v-if="animal2IsValid">Please select an animal</p>
+        <p v-if="!animal2IsValid">Please select an animal</p>
+        <!-- <img v-if="animal2Img.img" :src="animal2Img.img" /> -->
       </span>
     </div>
     <button v-on:click.stop="compareAnimals">Compare</button>
@@ -47,11 +50,22 @@ export default {
     };
   },
   computed: {
-    // animalsList() {
-    //   return this.$store.getters.getAnimals;
-    // }
-    // let selectedAnimal1 = this.animals.find(x => x.id === this.animal1)
-    // let selectedAnimal2 = this.animals.find(x => x.id === this.animal2)
+    animal1Img() {
+      let animal1Img;
+      if (this.animal1 !== 'noanimal') {
+        animal1Img = animals.find(x => x.id === this.animal1);
+      }
+      console.log('animal1 image' + animal1Img);
+      return animal1Img;
+    },
+    animal2Img() {
+      let animal2Img;
+      if (this.animal2 !== 'noanimal') {
+        animal2Img = animals.find(x => x.id === this.animal2);
+      }
+      console.log('animal2 image' + animal2Img);
+      return animal2Img;
+    }
   },
 
   methods: {
