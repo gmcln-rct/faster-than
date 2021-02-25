@@ -38,5 +38,45 @@ export const animals = [
     speed: '12.9',
     siteLink: 'https://en.wikipedia.org/wiki/Black_mamba',
     img: 'https://faster-than.s3.amazonaws.com/animal-blackmamba.png'
+  },
+  {
+    id: 'animal006',
+    commonName: 'Blue Jay',
+    scientificName: 'Cyanocitta cristata',
+    speed: '25',
+    siteLink: 'https://en.wikipedia.org/wiki/Blue_jay',
+    img: 'https://faster-than.s3.amazonaws.com/animal-bluejay.png'
+  },
+  {
+    id: 'animal007',
+    commonName: 'Blue Shark',
+    scientificName: 'Prionace glauca',
+    speed: '42.88',
+    siteLink: 'https://en.wikipedia.org/wiki/Blue_shark',
+    img: 'https://faster-than.s3.amazonaws.com/animal-blueshark.png'
+  },
+  {
+    id: 'animal008',
+    commonName: 'Brown Bear',
+    scientificName: 'Ursus arctos',
+    speed: '21.7',
+    siteLink: 'https://en.wikipedia.org/wiki/Brown_bear',
+    img: 'https://faster-than.s3.amazonaws.com/animal-brownbear.png'
+  },
+  {
+    id: 'animal009',
+    commonName: 'Camel',
+    scientificName: 'Camelus',
+    speed: '40',
+    siteLink: 'https://en.wikipedia.org/wiki/Camel',
+    img: 'https://faster-than.s3.amazonaws.com/animal-camel.png'
+  },
+  {
+    id: 'animal010',
+    commonName: 'African elephant',
+    scientificName: 'Loxodonta',
+    speed: '24.9',
+    siteLink: 'https://en.wikipedia.org/wiki/African_elephant',
+    img: 'https://faster-than.s3.amazonaws.com/animal-elephant.png'
   }
 ];

@@ -96,9 +96,6 @@ export default {
 
       console.log('Winner: ' + winner.commonName);
 
-      let typeCheck = typeof selectedAnimal1.speed;
-      console.log('Type 1' + typeCheck);
-
       if (event) {
         console.log(event.target.tagName);
       }
@@ -164,7 +161,7 @@ select {
 }
 
 button {
-  margin: 0 auto;
+  margin: 2vmin auto;
   padding: 0.75rem 2rem;
   font: inherit;
   border: 1px solid #0076bb;
@@ -258,5 +255,7 @@ button:active {
 
 .flip {
   transform: scaleX(-1);
+  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(163deg)
+    brightness(97%) contrast(101%);
 }
 </style>
