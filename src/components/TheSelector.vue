@@ -50,32 +50,7 @@ export default {
       animal2IsValid: true
     };
   },
-  computed: {
-    getAnimal1Img() {
-      let animal1Img;
-      if (this.animal1 !== 'noanimal') {
-        let animal = this.animals.find(x => x.id === this.animal1);
-        animal1Img = animal.img;
-      } else {
-        animal1Img = 'https://faster-than.s3.amazonaws.com/animal-noanimal.png';
-      }
-      console.log('animal1 image' + animal1Img);
-      return this.animal1Img;
-    },
-
-    animal2Iddd() {
-      let animal2Img;
-      if (this.animal2 !== 'noanimal') {
-        let animal = animals.find(x => x.id === this.animal2);
-        animal2Img = animal.img;
-      } else {
-        animal2Img =
-          'https://faster-than.s3.amazonaws.com/animal-annahummingbird.png';
-      }
-      console.log('animal2 image' + animal2Img);
-      return animal2Img;
-    }
-  },
+  computed: {},
 
   methods: {
     validateSelects() {

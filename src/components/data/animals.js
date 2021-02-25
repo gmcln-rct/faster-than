@@ -45,7 +45,7 @@ export const animals = [
     scientificName: 'Cyanocitta cristata',
     speed: '25',
     siteLink: 'https://en.wikipedia.org/wiki/Blue_jay',
-    img: 'https://faster-than.s3.amazonaws.com/animal-bluejay.png'
+    img: 'https://faster-than.s3.amazonaws.com/test-bird.svg'
   },
   {
     id: 'animal007',
