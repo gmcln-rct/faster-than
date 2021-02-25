@@ -6,6 +6,7 @@
     <div class="compare-selects">
       <span class="form-control">
         <!-- <div>{{ animal1Img.img }}</div> -->
+        <img :src="getAnimal1Img" />
         <label for="animal1">Choose Animal 1 </label>
         <select id="animal1" class="select-css" v-model="animal1">
           <option
@@ -17,10 +18,9 @@
         </select>
 
         <p v-if="!animal1IsValid">Please select an animal</p>
-        <img v-if="animal1 !== 'noanimal'" :src="animal1Img.img" />
       </span>
       <span class="form-control">
-        <label for="animal2">Choose Animal 2 </label>
+        <img class="flip " :src="getAnimalImg" />
         <select id="animal2" class="select-css" v-model="animal2">
           <option
             v-for="animal in animals"
@@ -28,9 +28,9 @@
             :key="animal.id"
             >{{ animal.commonName }}</option
           >
+          <option :value="animal2" disabled hidden>Select an animal</option>
         </select>
         <p v-if="!animal2IsValid">Please select an animal</p>
-        <!-- <img v-if="animal2Img.img" :src="animal2Img.img" /> -->
       </span>
     </div>
     <button v-on:click.stop="compareAnimals">Compare</button>
@@ -50,18 +50,37 @@ export default {
     };
   },
   computed: {
-    animal1Img() {
+    getAnimal1Img() {
       let animal1Img;
       if (this.animal1 !== 'noanimal') {
-        animal1Img = animals.find(x => x.id === this.animal1);
+        let animal = this.animals.find(x => x.id === this.animal1);
+        animal1Img = animal.img;
+      } else {
+        animal1Img = 'https://faster-than.s3.amazonaws.com/animal-noanimal.png';
       }
       console.log('animal1 image' + animal1Img);
-      return animal1Img;
+      return this.animal1Img;
     },
-    animal2Img() {
+    getAnimalImg() {
+      let animalId = this.animal2;
+      let animalImg;
+      if (animalId !== 'noanimal') {
+        let animal = animals.find(x => x.id === animalId);
+        animalImg = animal.img;
+      } else {
+        animalImg = 'https://faster-than.s3.amazonaws.com/animal-noanimal.png';
+      }
+
+      return animalImg;
+    },
+    animal2Iddd() {
       let animal2Img;
       if (this.animal2 !== 'noanimal') {
-        animal2Img = animals.find(x => x.id === this.animal2);
+        let animal = animals.find(x => x.id === this.animal2);
+        animal2Img = animal.img;
+      } else {
+        animal2Img =
+          'https://faster-than.s3.amazonaws.com/animal-annahummingbird.png';
       }
       console.log('animal2 image' + animal2Img);
       return animal2Img;
@@ -233,5 +252,9 @@ button:active {
 .select-css:disabled:hover,
 .select-css[aria-disabled='true'] {
   border-color: #aaa;
+}
+
+.flip {
+  transform: scaleX(-1);
 }
 </style>
