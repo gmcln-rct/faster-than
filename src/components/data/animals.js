@@ -13,7 +13,7 @@ export const animals = [
     scientificName: 'Calypte anna',
     speed: '61.06',
     siteLink: 'https://en.wikipedia.org/wiki/Anna%27s_hummingbird',
-    img: 'https://faster-than.s3.amazonaws.com/animal-annahummingbird.png'
+    img: 'https://faster-than.s3.amazonaws.com/annahummingbird.svg'
   },
   {
     id: 'animal003',
@@ -21,7 +21,7 @@ export const animals = [
     scientificName: 'Thunnus thynnus',
     speed: '43.51',
     siteLink: 'https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna',
-    img: 'https://faster-than.s3.amazonaws.com/animal-bluefin.png'
+    img: 'https://faster-than.s3.amazonaws.com/bluefin.svg'
   },
   {
     id: 'animal004',
@@ -29,7 +29,7 @@ export const animals = [
     scientificName: 'Bison',
     speed: '35',
     siteLink: 'https://en.wikipedia.org/wiki/Bison',
-    img: 'https://faster-than.s3.amazonaws.com/animal-bison.png'
+    img: 'https://faster-than.s3.amazonaws.com/bison.svg'
   },
   {
     id: 'animal005',
@@ -37,7 +37,7 @@ export const animals = [
     scientificName: 'Dendroaspis polylepis',
     speed: '12.9',
     siteLink: 'https://en.wikipedia.org/wiki/Black_mamba',
-    img: 'https://faster-than.s3.amazonaws.com/animal-blackmamba.png'
+    img: 'https://faster-than.s3.amazonaws.com/blackmamba.svg'
   },
   {
     id: 'animal006',
@@ -45,7 +45,7 @@ export const animals = [
     scientificName: 'Cyanocitta cristata',
     speed: '25',
     siteLink: 'https://en.wikipedia.org/wiki/Blue_jay',
-    img: 'https://faster-than.s3.amazonaws.com/test-bird.svg'
+    img: 'https://faster-than.s3.amazonaws.com/bluejay.svg'
   },
   {
     id: 'animal007',
@@ -53,7 +53,7 @@ export const animals = [
     scientificName: 'Prionace glauca',
     speed: '42.88',
     siteLink: 'https://en.wikipedia.org/wiki/Blue_shark',
-    img: 'https://faster-than.s3.amazonaws.com/animal-blueshark.png'
+    img: 'https://faster-than.s3.amazonaws.com/blueshark.svg'
   },
   {
     id: 'animal008',
