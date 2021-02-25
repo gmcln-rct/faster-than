@@ -61,7 +61,7 @@ export const animals = [
     scientificName: 'Ursus arctos',
     speed: '21.7',
     siteLink: 'https://en.wikipedia.org/wiki/Brown_bear',
-    img: 'https://faster-than.s3.amazonaws.com/animal-brownbear.png'
+    img: 'https://faster-than.s3.amazonaws.com/brownbear.svg'
   },
   {
     id: 'animal009',
@@ -77,6 +77,14 @@ export const animals = [
     scientificName: 'Loxodonta',
     speed: '24.9',
     siteLink: 'https://en.wikipedia.org/wiki/African_elephant',
-    img: 'https://faster-than.s3.amazonaws.com/animal-elephant.png'
+    img: 'https://faster-than.s3.amazonaws.com/elephant.svg'
+  },
+  {
+    id: 'animal011',
+    commonName: 'Cheetah',
+    scientificName: 'Acinonyx jubatus',
+    speed: '74.6',
+    siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
+    img: 'https://faster-than.s3.amazonaws.com/cheetah.svg'
   }
 ];

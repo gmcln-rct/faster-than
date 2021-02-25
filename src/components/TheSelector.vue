@@ -82,7 +82,7 @@ export default {
         let animal = animals.find(x => x.id === animalId);
         animalImg = animal.img;
       } else {
-        animalImg = 'https://faster-than.s3.amazonaws.com/animal-noanimal.png';
+        animalImg = 'https://faster-than.s3.amazonaws.com/noanimal.svg';
       }
 
       return animalImg;
