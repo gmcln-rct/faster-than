@@ -5,7 +5,7 @@ export const animals = [
     scientificName: 'Lycaon pictus',
     speed: '45',
     siteLink: 'https://en.wikipedia.org/wiki/African_wild_dog',
-    img: 'https://faster-than.s3.amazonaws.com/animal-wilddog.png'
+    img: 'https://faster-than.s3.amazonaws.com/wilddog.svg'
   },
   {
     id: 'animal002',
@@ -69,7 +69,7 @@ export const animals = [
     scientificName: 'Camelus',
     speed: '40',
     siteLink: 'https://en.wikipedia.org/wiki/Camel',
-    img: 'https://faster-than.s3.amazonaws.com/animal-camel.png'
+    img: 'https://faster-than.s3.amazonaws.com/camel.svg'
   },
   {
     id: 'animal010',

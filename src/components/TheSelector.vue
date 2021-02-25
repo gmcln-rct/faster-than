@@ -6,7 +6,7 @@
     <div class="compare-selects">
       <span class="form-control">
         <!-- <div>{{ animal1Img.img }}</div> -->
-        <img :src="getAnimalImg(animal1)" />
+        <img class="animal-img" :src="getAnimalImg(animal1)" />
 
         <select id="animal1" class="select-css" v-model="animal1">
           <option
@@ -226,6 +226,11 @@ button:active {
 .select-css:disabled:hover,
 .select-css[aria-disabled='true'] {
   border-color: #aaa;
+}
+
+.animal-img {
+  max-width: 300px;
+  height: 200px;
 }
 
 .flip {
