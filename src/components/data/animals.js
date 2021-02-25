@@ -86,5 +86,29 @@ export const animals = [
     speed: '74.6',
     siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
     img: 'https://faster-than.s3.amazonaws.com/cheetah.svg'
+  },
+  {
+    id: 'animal012',
+    commonName: 'Cat',
+    scientificName: 'Acinonyx jubatus',
+    speed: '74.6',
+    siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
+    img: 'https://faster-than.s3.amazonaws.com/cat.svg'
+  },
+  {
+    id: 'animal013',
+    commonName: 'Chicken',
+    scientificName: 'Acinonyx jubatus',
+    speed: '74.6',
+    siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
+    img: 'https://faster-than.s3.amazonaws.com/chicken.svg'
+  },
+  {
+    id: 'animal014',
+    commonName: 'Coyote',
+    scientificName: 'Acinonyx jubatus',
+    speed: '74.6',
+    siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
+    img: 'https://faster-than.s3.amazonaws.com/coyote.svg'
   }
 ];
