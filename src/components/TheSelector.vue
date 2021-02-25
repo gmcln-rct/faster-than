@@ -6,8 +6,8 @@
     <div class="compare-selects">
       <span class="form-control">
         <!-- <div>{{ animal1Img.img }}</div> -->
-        <img :src="getAnimal1Img" />
-        <label for="animal1">Choose Animal 1 </label>
+        <img :src="getAnimalImg(animal1)" />
+
         <select id="animal1" class="select-css" v-model="animal1">
           <option
             v-for="(animal, index) in animals"
@@ -15,12 +15,13 @@
             :key="index"
             >{{ animal.commonName }}</option
           >
+          <option :value="animal1" disabled hidden>Select Animal 1</option>
         </select>
 
         <p v-if="!animal1IsValid">Please select an animal</p>
       </span>
       <span class="form-control">
-        <img class="flip " :src="getAnimalImg" />
+        <img class="flip " :src="getAnimalImg(animal2)" />
         <select id="animal2" class="select-css" v-model="animal2">
           <option
             v-for="animal in animals"
@@ -28,7 +29,7 @@
             :key="animal.id"
             >{{ animal.commonName }}</option
           >
-          <option :value="animal2" disabled hidden>Select an animal</option>
+          <option :value="animal2" disabled hidden>Select Animal 2</option>
         </select>
         <p v-if="!animal2IsValid">Please select an animal</p>
       </span>
@@ -61,18 +62,7 @@ export default {
       console.log('animal1 image' + animal1Img);
       return this.animal1Img;
     },
-    getAnimalImg() {
-      let animalId = this.animal2;
-      let animalImg;
-      if (animalId !== 'noanimal') {
-        let animal = animals.find(x => x.id === animalId);
-        animalImg = animal.img;
-      } else {
-        animalImg = 'https://faster-than.s3.amazonaws.com/animal-noanimal.png';
-      }
 
-      return animalImg;
-    },
     animal2Iddd() {
       let animal2Img;
       if (this.animal2 !== 'noanimal') {
@@ -112,6 +102,18 @@ export default {
       if (event) {
         console.log(event.target.tagName);
       }
+    },
+    getAnimalImg(animalId) {
+      // let animalId = this.animal2;
+      let animalImg;
+      if (animalId !== 'noanimal') {
+        let animal = animals.find(x => x.id === animalId);
+        animalImg = animal.img;
+      } else {
+        animalImg = 'https://faster-than.s3.amazonaws.com/animal-noanimal.png';
+      }
+
+      return animalImg;
     }
   }
 };

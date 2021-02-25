@@ -29,7 +29,7 @@ export const animals = [
     scientificName: 'Bison',
     speed: '35',
     siteLink: 'https://en.wikipedia.org/wiki/Bison',
-    img: 'https://faster-than.s3.amazonaws.com/animal-annahummingbird.png'
+    img: 'https://faster-than.s3.amazonaws.com/animal-bison.png'
   },
   {
     id: 'animal005',
