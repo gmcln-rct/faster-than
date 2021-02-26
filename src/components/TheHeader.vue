@@ -39,7 +39,7 @@ a.router-link-active {
 
 h1 {
   margin: 0;
-  padding: 2vmin 0;
+  padding: 2vmin 0 1vmin 0;
   font-family: bilo, sans-serif;
 
   font-weight: 700;
@@ -53,6 +53,9 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h1 a {
@@ -65,12 +68,4 @@ h1 a:active,
 h1 a.router-link-active {
   border-color: transparent;
 }
-
-/* header nav {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 </style>

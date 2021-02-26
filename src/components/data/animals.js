@@ -129,14 +129,6 @@ export const animals = [
   },
   {
     id: 'animal017',
-    commonName: 'Elk',
-    scientificName: 'Cervus canadensis',
-    speed: '45',
-    siteLink: 'https://en.wikipedia.org/wiki/Elk',
-    img: 'https://faster-than.s3.amazonaws.com/elk.svg'
-  },
-  {
-    id: 'animal018',
     commonName: 'Rabbit',
     scientificName: 'Oryctolagus cuniculus',
     speed: '29.8',
@@ -144,7 +136,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/rabbit.svg'
   },
   {
-    id: 'animal019',
+    id: 'animal018',
     commonName: 'Leopard Tortoise',
     scientificName: 'Stigmochelys pardalis',
     speed: '0.62',

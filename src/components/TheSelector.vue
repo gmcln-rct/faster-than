@@ -108,7 +108,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 250px;
 }
 
 .form-control {
@@ -124,20 +123,8 @@ h2 {
   margin: 0.5rem 0;
 }
 
-input,
-select {
-  display: block;
-  width: 100%;
-  font: inherit;
-  margin-top: 0.5rem;
-}
-
-select {
-  width: auto;
-}
-
 button {
-  margin: 2vmin auto;
+  margin: 3vmin auto;
   padding: 0.75rem 2rem;
   font: inherit;
   border: 1px solid #0076bb;
@@ -231,6 +218,8 @@ button:active {
 
 .animal-img {
   padding: 2vmin 0;
+  width: 250px;
+  height: 250px;
 }
 
 .flip {
