@@ -73,11 +73,11 @@ export const animals = [
   },
   {
     id: 'animal010',
-    commonName: 'African elephant',
-    scientificName: 'Loxodonta',
-    speed: '24.9',
-    siteLink: 'https://en.wikipedia.org/wiki/African_elephant',
-    img: 'https://faster-than.s3.amazonaws.com/elephant.svg'
+    commonName: 'Cat (domestic)',
+    scientificName: 'Felis catus',
+    speed: '29.8',
+    siteLink: 'https://en.wikipedia.org/wiki/Cat',
+    img: 'https://faster-than.s3.amazonaws.com/cat.svg'
   },
   {
     id: 'animal011',
@@ -89,26 +89,66 @@ export const animals = [
   },
   {
     id: 'animal012',
-    commonName: 'Cat',
-    scientificName: 'Acinonyx jubatus',
-    speed: '74.6',
-    siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
-    img: 'https://faster-than.s3.amazonaws.com/cat.svg'
-  },
-  {
-    id: 'animal013',
     commonName: 'Chicken',
-    scientificName: 'Acinonyx jubatus',
-    speed: '74.6',
-    siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
+    scientificName: 'Gallus gallus domesticus',
+    speed: '9',
+    siteLink: 'https://en.wikipedia.org/wiki/Chicken',
     img: 'https://faster-than.s3.amazonaws.com/chicken.svg'
   },
   {
-    id: 'animal014',
+    id: 'animal013',
     commonName: 'Coyote',
-    scientificName: 'Acinonyx jubatus',
-    speed: '74.6',
-    siteLink: 'https://en.wikipedia.org/wiki/Cheetah',
+    scientificName: 'Canis latrans',
+    speed: '43',
+    siteLink: 'https://en.wikipedia.org/wiki/Coyote',
     img: 'https://faster-than.s3.amazonaws.com/coyote.svg'
+  },
+  {
+    id: 'animal014',
+    commonName: 'Deer',
+    scientificName: 'Cervidae',
+    speed: '40',
+    siteLink: 'https://en.wikipedia.org/wiki/Deer',
+    img: 'https://faster-than.s3.amazonaws.com/deer.svg'
+  },
+  {
+    id: 'animal015',
+    commonName: 'Dog (domestic)',
+    scientificName: 'Canis lupus familiaris',
+    speed: '20',
+    siteLink: 'https://en.wikipedia.org/wiki/Dog',
+    img: 'https://faster-than.s3.amazonaws.com/dog.svg'
+  },
+  {
+    id: 'animal016',
+    commonName: 'Elephant',
+    scientificName: 'Loxodonta',
+    speed: '24.9',
+    siteLink: 'https://en.wikipedia.org/wiki/African_elephant',
+    img: 'https://faster-than.s3.amazonaws.com/elephant.svg'
+  },
+  {
+    id: 'animal017',
+    commonName: 'Elk',
+    scientificName: 'Cervus canadensis',
+    speed: '45',
+    siteLink: 'https://en.wikipedia.org/wiki/Elk',
+    img: 'https://faster-than.s3.amazonaws.com/elk.svg'
+  },
+  {
+    id: 'animal018',
+    commonName: 'Rabbit',
+    scientificName: 'Oryctolagus cuniculus',
+    speed: '29.8',
+    siteLink: 'https://en.wikipedia.org/wiki/European_rabbit',
+    img: 'https://faster-than.s3.amazonaws.com/rabbit.svg'
+  },
+  {
+    id: 'animal019',
+    commonName: 'Leopard Tortoise',
+    scientificName: 'Stigmochelys pardalis',
+    speed: '0.62',
+    siteLink: 'https://en.wikipedia.org/wiki/Leopard_tortoise',
+    img: 'https://faster-than.s3.amazonaws.com/tortoise.svg'
   }
 ];
