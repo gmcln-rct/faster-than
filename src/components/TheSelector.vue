@@ -21,7 +21,7 @@
         <p v-if="!animal1IsValid">Please select an animal</p>
       </span>
       <span class="form-control">
-        <img class="flip " :src="getAnimalImg(animal2)" />
+        <img class="animal-img flip" :src="getAnimalImg(animal2)" />
         <select id="animal2" class="select-css" v-model="animal2">
           <option
             v-for="animal in animals"
@@ -108,6 +108,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 250px;
 }
 
 .form-control {
@@ -229,8 +230,7 @@ button:active {
 }
 
 .animal-img {
-  max-width: 300px;
-  height: 200px;
+  padding: 2vmin 0;
 }
 
 .flip {

@@ -1,16 +1,19 @@
 <template>
   <the-header></the-header>
   <the-selector></the-selector>
+  <the-footer></the-footer>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
 import TheSelector from './components/TheSelector';
+import TheFooter from './components/TheFooter';
 
 export default {
   components: {
     TheHeader,
-    TheSelector
+    TheSelector,
+    TheFooter
   }
 };
 </script>
