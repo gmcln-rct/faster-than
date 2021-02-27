@@ -20,6 +20,7 @@
 
         <p v-if="!animal1IsValid">Please select an animal</p>
       </span>
+      <span class="vs">vs.</span>
       <span class="form-control">
         <img class="animal-img flip" :src="getAnimalImg(animal2)" />
         <select id="animal2" class="select-css" v-model="animal2">
@@ -121,6 +122,10 @@ label {
 h2 {
   font-size: 1rem;
   margin: 0.5rem 0;
+}
+
+.vs {
+  font-size: 24px;
 }
 
 button {
