@@ -1,6 +1,6 @@
 <template>
   <div>
-    <select :value="value" @input="updateValue" v-bind="$attrs">
+    <select :value="modelValue" @input="updateValue" v-bind="$attrs">
       <option v-for="option in options" :key="option">{{ option }}</option>
     </select>
   </div>
@@ -14,6 +14,10 @@ export default {
       type: Array,
       require: true
     }
+  },
+  modelValue: {
+    type: [String, Number],
+    default: ''
   }
 };
 </script>
