@@ -72,10 +72,18 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/camel.svg'
   },
   {
+    id: 'animal022',
+    commonName: 'Canadian Goose',
+    scientificName: 'Branta canadensis',
+    speed: '60',
+    siteLink: 'https://en.wikipedia.org/wiki/Canada_goose',
+    img: 'https://faster-than.s3.amazonaws.com/goose.svg'
+  },
+  {
     id: 'animal010',
     commonName: 'Cat (domestic)',
     scientificName: 'Felis catus',
-    speed: '29.8',
+    speed: '30',
     siteLink: 'https://en.wikipedia.org/wiki/Cat',
     img: 'https://faster-than.s3.amazonaws.com/cat.svg'
   },
@@ -129,6 +137,70 @@ export const animals = [
   },
   {
     id: 'animal017',
+    commonName: 'Elk',
+    scientificName: 'Cervus canadensis',
+    speed: '45',
+    siteLink: 'https://en.wikipedia.org/wiki/Elk',
+    img: 'https://faster-than.s3.amazonaws.com/elk.svg'
+  },
+  {
+    id: 'animal021',
+    commonName: 'Flying Fish',
+    scientificName: 'Exocoetidae',
+    speed: '34.8',
+    siteLink: 'https://en.wikipedia.org/wiki/Flying_fish',
+    img: 'https://faster-than.s3.amazonaws.com/flyingfish.svg'
+  },
+  {
+    id: 'animal024',
+    commonName: 'Garden snail',
+    scientificName: 'Cornu aspersum',
+    speed: '0.03',
+    siteLink: 'https://en.wikipedia.org/wiki/Cornu_aspersum',
+    img: 'https://faster-than.s3.amazonaws.com/snail.svg'
+  },
+  {
+    id: 'animal020',
+    commonName: 'Giraffe',
+    scientificName: 'Giraffa',
+    speed: '32.3',
+    siteLink: 'https://en.wikipedia.org/wiki/Giraffe',
+    img: 'https://faster-than.s3.amazonaws.com/giraffe.svg'
+  },
+  {
+    id: 'animal027',
+    commonName: 'Great white shark',
+    scientificName: 'Carcharodon carcharias',
+    speed: '35',
+    siteLink: 'https://en.wikipedia.org/wiki/Great_white_shark',
+    img: 'https://faster-than.s3.amazonaws.com/greatwhiteshark.svg'
+  },
+  {
+    id: 'animal023',
+    commonName: 'Human',
+    scientificName: 'Homo sapien',
+    speed: '27.9',
+    siteLink: 'https://en.wikipedia.org/wiki/Early_modern_human',
+    img: 'https://faster-than.s3.amazonaws.com/human.svg'
+  },
+  {
+    id: 'animal019',
+    commonName: 'Leopard Tortoise',
+    scientificName: 'Stigmochelys pardalis',
+    speed: '0.62',
+    siteLink: 'https://en.wikipedia.org/wiki/Leopard_tortoise',
+    img: 'https://faster-than.s3.amazonaws.com/tortoise.svg'
+  },
+  {
+    id: 'animal025',
+    commonName: 'Peregrine falcon',
+    scientificName: 'Falco peregrinus',
+    speed: '242',
+    siteLink: 'https://en.wikipedia.org/wiki/Peregrine_falcon',
+    img: 'https://faster-than.s3.amazonaws.com/falcon.svg'
+  },
+  {
+    id: 'animal018',
     commonName: 'Rabbit',
     scientificName: 'Oryctolagus cuniculus',
     speed: '29.8',
@@ -136,11 +208,11 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/rabbit.svg'
   },
   {
-    id: 'animal018',
-    commonName: 'Leopard Tortoise',
-    scientificName: 'Stigmochelys pardalis',
-    speed: '0.62',
-    siteLink: 'https://en.wikipedia.org/wiki/Leopard_tortoise',
-    img: 'https://faster-than.s3.amazonaws.com/tortoise.svg'
+    id: 'animal026',
+    commonName: 'Squirrel',
+    scientificName: 'Sciurus carolinensis',
+    speed: '12',
+    siteLink: 'https://en.wikipedia.org/wiki/Eastern_gray_squirrel',
+    img: 'https://faster-than.s3.amazonaws.com/squirrel.svg'
   }
 ];
