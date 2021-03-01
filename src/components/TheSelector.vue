@@ -7,8 +7,9 @@
       <span class="form-control">
         <!-- <div>{{ animal1Img.img }}</div> -->
         <img class="animal-img" :src="getAnimalImg(animal1)" />
+        <BaseSelect :option="animals" v-model="animal1" />
 
-        <select id="animal1" class="select-css" v-model="animal1">
+        <!-- <select id="animal1" class="select-css" v-model="animal1">
           <option
             v-for="(animal, index) in animals"
             :value="animal.id"
@@ -16,7 +17,7 @@
             >{{ animal.commonName }}</option
           >
           <option :value="animal1" disabled hidden>Select Animal 1</option>
-        </select>
+        </select> -->
 
         <p v-if="!animal1IsValid">Please select an animal</p>
       </span>

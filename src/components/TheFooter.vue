@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <h5>Data sources:</h5>
     <p>Copyright @2021 Glenn McClanan.</p>
   </footer>
 </template>
