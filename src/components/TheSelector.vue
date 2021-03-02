@@ -5,8 +5,9 @@
   <section class="compare">
     <div class="compare-selects">
       <span class="form-control">
-        <!-- <div>{{ animal1Img.img }}</div> -->
-        <!-- <div v-model="getAnimalImg(animal1)"></div> -->
+        <h2 v-if="animal1 !== 'noanimal'">
+          {{ getAnimalName(animal1) }}
+        </h2>
 
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
@@ -14,16 +15,6 @@
           class="select-css"
           v-model="animal1"
         ></base-select>
-
-        <!-- <select id="animal1" class="select-css" v-model="animal1">
-          <option
-            v-for="(animal, index) in animals"
-            :value="animal.id"
-            :key="index"
-            >{{ animal.commonName }}</option
-          >
-          <option :value="animal1" disabled hidden>Select Animal 1</option>
-        </select> -->
 
         <p v-if="!animal1IsValid">Please select an animal</p>
       </span>
@@ -95,13 +86,29 @@ export default {
 
       return animalImg;
     },
+    getAnimalName(animalId) {
+      let selectedAnimal;
+      if (animalId !== 'noanimal') {
+        let animal = animals.find(x => x.id === animalId);
+        selectedAnimal = animal;
+      }
+      return selectedAnimal.commonName;
+    },
+    getAnimalScientificName(animalId) {
+      let selectedAnimal;
+      if (animalId !== 'noanimal') {
+        let animal = animals.find(x => x.id === animalId);
+        selectedAnimal = animal;
+      }
+      return selectedAnimal.commonName;
+    },
     getAnimal(animalId) {
       let selectedAnimal;
       if (animalId !== 'noanimal') {
         let animal = animals.find(x => x.id === animalId);
         selectedAnimal = animal;
       }
-
+      console.log(selectedAnimal);
       return selectedAnimal;
     }
   }
