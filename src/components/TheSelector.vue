@@ -76,6 +76,8 @@ export default {
       }
 
       console.log('Winner: ' + winner.commonName);
+      console.log('Animal 1 Speed ' + selectedAnimal1.speed);
+      console.log('Animal 2 Speed ' + selectedAnimal2.speed);
 
       if (event) {
         console.log(event.target.tagName);
