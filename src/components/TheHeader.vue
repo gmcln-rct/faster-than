@@ -42,20 +42,25 @@ h1 {
   padding: 2vmin 0 1vmin 0;
   font-family: bilo, sans-serif;
 
-  font-weight: 700;
+  font-weight: 900;
 
   font-style: italic;
   font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
-  font-family: adobe-caslon-pro, serif;
+  margin: 0 auto;
+  padding: 1vmin 0 1vmin 0;
+  font-family: merriweather, serif;
+
   font-weight: 400;
+
   font-style: normal;
   font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
 
   margin-block-start: 0;
   margin-block-end: 0;
+  text-align: center;
 }
 
 h1 a {
