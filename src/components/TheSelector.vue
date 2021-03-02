@@ -6,6 +6,8 @@
     <div class="compare-selects">
       <span class="form-control">
         <!-- <div>{{ animal1Img.img }}</div> -->
+        <!-- <div v-model="getAnimalImg(animal1)"></div> -->
+
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
@@ -33,15 +35,7 @@
           class="select-css"
           v-model="animal2"
         ></base-select>
-        <!-- <select id="animal2" class="select-css" v-model="animal2">
-          <option
-            v-for="animal in animals"
-            :value="animal.id"
-            :key="animal.id"
-            >{{ animal.commonName }}</option
-          >
-          <option :value="animal2" disabled hidden>Select Animal 2</option>
-        </select> -->
+
         <p v-if="!animal2IsValid">Please select an animal</p>
       </span>
     </div>
@@ -58,7 +52,8 @@ export default {
       animal2: 'noanimal',
       animals: animals,
       animal1IsValid: true,
-      animal2IsValid: true
+      animal2IsValid: true,
+      currentWinner: ''
     };
   },
   computed: {},
@@ -97,6 +92,15 @@ export default {
       }
 
       return animalImg;
+    },
+    getAnimal(animalId) {
+      let selectedAnimal;
+      if (animalId !== 'noanimal') {
+        let animal = animals.find(x => x.id === animalId);
+        selectedAnimal = animal;
+      }
+
+      return selectedAnimal;
     }
   }
 };
