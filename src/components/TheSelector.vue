@@ -5,10 +5,9 @@
   <section class="compare">
     <div class="compare-selects">
       <span class="form-control">
-        <h2 v-if="animal1 !== 'noanimal'">
-          {{ getAnimalName(animal1) }}
-        </h2>
-
+        <!-- <h2>Common Name: {{ getAnimalName(animal1) }}</h2>
+        <h3>Scientific Name: {{ getAnimalScientificName(animal1) }}</h3> -->
+        <h2>Animal 1</h2>
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
@@ -20,6 +19,7 @@
       </span>
       <span class="vs">vs.</span>
       <span class="form-control">
+        <h2>Animal 2</h2>
         <img class="animal-img flip" :src="getAnimalImg(animal2)" />
         <base-select
           :options="animals"
@@ -91,6 +91,8 @@ export default {
       if (animalId !== 'noanimal') {
         let animal = animals.find(x => x.id === animalId);
         selectedAnimal = animal;
+      } else {
+        return 'NA';
       }
       return selectedAnimal.commonName;
     },
@@ -99,8 +101,10 @@ export default {
       if (animalId !== 'noanimal') {
         let animal = animals.find(x => x.id === animalId);
         selectedAnimal = animal;
+      } else {
+        return 'NA';
       }
-      return selectedAnimal.commonName;
+      return selectedAnimal.scientificName;
     },
     getAnimal(animalId) {
       let selectedAnimal;
@@ -143,8 +147,9 @@ label {
 }
 
 h2 {
-  font-size: 1rem;
   margin: 0.5rem 0;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
 }
 
 .vs {
@@ -172,6 +177,11 @@ button:active {
   padding: 2vmin 0;
   width: 250px;
   height: 250px;
+}
+
+.small {
+  width: 150px;
+  height: auto;
 }
 
 .flip {
