@@ -8,7 +8,7 @@
         <!-- <h2>Common Name: {{ getAnimalName(animal1) }}</h2>
         <h3>Scientific Name: {{ getAnimalScientificName(animal1) }}</h3> -->
         <h2>Animal 1</h2>
-        <img class="animal-img" :src="getAnimalImg(animal1)" />
+        <img class="animal-img small" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
           class="select-css"
@@ -180,8 +180,7 @@ button:active {
 }
 
 .small {
-  width: 150px;
-  height: auto;
+  padding: 5vmin;
 }
 
 .flip {

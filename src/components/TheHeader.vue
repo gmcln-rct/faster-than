@@ -2,7 +2,7 @@
   <header>
     <nav>
       <h1>
-        Faster Than...
+        Faster Than
       </h1>
       <h2>Which animal is faster?</h2>
     </nav>
@@ -41,11 +41,11 @@ h1 {
   margin: 0;
   padding: 2vmin 0 1vmin 0;
   font-family: bilo, sans-serif;
-
   font-weight: 900;
-
   font-style: italic;
   font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1600 - 300)));
+
+  text-align: center;
 }
 
 h2 {
