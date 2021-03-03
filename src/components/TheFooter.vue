@@ -33,11 +33,11 @@ footer {
   align-items: center;
 
   /* height: 5rem; */
-  /* background-color: #3d008d; */
+  background-color: #999;
 }
 
 footer p {
   font-size: 14px;
-  color: #555;
+  color: #fff;
 }
 </style>

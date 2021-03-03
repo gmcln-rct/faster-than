@@ -1,14 +1,9 @@
 <template>
-  <!-- {{ $store.state.animals }} -->
-
-  <!-- {{ animals }} -->
   <section class="compare">
     <div class="compare-selects">
       <span class="form-control">
-        <!-- <h2>Common Name: {{ getAnimalName(animal1) }}</h2>
-        <h3>Scientific Name: {{ getAnimalScientificName(animal1) }}</h3> -->
         <h2>Animal 1</h2>
-        <img class="animal-img small" :src="getAnimalImg(animal1)" />
+        <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
           class="select-css"
@@ -33,6 +28,7 @@
     <button v-on:click.stop="compareAnimals">Compare</button>
   </section>
   <section class="winnerSection">
+    <h4>Winner:</h4>
     {{ currentWinner }}
   </section>
 </template>
@@ -190,7 +186,20 @@ button:active {
 
 .winnerSection {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .compare-selects {
+    flex-direction: column;
+  }
+
+  .animal-img {
+    padding: 1vmin 0;
+    width: 150px;
+    height: 150px;
+  }
 }
 </style>
