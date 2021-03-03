@@ -1,8 +1,8 @@
 <template>
   <section class="compare">
     <div class="compare-selects">
-      <span class="form-control">
-        <h2>Animal 1</h2>
+      <span class="animal-card">
+        <h3>Animal 1</h3>
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
@@ -13,8 +13,8 @@
         <p v-if="!animal1IsValid">Please select an animal</p>
       </span>
       <span class="vs">vs.</span>
-      <span class="form-control">
-        <h2>Animal 2</h2>
+      <span class="animal-card">
+        <h3>Animal 2</h3>
         <img class="animal-img flip" :src="getAnimalImg(animal2)" />
         <base-select
           :options="animals"
@@ -126,9 +126,6 @@ export default {
   justify-content: center;
   margin: 2rem auto;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  background-color: #ffffff;
 }
 
 .compare-selects {
@@ -137,18 +134,29 @@ export default {
   align-items: center;
 }
 
-.form-control {
+.animal-card {
   margin: 0 5vmin;
+  padding: 2vmin;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background-color: #ffffff;
 }
 
 h2 {
   margin: 0.5rem 0;
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+}
+
+h3 {
+  margin: 0.5rem 0;
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
 }
 
 .vs {
-  font-size: 24px;
+  padding: 2vmin 0;
+  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
 button {
@@ -192,6 +200,10 @@ button:active {
 }
 
 @media only screen and (max-width: 720px) {
+  .compare {
+    margin: 1vmin auto;
+    padding: 0.5vmin;
+  }
   .compare-selects {
     flex-direction: column;
   }

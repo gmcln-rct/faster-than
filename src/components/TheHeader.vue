@@ -56,7 +56,7 @@ h2 {
   font-weight: 400;
 
   font-style: normal;
-  font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
 
   margin-block-start: 0;
   margin-block-end: 0;
