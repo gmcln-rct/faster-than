@@ -32,6 +32,9 @@
     </div>
     <button v-on:click.stop="compareAnimals">Compare</button>
   </section>
+  <section class="winnerSection">
+    {{ currentWinner }}
+  </section>
 </template>
 
 <script>
@@ -69,7 +72,7 @@ export default {
       console.log('Winner: ' + winner.commonName);
       console.log('Animal 1 Speed ' + selectedAnimal1.speed);
       console.log('Animal 2 Speed ' + selectedAnimal2.speed);
-
+      this.currentWinner = winner.commonName;
       if (event) {
         console.log(event.target.tagName);
       }
@@ -142,10 +145,6 @@ export default {
   margin: 0 5vmin;
 }
 
-label {
-  font-weight: bold;
-}
-
 h2 {
   margin: 0.5rem 0;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -187,5 +186,11 @@ button:active {
   transform: scaleX(-1);
   filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(163deg)
     brightness(97%) contrast(101%);
+}
+
+.winnerSection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 </style>
