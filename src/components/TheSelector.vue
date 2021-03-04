@@ -6,7 +6,7 @@
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
-          v-on:change="onChange($event)"
+          v-on:change="onChange"
           class="select-css"
           v-model="animal1"
         ></base-select>
@@ -140,7 +140,7 @@ export default {
 
 .animal-card {
   margin: 0 5vmin;
-  padding: 2vmin;
+  padding: 2vmin 4vmin;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   background-color: #ffffff;
