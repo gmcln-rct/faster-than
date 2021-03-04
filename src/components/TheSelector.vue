@@ -47,8 +47,20 @@ export default {
       currentWinner: ''
     };
   },
-  computed: {},
-
+  // computed: {
+  //   computedWinner() {
+  //     console.log('What?');
+  //     return '';
+  //   }
+  // },
+  watch: {
+    animal1() {
+      this.currentWinner = '';
+    },
+    animal2() {
+      this.currentWinner = '';
+    }
+  },
   methods: {
     validateSelects() {
       console.log('This is validating');
