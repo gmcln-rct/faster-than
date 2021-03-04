@@ -196,7 +196,14 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  padding: 1vmin 0;
   text-align: center;
+  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.winnerSection h4 {
+  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
 @media only screen and (max-width: 720px) {
