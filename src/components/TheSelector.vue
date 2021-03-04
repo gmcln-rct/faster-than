@@ -6,6 +6,7 @@
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
+          v-on:change="onChange($event)"
           class="select-css"
           v-model="animal1"
         ></base-select>
@@ -27,7 +28,7 @@
     </div>
     <button v-on:click.stop="compareAnimals">Compare</button>
   </section>
-  <section class="winnerSection">
+  <section v-if="currentWinner !== ''" class="winnerSection">
     <h4>Winner:</h4>
     {{ currentWinner }}
   </section>
@@ -51,6 +52,9 @@ export default {
   methods: {
     validateSelects() {
       console.log('This is validating');
+    },
+    onChange() {
+      this.currentWinner = '';
     },
     compareAnimals(event) {
       this.validateSelects();
