@@ -1,5 +1,6 @@
 <template>
   <section class="compare">
+    <h2>Which animal is faster?</h2>
     <div class="compare-selects">
       <span class="animal-card">
         <h3>Animal 1</h3>
@@ -140,8 +141,9 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 1vmin auto;
+  padding: 2vmin 0;
+  background-color: #0076bb;
 }
 
 .compare-selects {
@@ -159,8 +161,19 @@ export default {
 }
 
 h2 {
-  margin: 0.5rem 0;
-  font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 1vmin 0 1vmin 0;
+  font-family: merriweather, serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+
+  margin-block-start: 0;
+  margin-block-end: 0;
   text-align: center;
 }
 
