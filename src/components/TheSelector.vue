@@ -161,10 +161,8 @@ export default {
 }
 
 h2 {
-  text-align: center;
-
   margin: 0 auto;
-  padding: 1vmin 0 1vmin 0;
+  padding: 1vmin 0 2vmin 0;
   font-family: merriweather, serif;
 
   font-weight: 400;
@@ -172,9 +170,10 @@ h2 {
   font-style: normal;
   font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
 
+  text-align: center;
+  color: #fff;
   margin-block-start: 0;
   margin-block-end: 0;
-  text-align: center;
 }
 
 h3 {
@@ -192,17 +191,23 @@ button {
   margin: 3vmin auto;
   padding: 0.75rem 2rem;
   font: inherit;
-  border: 1px solid #0076bb;
+  /* border: 1px solid #0076bb;
   background-color: #0076bb;
-  color: white;
+  color: white; */
+  background-color: #fff;
+  color: #0076bb;
+  border: 1px solid #0076bb;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 button:hover,
 button:active {
-  border-color: #002350;
-  background-color: #002350;
+  /* border-color: #002350;
+  background-color: #002350; */
+  color: white;
+  background-color: #0076bb;
+  border: 2px solid #fff;
 }
 
 .animal-img {
