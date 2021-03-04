@@ -32,6 +32,8 @@
   <section v-if="currentWinner !== ''" class="winnerSection">
     <h4>Winner:</h4>
     {{ currentWinner }}
+    <p>Scientific Name: {{ currentWinnerObj.scientificName }}</p>
+    <p>Top Speed: {{ currentWinnerObj.speed }}</p>
   </section>
 </template>
 
@@ -45,7 +47,13 @@ export default {
       animals: animals,
       animal1IsValid: true,
       animal2IsValid: true,
-      currentWinner: ''
+      currentWinner: '',
+      currentWinnerObj: {
+        commonName: '',
+        scientificName: '',
+        siteLink: '',
+        speed: ''
+      }
     };
   },
   // computed: {
@@ -66,9 +74,7 @@ export default {
     validateSelects() {
       console.log('This is validating');
     },
-    onChange() {
-      this.currentWinner = '';
-    },
+
     compareAnimals(event) {
       this.validateSelects();
       let selectedAnimal1 = this.animals.find(x => x.id === this.animal1);
@@ -86,6 +92,10 @@ export default {
       console.log('Animal 1 Speed ' + selectedAnimal1.speed);
       console.log('Animal 2 Speed ' + selectedAnimal2.speed);
       this.currentWinner = winner.commonName;
+      this.currentWinnerObj.commonName = winner.commonName;
+      this.currentWinnerObj.scientificName = winner.scientificName;
+      this.currentWinnerObj.speed = winner.speed;
+      this.currentWinnerObj.siteLink = winner.siteLink;
       if (event) {
         console.log(event.target.tagName);
       }
@@ -185,6 +195,7 @@ h3 {
 .vs {
   padding: 2vmin 0;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  color: #fff;
 }
 
 button {
@@ -237,7 +248,10 @@ button:active {
 }
 
 .winnerSection h4 {
-  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+.winnerSection p {
+  font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
 @media only screen and (max-width: 720px) {
