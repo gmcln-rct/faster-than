@@ -34,6 +34,7 @@
     {{ currentWinner }}
     <p>Scientific Name: {{ currentWinnerObj.scientificName }}</p>
     <p>Top Speed: {{ currentWinnerObj.speed }}</p>
+    <p>Learn More: <a href="{{currentWinnerObj.siteLink}}">Wikipedia</a></p>
   </section>
 </template>
 
@@ -251,6 +252,7 @@ button:active {
   font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 .winnerSection p {
+  padding: 0.2vmin 0;
   font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
