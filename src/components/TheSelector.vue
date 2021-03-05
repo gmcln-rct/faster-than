@@ -32,8 +32,10 @@
   <section v-if="currentWinner !== ''" class="winnerSection">
     <h4>Winner:</h4>
     {{ currentWinner }}
-    <p>Scientific Name: {{ currentWinnerObj.scientificName }}</p>
-    <p>Top Speed: {{ currentWinnerObj.speed }}</p>
+    <p>
+      Scientific Name: <em>{{ currentWinnerObj.scientificName }}</em>
+    </p>
+    <p>Top Speed: {{ currentWinnerObj.speed }} mph</p>
     <p>Learn More: <a href="{{currentWinnerObj.siteLink}}">Wikipedia</a></p>
   </section>
 </template>
