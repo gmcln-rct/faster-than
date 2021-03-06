@@ -19,7 +19,7 @@ export const animals = [
     id: 'animal003',
     commonName: 'Atlantic bluefin tuna',
     scientificName: 'Thunnus thynnus',
-    speed: '43.51',
+    speed: 43.51,
     siteLink: 'https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna',
     img: 'https://faster-than.s3.amazonaws.com/bluefin.svg'
   },
@@ -35,7 +35,7 @@ export const animals = [
     id: 'animal005',
     commonName: 'Black mamba snake',
     scientificName: 'Dendroaspis polylepis',
-    speed: '12.9',
+    speed: 12.9,
     siteLink: 'https://en.wikipedia.org/wiki/Black_mamba',
     img: 'https://faster-than.s3.amazonaws.com/blackmamba.svg'
   },
@@ -43,7 +43,7 @@ export const animals = [
     id: 'animal006',
     commonName: 'Blue Jay',
     scientificName: 'Cyanocitta cristata',
-    speed: '25',
+    speed: 25,
     siteLink: 'https://en.wikipedia.org/wiki/Blue_jay',
     img: 'https://faster-than.s3.amazonaws.com/bluejay.svg'
   },
@@ -73,7 +73,7 @@ export const animals = [
   },
   {
     id: 'animal022',
-    commonName: 'Canadian Goose',
+    commonName: 'Canada Goose',
     scientificName: 'Branta canadensis',
     speed: '60',
     siteLink: 'https://en.wikipedia.org/wiki/Canada_goose',

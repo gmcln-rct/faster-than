@@ -19,7 +19,7 @@ header {
   align-items: center;
 
   /* height: 5rem; */
-  background-color: var(--dark-shades);
+  background-color: var(--dark-accent);
 }
 
 h1 {

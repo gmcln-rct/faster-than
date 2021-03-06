@@ -153,20 +153,28 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1vmin auto;
+  /* margin: 1vmin auto; */
   padding: 2vmin 0;
   /* background-color: #0076bb; */
-  background: #67b6d3; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  /* background: var(--light-shades); fallback for old browsers */
+  /* background: -webkit-linear-gradient(
     to bottom,
     #f2fcfe,
-    #67b6d3
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+    var(--dark-shades) */
+  /* ); Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(
     to bottom,
     #f2fcfe,
-    #67b6d3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    var(--dark-shades) */
+  /* ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: linear-gradient(
+    to right top,
+    #272e3a,
+    #004d7a,
+    #2d878f,
+    #4bbe90,
+    #c5ee6d
+  ); */
 }
 
 .compare-selects {
@@ -193,7 +201,7 @@ h2 {
   font-weight: 600;
 
   text-align: center;
-  color: #111;
+  color: #fefefe;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -218,9 +226,9 @@ button {
   /* border: 1px solid #0076bb;
   background-color: #0076bb;
   color: white; */
-  background-color: var(--dark-accent);
+  background-color: var(--main-brand);
   color: #fff;
-  border: 3px solid #fff;
+  border: 3px solid var(--light-shades);
   cursor: pointer;
   border-radius: 10px;
 
@@ -231,7 +239,7 @@ button:hover,
 button:active {
   /* border-color: #002350;
   background-color: #002350; */
-  color: var(--dark-accent);
+  color: var(--main-brand);
   background-color: #fff;
   border: 3px solid #fff;
 
@@ -259,6 +267,8 @@ button:active {
   flex-direction: column;
   justify-content: center;
 
+  width: 320px;
+  margin: 2vmin auto;
   padding: 1vmin 0;
 
   font-family: merriweather, serif;
@@ -266,7 +276,7 @@ button:active {
   text-align: center;
 
   color: #fff;
-  background-color: var(--light-accent);
+  background-color: var(--main-brand);
 }
 
 .winnerSection h4 {

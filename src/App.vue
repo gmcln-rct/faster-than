@@ -23,11 +23,12 @@ export default {
 
 * {
   box-sizing: border-box;
-  --light-shades: #efe5ec;
-  --light-accent: #a8b03e;
-  --main-brand: #67b6d3;
-  --dark-accent: #b051a0;
-  --dark-shades: #0076bb;
+
+  --light-shades: #f5eff1;
+  --light-accent: #60b0c0;
+  --main-brand: #5bad58;
+  --dark-accent: #004d7a;
+  --dark-shades: #17161c;
 
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
@@ -40,6 +41,15 @@ html {
 body {
   margin: 0;
   letter-spacing: 1px;
+
+  background-image: linear-gradient(
+    to right top,
+    #272e3a,
+    #004d7a,
+    #2d878f,
+    #4bbe90,
+    #c5ee6d
+  );
 }
 
 /* Box sizing rules */
