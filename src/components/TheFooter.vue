@@ -29,15 +29,23 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
   align-items: center;
+  width: 100%;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  margin: 2vmin 0 0 0;
 
   /* height: 5rem; */
-  background-color: #999;
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
 footer p {
-  font-size: 14px;
+  padding: 1vmin 0;
+  font-size: var(--base-size);
   color: #fff;
 }
 </style>

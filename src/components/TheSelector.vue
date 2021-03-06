@@ -114,26 +114,26 @@ export default {
 
       return animalImg;
     },
-    getAnimalName(animalId) {
-      let selectedAnimal;
-      if (animalId !== 'noanimal') {
-        let animal = animals.find(x => x.id === animalId);
-        selectedAnimal = animal;
-      } else {
-        return 'NA';
-      }
-      return selectedAnimal.commonName;
-    },
-    getAnimalScientificName(animalId) {
-      let selectedAnimal;
-      if (animalId !== 'noanimal') {
-        let animal = animals.find(x => x.id === animalId);
-        selectedAnimal = animal;
-      } else {
-        return 'NA';
-      }
-      return selectedAnimal.scientificName;
-    },
+    // getAnimalName(animalId) {
+    //   let selectedAnimal;
+    //   if (animalId !== 'noanimal') {
+    //     let animal = animals.find(x => x.id === animalId);
+    //     selectedAnimal = animal;
+    //   } else {
+    //     return 'NA';
+    //   }
+    //   return selectedAnimal.commonName;
+    // },
+    // getAnimalScientificName(animalId) {
+    //   let selectedAnimal;
+    //   if (animalId !== 'noanimal') {
+    //     let animal = animals.find(x => x.id === animalId);
+    //     selectedAnimal = animal;
+    //   } else {
+    //     return 'NA';
+    //   }
+    //   return selectedAnimal.scientificName;
+    // },
     getAnimal(animalId) {
       let selectedAnimal;
       if (animalId !== 'noanimal') {
@@ -155,26 +155,6 @@ export default {
   justify-content: center;
   /* margin: 1vmin auto; */
   padding: 2vmin 0;
-  /* background-color: #0076bb; */
-  /* background: var(--light-shades); fallback for old browsers */
-  /* background: -webkit-linear-gradient(
-    to bottom,
-    #f2fcfe,
-    var(--dark-shades) */
-  /* ); Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(
-    to bottom,
-    #f2fcfe,
-    var(--dark-shades) */
-  /* ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* background-image: linear-gradient(
-    to right top,
-    #272e3a,
-    #004d7a,
-    #2d878f,
-    #4bbe90,
-    #c5ee6d
-  ); */
 }
 
 .compare-selects {
@@ -248,8 +228,8 @@ button:active {
 
 .animal-img {
   padding: 2vmin 0;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .small {
@@ -267,8 +247,8 @@ button:active {
   flex-direction: column;
   justify-content: center;
 
-  width: 320px;
-  margin: 2vmin auto;
+  max-width: 40rem;
+  margin: 0 auto;
   padding: 1vmin 0;
 
   font-family: merriweather, serif;
@@ -277,9 +257,18 @@ button:active {
 
   color: #fff;
   background-color: var(--main-brand);
+
+  border-radius: 10px;
+  border: 3px solid #ebe18e;
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .winnerSection h4 {
+  color: var(--light-shade);
   font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 .winnerSection p {
