@@ -59,11 +59,7 @@ export default {
     };
   },
   // computed: {
-  //   computedWinner() {
-  //     console.log('What?');
-  //     return '';
-  //   }
-  // },
+
   watch: {
     animal1() {
       this.currentWinner = '';
@@ -94,10 +90,12 @@ export default {
       console.log('Animal 1 Speed ' + selectedAnimal1.speed);
       console.log('Animal 2 Speed ' + selectedAnimal2.speed);
       this.currentWinner = winner.commonName;
-      this.currentWinnerObj.commonName = winner.commonName;
-      this.currentWinnerObj.scientificName = winner.scientificName;
-      this.currentWinnerObj.speed = winner.speed;
-      this.currentWinnerObj.siteLink = winner.siteLink;
+      // this.currentWinnerObj.commonName = winner.commonName;
+      // this.currentWinnerObj.scientificName = winner.scientificName;
+      // this.currentWinnerObj.speed = winner.speed;
+      // this.currentWinnerObj.siteLink = winner.siteLink;
+      this.currentWinnerObj = winner;
+
       if (event) {
         console.log(event.target.tagName);
       }
@@ -114,26 +112,7 @@ export default {
 
       return animalImg;
     },
-    // getAnimalName(animalId) {
-    //   let selectedAnimal;
-    //   if (animalId !== 'noanimal') {
-    //     let animal = animals.find(x => x.id === animalId);
-    //     selectedAnimal = animal;
-    //   } else {
-    //     return 'NA';
-    //   }
-    //   return selectedAnimal.commonName;
-    // },
-    // getAnimalScientificName(animalId) {
-    //   let selectedAnimal;
-    //   if (animalId !== 'noanimal') {
-    //     let animal = animals.find(x => x.id === animalId);
-    //     selectedAnimal = animal;
-    //   } else {
-    //     return 'NA';
-    //   }
-    //   return selectedAnimal.scientificName;
-    // },
+
     getAnimal(animalId) {
       let selectedAnimal;
       if (animalId !== 'noanimal') {
@@ -190,6 +169,8 @@ h3 {
   margin: 0.5rem 0;
   font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
+
+  color: var(--dark-accent);
 }
 
 .vs {
