@@ -203,26 +203,30 @@ h3 {
 
 button {
   margin: 3vmin auto;
-  padding: 0.75rem 2rem;
-  font: inherit;
+  padding: 1vmin 3vmin;
+  font-size: var(--medium-size);
   font-weight: 700;
   /* border: 1px solid #0076bb;
   background-color: #0076bb;
   color: white; */
-  background-color: var(--light-accent);
+  background-color: var(--dark-accent);
   color: #fff;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   cursor: pointer;
   border-radius: 10px;
+
+  transition: 0.4s;
 }
 
 button:hover,
 button:active {
   /* border-color: #002350;
   background-color: #002350; */
-  color: var(--light-accent);
+  color: var(--dark-accent);
   background-color: #fff;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
+
+  transition: 0.4s;
 }
 
 .animal-img {
@@ -269,9 +273,9 @@ button:active {
   }
 
   .animal-img {
-    padding: 1vmin 0;
-    width: 150px;
-    height: 150px;
+    padding: 1vmin;
+    width: 120px;
+    height: 120px;
   }
 }
 </style>

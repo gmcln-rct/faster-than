@@ -28,6 +28,9 @@ export default {
   --main-brand: #67b6d3;
   --dark-accent: #b051a0;
   --dark-shades: #0076bb;
+
+  --base-size: 16px;
+  --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
 html {

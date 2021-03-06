@@ -24,7 +24,7 @@ header {
 
 h1 {
   margin: 0;
-  padding: 2vmin 0 1vmin 0;
+  /* padding: 2vmin 0 1vmin 0; */
   font-family: bilo, sans-serif;
   font-weight: 900;
   font-style: italic;
