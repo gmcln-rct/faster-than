@@ -30,8 +30,7 @@
     <button v-on:click.stop="compareAnimals">Compare</button>
   </section>
   <section v-if="currentWinner !== ''" class="winnerSection">
-    <h4>Winner:</h4>
-    {{ currentWinner }}
+    <h4>Winner: {{ currentWinner }}</h4>
     <p>
       Scientific Name: <em>{{ currentWinnerObj.scientificName }}</em>
     </p>
@@ -156,7 +155,18 @@ export default {
   justify-content: center;
   margin: 1vmin auto;
   padding: 2vmin 0;
-  background-color: #0076bb;
+  /* background-color: #0076bb; */
+  background: #67b6d3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f2fcfe,
+    #67b6d3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f2fcfe,
+    #67b6d3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .compare-selects {
@@ -178,13 +188,12 @@ h2 {
   padding: 1vmin 0 2vmin 0;
   font-family: merriweather, serif;
 
-  font-weight: 400;
-
   font-style: normal;
-  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 600;
 
   text-align: center;
-  color: #fff;
+  color: #111;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -251,8 +260,13 @@ button:active {
   justify-content: center;
 
   padding: 1vmin 0;
-  text-align: center;
+
+  font-family: merriweather, serif;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+
+  color: #fff;
+  background-color: var(--light-accent);
 }
 
 .winnerSection h4 {

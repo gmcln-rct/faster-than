@@ -19,17 +19,19 @@ header {
   align-items: center;
 
   /* height: 5rem; */
-  /* background-color: #3d008d; */
+  background-color: var(--dark-shades);
 }
 
 h1 {
   margin: 0;
   /* padding: 2vmin 0 1vmin 0; */
   font-family: bilo, sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-style: italic;
   font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1600 - 300)));
 
   text-align: center;
+
+  color: #fff;
 }
 </style>
