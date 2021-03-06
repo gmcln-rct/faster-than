@@ -87,7 +87,7 @@ export default {
 
       if (selectedAnimal1.speed > selectedAnimal2.speed) {
         winner = selectedAnimal1;
-      } else {
+      } else if (selectedAnimal2.speed > selectedAnimal1.speed) {
         winner = selectedAnimal2;
       }
 
@@ -205,12 +205,13 @@ button {
   margin: 3vmin auto;
   padding: 0.75rem 2rem;
   font: inherit;
+  font-weight: 700;
   /* border: 1px solid #0076bb;
   background-color: #0076bb;
   color: white; */
-  background-color: #fff;
-  color: #0076bb;
-  border: 1px solid #0076bb;
+  background-color: var(--light-accent);
+  color: #fff;
+  border: 2px solid #fff;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -219,8 +220,8 @@ button:hover,
 button:active {
   /* border-color: #002350;
   background-color: #002350; */
-  color: white;
-  background-color: #0076bb;
+  color: var(--light-accent);
+  background-color: #fff;
   border: 2px solid #fff;
 }
 

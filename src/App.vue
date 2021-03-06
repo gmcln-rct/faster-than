@@ -23,6 +23,11 @@ export default {
 
 * {
   box-sizing: border-box;
+  --light-shades: #efe5ec;
+  --light-accent: #a8b03e;
+  --main-brand: #67b6d3;
+  --dark-accent: #b051a0;
+  --dark-shades: #0076bb;
 }
 
 html {

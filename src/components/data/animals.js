@@ -3,7 +3,7 @@ export const animals = [
     id: 'animal001',
     commonName: 'African wild dog',
     scientificName: 'Lycaon pictus',
-    speed: '45',
+    speed: 45,
     siteLink: 'https://en.wikipedia.org/wiki/African_wild_dog',
     img: 'https://faster-than.s3.amazonaws.com/wilddog.svg'
   },
@@ -11,7 +11,7 @@ export const animals = [
     id: 'animal002',
     commonName: "Anna's hummingbird",
     scientificName: 'Calypte anna',
-    speed: '61.06',
+    speed: 61.06,
     siteLink: 'https://en.wikipedia.org/wiki/Anna%27s_hummingbird',
     img: 'https://faster-than.s3.amazonaws.com/annahummingbird.svg'
   },
@@ -99,7 +99,7 @@ export const animals = [
     id: 'animal012',
     commonName: 'Chicken',
     scientificName: 'Gallus gallus domesticus',
-    speed: '9',
+    speed: 9.0,
     siteLink: 'https://en.wikipedia.org/wiki/Chicken',
     img: 'https://faster-than.s3.amazonaws.com/chicken.svg'
   },
