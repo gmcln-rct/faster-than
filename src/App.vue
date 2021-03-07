@@ -28,7 +28,7 @@ export default {
   box-sizing: border-box;
 
   --light-shades: #f5eff1;
-  --light-accent: #60b0c0;
+  --light-accent: #7de4f8;
   --main-brand: #7c5a9c;
   --dark-accent: #004d7a;
   --dark-shades: #17161c;

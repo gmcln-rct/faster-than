@@ -186,7 +186,7 @@ h3 {
 button {
   margin: 3vmin auto;
   padding: 1vmin 3vmin;
-  font-size: var(--medium-size);
+  font-size: var(--large-size);
   font-weight: 700;
   /* border: 1px solid #0076bb;
   background-color: #0076bb;
@@ -254,6 +254,10 @@ button:active {
   }
   .compare-selects {
     flex-direction: column;
+  }
+
+  button {
+    margin: 5vmin auto;
   }
 
   h2 {
