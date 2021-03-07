@@ -26,14 +26,18 @@ export default {
 
   --light-shades: #f5eff1;
   --light-accent: #60b0c0;
-  --main-brand: #5bad58;
+  --main-brand: #7c5a9c;
   --dark-accent: #004d7a;
   --dark-shades: #17161c;
 
-  --highlight-yellow: #ebe18e;
+  --highlight-yellow: #ecb100;
+
+  --winner: #4f944d;
 
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
+
+  --roboto: 'Roboto', sans-serif;
 }
 
 html {

@@ -1,6 +1,5 @@
 <template>
   <footer>
-    <h5>Data sources:</h5>
     <p>Copyright @2021 Glenn McClanan.</p>
   </footer>
 </template>
@@ -38,6 +37,7 @@ footer {
   width: 100%;
 
   margin: 2vmin 0 0 0;
+  padding: 2vmin 0;
 
   /* height: 5rem; */
   background-color: rgba(50, 50, 50, 0.5);

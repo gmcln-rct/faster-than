@@ -29,19 +29,24 @@
     </div>
     <button v-on:click.stop="compareAnimals">Compare</button>
   </section>
-  <section v-if="currentWinner !== ''" class="winnerSection">
-    <h4>Winner: {{ currentWinner }}</h4>
-    <p>
-      Scientific Name: <em>{{ currentWinnerObj.scientificName }}</em>
-    </p>
-    <p>Top Speed: {{ currentWinnerObj.speed }} mph</p>
-    <p>Learn More: <a href="{{currentWinnerObj.siteLink}}">Wikipedia</a></p>
-  </section>
+  <transition name="winner">
+    <the-winner
+      :currentWinner="currentWinner"
+      :commonName="currentWinnerObj.commonName"
+      :scientificName="currentWinnerObj.scientificName"
+      :siteLink="currentWinnerObj.siteLink"
+      :speed="currentWinnerObj.speed"
+    ></the-winner>
+  </transition>
 </template>
 
 <script>
+import TheWinner from './TheWinner';
 import { animals } from './data/animals.js';
 export default {
+  components: {
+    TheWinner
+  },
   data() {
     return {
       animal1: 'noanimal',
@@ -58,7 +63,6 @@ export default {
       }
     };
   },
-  // computed: {
 
   watch: {
     animal1() {
@@ -84,16 +88,16 @@ export default {
         winner = selectedAnimal1;
       } else if (selectedAnimal2.speed > selectedAnimal1.speed) {
         winner = selectedAnimal2;
+      } else {
+        return;
       }
 
-      console.log('Winner: ' + winner.commonName);
-      console.log('Animal 1 Speed ' + selectedAnimal1.speed);
-      console.log('Animal 2 Speed ' + selectedAnimal2.speed);
+      // console.log('Winner: ' + winner.commonName);
+      // console.log('Animal 1 Speed ' + selectedAnimal1.speed);
+      // console.log('Animal 2 Speed ' + selectedAnimal2.speed);
+
       this.currentWinner = winner.commonName;
-      // this.currentWinnerObj.commonName = winner.commonName;
-      // this.currentWinnerObj.scientificName = winner.scientificName;
-      // this.currentWinnerObj.speed = winner.speed;
-      // this.currentWinnerObj.siteLink = winner.siteLink;
+
       this.currentWinnerObj = winner;
 
       if (event) {
@@ -187,12 +191,16 @@ button {
   /* border: 1px solid #0076bb;
   background-color: #0076bb;
   color: white; */
-  background-color: var(--main-brand);
+  background-color: var(--highlight-yellow);
   color: #fff;
   border: 3px solid var(--light-shades);
   cursor: pointer;
   border-radius: 10px;
 
+  -webkit-box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
+  box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
+
+  text-transform: uppercase;
   transition: 0.4s;
 }
 
@@ -211,6 +219,8 @@ button:active {
   padding: 2vmin 0;
   width: 200px;
   height: 200px;
+  filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
+    brightness(50%) contrast(101%);
 }
 
 .small {
@@ -223,38 +233,18 @@ button:active {
     brightness(97%) contrast(101%);
 }
 
-.winnerSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 1vmin 0;
-
-  font-family: merriweather, serif;
-  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
-  text-align: center;
-
-  color: #fff;
-  background-color: var(--main-brand);
-
-  border-radius: 10px;
-  border: 3px solid #ebe18e;
-
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+/* Transition */
+.winner-enter-from {
+  opacity: 0;
+  transform: translateY(-50px) scale(0.4);
 }
 
-.winnerSection h4 {
-  color: var(--light-shade);
-  font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
+.winner-enter-active {
+  transition: all 0.5s ease-in;
 }
-.winnerSection p {
-  padding: 0.2vmin 0;
-  font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+.winner-enter-to {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 @media only screen and (max-width: 720px) {
