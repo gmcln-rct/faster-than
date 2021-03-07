@@ -73,7 +73,7 @@ export const animals = [
   },
   {
     id: 'animal010',
-    commonName: 'Canadian Goose',
+    commonName: 'Canada Goose',
     scientificName: 'Branta canadensis',
     speed: 60,
     siteLink: 'https://en.wikipedia.org/wiki/Canada_goose',
