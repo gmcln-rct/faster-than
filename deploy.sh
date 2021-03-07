@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+# !/usr/bin/env sh
 
 # abort on errors
 set -e
@@ -22,7 +22,7 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
-git push -f git@github.com:gmcln-rct/vue-faster.git main:gh-pages
+# git push -f git@github.com:gmcln-rct/faster-than.git gh-pages
 
 
 cd -

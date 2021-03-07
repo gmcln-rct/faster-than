@@ -19,7 +19,11 @@ header {
   align-items: center;
 
   /* height: 5rem; */
-  background-color: var(--dark-accent);
+  /* background-color: var(--dark-accent); */
+  background-color: rgba(0, 77, 122, 0.8);
+
+  -webkit-box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.24);
 }
 
 h1 {
