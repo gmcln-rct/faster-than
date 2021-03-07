@@ -1,10 +1,10 @@
 <template>
   <header>
-    <nav>
-      <h1>
-        Faster Than
-      </h1>
-    </nav>
+    <img
+      class="logo"
+      src="https://faster-than.s3.amazonaws.com/faster-than-logo.svg"
+    />
+    <span class="site-name"> Faster Than</span>
   </header>
 </template>
 
@@ -14,9 +14,9 @@
 header {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
   align-items: center;
+  /* flex-direction: column; */
+  width: 100%;
 
   /* height: 5rem; */
   /* background-color: var(--dark-accent); */
@@ -26,16 +26,31 @@ header {
   box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.24);
 }
 
-h1 {
-  margin: 0;
-  /* padding: 2vmin 0 1vmin 0; */
+.site-name {
+  /* margin: 0; */
+  padding: 1vmin 0;
   font-family: bilo, sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1600 - 300)));
+  font-size: var(--huge-size);
 
-  text-align: center;
+  vertical-align: middle;
 
   color: #fff;
+}
+
+.logo {
+  display: inline;
+  width: 65px;
+  margin: 0 1vmin 0 0;
+  padding: 1vmin 1vmin 1vmin 0;
+  opacity: 0.95;
+  filter: invert(1);
+}
+
+@media only screen and (max-width: 720px) {
+  .logo {
+    width: 50px;
+  }
 }
 </style>

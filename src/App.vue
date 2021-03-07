@@ -1,6 +1,7 @@
 <template>
   <the-header></the-header>
   <the-selector></the-selector>
+  <the-details></the-details>
   <the-footer></the-footer>
 </template>
 
@@ -8,11 +9,13 @@
 import TheHeader from './components/TheHeader';
 import TheSelector from './components/TheSelector';
 import TheFooter from './components/TheFooter';
+import TheDetails from './components/TheDetails';
 
 export default {
   components: {
     TheHeader,
     TheSelector,
+    TheDetails,
     TheFooter
   }
 };
@@ -36,6 +39,8 @@ export default {
 
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
+  --large-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
+  --huge-size: calc(42px + (56 - 42) * ((100vw - 300px) / (1600 - 300)));
 
   --roboto: 'Roboto', sans-serif;
 }

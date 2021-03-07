@@ -160,7 +160,7 @@ h2 {
   font-family: merriweather, serif;
 
   font-style: normal;
-  font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: var(--large-size);
   font-weight: 600;
 
   text-align: center;
@@ -249,17 +249,22 @@ button:active {
 
 @media only screen and (max-width: 720px) {
   .compare {
-    margin: 1vmin auto;
+    margin: 2vmin auto;
     padding: 0.5vmin;
   }
   .compare-selects {
     flex-direction: column;
   }
 
+  h2 {
+    padding: 2vmin 0 3vmin 0;
+  }
   .animal-img {
-    padding: 1vmin;
     width: 120px;
     height: 120px;
+
+    margin: 0 auto;
+    padding: 1vmin;
   }
 }
 </style>

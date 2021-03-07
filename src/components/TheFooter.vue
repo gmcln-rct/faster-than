@@ -31,7 +31,7 @@ footer {
   align-items: center;
   width: 100%;
 
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
