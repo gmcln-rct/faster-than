@@ -261,7 +261,7 @@ export const animals = [
     scientificName: 'Sarcophilus harrisii',
     speed: 8.1,
     siteLink: 'https://en.wikipedia.org/wiki/Tasmanian_devil',
-    img: 'https://faster-than.s3.amazonaws.com/tasmaniandevil.svg'
+    img: 'https://faster-than.s3.amazonaws.com/tasmanian.svg'
   },
   {
     id: 'animal031',
