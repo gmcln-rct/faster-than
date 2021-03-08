@@ -143,14 +143,7 @@ export const animals = [
     siteLink: 'https://en.wikipedia.org/wiki/African_elephant',
     img: 'https://faster-than.s3.amazonaws.com/elephant.svg'
   },
-  {
-    id: 'animal018',
-    commonName: 'Elk',
-    scientificName: 'Cervus canadensis',
-    speed: 45,
-    siteLink: 'https://en.wikipedia.org/wiki/Elk',
-    img: 'https://faster-than.s3.amazonaws.com/elk.svg'
-  },
+
   {
     id: 'animal019',
     commonName: 'Flying Fish',

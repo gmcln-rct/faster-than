@@ -59,7 +59,8 @@ export default {
         scientificName: '',
         siteLink: '',
         speed: ''
-      }
+      },
+      tie: false
     };
   },
 

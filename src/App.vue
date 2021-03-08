@@ -1,7 +1,7 @@
 <template>
   <the-header></the-header>
-  <the-selector></the-selector>
   <the-details></the-details>
+  <the-selector></the-selector>
   <!-- <the-footer></the-footer> -->
 </template>
 
