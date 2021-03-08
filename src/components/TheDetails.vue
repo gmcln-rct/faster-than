@@ -32,8 +32,8 @@
     <p>
       The site was built using Vue 3 and CSS, and created by Front-end developer
       Glenn McClanan after his 4-year-old spent weeks quizzing him about which
-      animals a cheetah is faster than. Daddy needed to build a website if he
-      wanted to maintain his sanity...
+      animals a cheetah is faster than. Daddy needed to build this website to
+      keep her happy and to keep his sanity...
     </p>
   </details>
 </template>
@@ -53,18 +53,21 @@ details {
   justify-content: center;
   align-items: center;
 
-  width: 60vw;
-  margin: 0 20vw;
+  /* width: 60vw; */
+  margin: 3vmin 0 0 0;
+  padding: 0 20vw;
 
   font-size: var(--medium-size);
 
   color: #fff;
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
 p {
   padding: 1vmin 0;
 }
 summary {
+  padding: 2vmin 0;
   font-size: var(--large-size);
   text-align: center;
 }
@@ -75,8 +78,9 @@ a {
 
 @media only screen and (max-width: 720px) {
   details {
-    width: 90vw;
-    margin: 5vw 5vw;
+    /* width: 90vw; */
+    margin: 2vw 5vw;
+    padding: 0 5vw 10vw 5vw;
   }
 }
 </style>

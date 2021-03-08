@@ -1,6 +1,6 @@
 <template>
   <section class="compare">
-    <h2>Which animal is faster?</h2>
+    <h2>Select different animals to see which is faster.</h2>
     <div class="compare-selects">
       <span class="animal-card">
         <h3>Animal 1</h3>
@@ -11,7 +11,6 @@
           class="select-css"
           v-model="animal1"
         ></base-select>
-
         <p v-if="!animal1IsValid">Please select an animal</p>
       </span>
       <span class="vs">vs.</span>
@@ -27,7 +26,7 @@
         <p v-if="!animal2IsValid">Please select an animal</p>
       </span>
     </div>
-    <button v-on:click.stop="compareAnimals">Compare</button>
+    <button v-on:click.stop="compareAnimals">Which is faster?</button>
   </section>
   <transition name="winner">
     <the-winner
@@ -194,7 +193,7 @@ button {
   color: white; */
   background-color: var(--highlight-yellow);
   color: #fff;
-  border: 3px solid var(--light-shades);
+  border: 3px solid #fff;
   cursor: pointer;
   border-radius: 10px;
 
@@ -211,7 +210,7 @@ button:active {
   background-color: #002350; */
   color: var(--main-brand);
   background-color: #fff;
-  border: 3px solid #fff;
+  border: 3px solid var(--main-brand);
 
   transition: 0.4s;
 }
@@ -258,7 +257,8 @@ button:active {
   }
 
   button {
-    margin: 6vmin auto;
+    max-width: 80vw;
+    margin: 8vmin auto;
     padding: 2vmin 6vmin;
   }
 

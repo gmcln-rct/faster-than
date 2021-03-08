@@ -2,21 +2,21 @@
   <the-header></the-header>
   <the-selector></the-selector>
   <the-details></the-details>
-  <the-footer></the-footer>
+  <!-- <the-footer></the-footer> -->
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
 import TheSelector from './components/TheSelector';
-import TheFooter from './components/TheFooter';
+// import TheFooter from './components/TheFooter';
 import TheDetails from './components/TheDetails';
 
 export default {
   components: {
     TheHeader,
     TheSelector,
-    TheDetails,
-    TheFooter
+    TheDetails
+    // TheFooter
   }
 };
 </script>
