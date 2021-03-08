@@ -137,7 +137,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   /* margin: 1vmin auto; */
-  padding: 2vmin 0;
+  padding: 2vmin 0 0 0;
 }
 
 .compare-selects {
@@ -147,7 +147,7 @@ export default {
 }
 
 .animal-card {
-  margin: 0 5vmin;
+  margin: 0 2vmin;
   padding: 2vmin 4vmin;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -184,7 +184,8 @@ h3 {
 }
 
 button {
-  margin: 3vmin auto;
+  max-width: 40vw;
+  margin: 2vmin auto;
   padding: 1vmin 3vmin;
   font-size: var(--large-size);
   font-weight: 700;
@@ -249,7 +250,7 @@ button:active {
 
 @media only screen and (max-width: 720px) {
   .compare {
-    margin: 2vmin auto;
+    margin: 3vmin auto;
     padding: 0.5vmin;
   }
   .compare-selects {
@@ -257,15 +258,21 @@ button:active {
   }
 
   button {
-    margin: 5vmin auto;
+    margin: 6vmin auto;
+    padding: 2vmin 6vmin;
   }
 
   h2 {
+    display: none;
     padding: 2vmin 0 3vmin 0;
+  }
+
+  h3 {
+    margin: 0 auto;
   }
   .animal-img {
     width: 120px;
-    height: 120px;
+    height: 100px;
 
     margin: 0 auto;
     padding: 1vmin;

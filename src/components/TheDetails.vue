@@ -2,14 +2,13 @@
   <details>
     <summary>About <em>Faster Than</em></summary>
     <p>
-      <em>Faster Than</em> was designed and created by front-end developer Glenn
-      McClanan after his 4-year-old spent weeks quizzing him about which animals
-      a cheetah is faster than. Daddy needed to build a website if he wanted to
-      maintain his sanity...
+      Cheetah vs. lion? Rabbit vs. tortoise? <em>Faster Than</em> helps you
+      answer the question: which animal is faster? Just selct the animals you
+      want to compare and click "Compare."
     </p>
     <p>
-      The speed comparisons are based on top speed of each animal, with data
-      compiled from several different sources:
+      The comparisons are based on top speed of each animal, with data compiled
+      from different sources:
     </p>
     <ul>
       <li>
@@ -31,7 +30,10 @@
       </li>
     </ul>
     <p>
-      The site was built using Vue 3 and CSS.
+      The site was built using Vue 3 and CSS, and created by Front-end developer
+      Glenn McClanan after his 4-year-old spent weeks quizzing him about which
+      animals a cheetah is faster than. Daddy needed to build a website if he
+      wanted to maintain his sanity...
     </p>
   </details>
 </template>

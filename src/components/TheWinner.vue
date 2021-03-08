@@ -21,9 +21,9 @@ export default {
   flex-direction: column;
   justify-content: center;
 
-  max-width: 90vw;
-  margin: 0 auto;
-  padding: 1vmin 0;
+  width: 500px;
+  margin: 1vmin auto;
+  padding: 2vmin 2vmin;
 
   font-family: var(--roboto);
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
@@ -52,5 +52,11 @@ export default {
 
 .winnerSection a {
   color: var(--light-shades);
+}
+
+@media only screen and (max-width: 720px) {
+  .winnerSection {
+    width: 80vw;
+  }
 }
 </style>

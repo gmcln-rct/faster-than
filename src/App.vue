@@ -39,7 +39,7 @@ export default {
 
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
-  --large-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
+  --large-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
   --huge-size: calc(42px + (56 - 42) * ((100vw - 300px) / (1600 - 300)));
 
   --roboto: 'Roboto', sans-serif;

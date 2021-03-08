@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>Copyright @2021 Glenn McClanan.</p>
+    <!-- <p>Copyright @2021 Glenn McClanan.</p> -->
   </footer>
 </template>
 <script>
