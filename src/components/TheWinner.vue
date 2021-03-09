@@ -33,7 +33,7 @@ export default {
   background-color: var(--winner);
 
   border-radius: 10px;
-  border: 5px solid #ebe18e;
+  border: 5px solid #fff;
 
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -42,7 +42,7 @@ export default {
 }
 
 .winnerSection h4 {
-  color: var(--light-shade);
+  color: var(--highlight-yellow);
   font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 .winnerSection p {
