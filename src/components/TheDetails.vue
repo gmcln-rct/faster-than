@@ -49,13 +49,12 @@ export default {
 <style scoped>
 details {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 
-  /* width: 60vw; */
-  margin: 3vmin 0 0 0;
-  padding: 0 20vw;
+  width: 100vw;
+  /* margin: 3vmin 0 0 0; */
+  padding: 0 10vw;
 
   font-size: var(--medium-size);
 
@@ -79,8 +78,8 @@ a {
 @media only screen and (max-width: 720px) {
   details {
     /* width: 90vw; */
-    margin: 2vw 5vw;
-    padding: 0 5vw 10vw 5vw;
+    /* margin: 0 5vw 2vw 5vw; */
+    padding: 0 5vw 50 5vw;
   }
 }
 </style>
