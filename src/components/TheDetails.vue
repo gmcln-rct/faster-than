@@ -66,7 +66,7 @@ p {
   padding: 1vmin 0;
 }
 summary {
-  padding: 2vmin 0;
+  padding: 1vmin 0;
   font-size: var(--large-size);
   text-align: center;
 }
