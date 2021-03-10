@@ -1,17 +1,14 @@
 <template>
   <section class="tieSection" v-if="currentWinner !== ''">
-    <h4>Winner: {{ commonName }}</h4>
-    <p>
-      Scientific Name: <em>{{ scientificName }}</em>
-    </p>
-    <p>Top Speed: {{ speed }} mph</p>
-    <p>Learn More: <a :href="siteLink" target="_blank">Wikipedia</a></p>
+    <h4>Tie: {{ name1 }} vs. {{ name2 }}</h4>
+
+    <p>Speed: {{ speed }} mph</p>
   </section>
 </template>
 
 <script>
 export default {
-  props: ['currentWinner', 'commonName', 'scientificName', 'siteLink', 'speed']
+  props: ['name1', 'name2', 'speed']
 };
 </script>
 
