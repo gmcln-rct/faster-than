@@ -196,13 +196,14 @@ h3 {
 
 button {
   max-width: 40vw;
-  margin: 2vmin auto;
+  margin: 3vmin auto 2vmin auto;
   padding: 1vmin 3vmin;
+
   font-size: var(--large-size);
   font-weight: 700;
-  /* border: 1px solid #0076bb;
-  background-color: #0076bb;
-  color: white; */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
   background-color: var(--highlight-yellow);
   color: #fff;
   border: 3px solid #fff;
@@ -212,7 +213,6 @@ button {
   -webkit-box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
   box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
 
-  text-transform: uppercase;
   transition: 0.4s;
 }
 

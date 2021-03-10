@@ -14,26 +14,29 @@
       <li>
         <a
           href="https://tpwd.texas.gov/publications/nonpwdpubs/young_naturalist/animals/animal_speeds/"
-          targe="_blank"
+          target="_blank"
           >Young Naturalist - Texas A&M Press</a
         >
       </li>
       <li>
-        <a href="https://www.speedofanimals.com/" targe="_blank"
+        <a href="https://www.speedofanimals.com/" target="_blank"
           >Speed of Animals</a
         >
       </li>
       <li>
-        <a href="https://en.wikipedia.org/wiki/Fastest_animals" targe="_blank"
+        <a href="https://en.wikipedia.org/wiki/Fastest_animals" target="_blank"
           >Wikipedia - Fastest Animals</a
         >
       </li>
     </ul>
     <p>
-      The site was built using Vue 3 and CSS, and created by Front-end developer
-      Glenn McClanan after his 4-year-old spent weeks quizzing him about which
-      animals a cheetah is faster than. Daddy needed to build this website to
-      keep her happy and to keep his sanity...
+      The site was built using Vue 3 and CSS, and created by Frontend developer
+      <a href="https://www.glennmcclanan.com/" target="_blank"
+        >Glenn McClanan</a
+      >
+      after his 4-year-old spent weeks quizzing him about which animals a
+      cheetah is faster than. Daddy needed to build this website to keep her
+      happy and to keep his sanity...
     </p>
   </details>
 </template>
@@ -54,7 +57,7 @@ details {
 
   width: 100vw;
   /* margin: 3vmin 0 0 0; */
-  padding: 0 10vw;
+  padding: 0 10vw 0 10vw;
 
   font-size: var(--medium-size);
 
@@ -63,7 +66,7 @@ details {
 }
 
 p {
-  padding: 1vmin 0;
+  padding: 1vmin 0 3vmin 0;
 }
 summary {
   padding: 1vmin 0;
