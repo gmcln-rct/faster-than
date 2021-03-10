@@ -1,6 +1,8 @@
 <template>
   <section class="winnerSection" v-if="currentWinner !== ''">
-    <h4>Winner: {{ commonName }}</h4>
+    <h4>
+      Winner: <span class="winnerName">{{ commonName }}</span>
+    </h4>
     <p>
       Scientific Name: <em>{{ scientificName }}</em>
     </p>
@@ -42,12 +44,15 @@ export default {
 }
 
 .winnerSection h4 {
-  color: var(--highlight-yellow);
   font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 .winnerSection p {
   padding: 0.2vmin 0;
   font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.winnerName {
+  color: var(--muted-yellow);
 }
 
 .winnerSection a {

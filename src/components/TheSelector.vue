@@ -1,6 +1,6 @@
 <template>
   <section class="compare">
-    <h2>Select different animals to see which is faster.</h2>
+    <h2>Select different animals to find out which is faster.</h2>
     <div class="compare-selects">
       <span class="animal-card">
         <h3>Animal 1</h3>
@@ -37,14 +37,25 @@
       :speed="currentWinnerObj.speed"
     ></the-winner>
   </transition>
+  <transition name="tie">
+    <the-tie
+      :currenttie="currentWinner"
+      :commonName="currentWinnerObj.commonName"
+      :scientificName="currentWinnerObj.scientificName"
+      :siteLink="currentWinnerObj.siteLink"
+      :speed="currentWinnerObj.speed"
+    ></the-tie>
+  </transition>
 </template>
 
 <script>
 import TheWinner from './TheWinner';
+import TheTie from './TheTie';
 import { animals } from './data/animals.js';
 export default {
   components: {
-    TheWinner
+    TheWinner,
+    TheTie
   },
   data() {
     return {
@@ -89,7 +100,7 @@ export default {
       } else if (selectedAnimal2.speed > selectedAnimal1.speed) {
         winner = selectedAnimal2;
       } else {
-        return;
+        this.tie = true;
       }
 
       // console.log('Winner: ' + winner.commonName);
