@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  props: ['name1', 'name2', 'speed']
+  props: ['name1', 'name2', 'speed', 'currentTie']
 };
 </script>
 
