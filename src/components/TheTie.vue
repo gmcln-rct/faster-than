@@ -1,5 +1,8 @@
 <template>
-  <section class="tieSection" v-if="currentWinner !== ''">
+  <section
+    class="tieSection"
+    v-if="currentWinner !== '' && currentTie === true"
+  >
     <h4>Tie: {{ name1 }} vs. {{ name2 }}</h4>
 
     <p>Speed: {{ speed }} mph</p>
