@@ -17,6 +17,14 @@ export default {
     TheSelector,
     TheDetails
     // TheFooter
+  },
+  metaInfo: {
+    title: 'My Example App',
+    titleTemplate: '%s - Yay!',
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    }
   }
 };
 </script>
@@ -33,8 +41,8 @@ export default {
   --dark-accent: #004d7a;
   --dark-shades: #17161c;
 
-  --highlight-yellow: #ecb100;
-  --muted-yellow: #f5d576;
+  --highlight-yellow: #d86a2c;
+  --muted-yellow: #fce7aa;
 
   --winner: #258f5c;
   --base-size: 16px;
