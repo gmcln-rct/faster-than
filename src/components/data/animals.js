@@ -306,7 +306,7 @@ export const animals = [
   {
     id: 'animal039',
     commonName: 'Leopard',
-    scientificName: 'https://en.wikipedia.org/wiki/Carpenter_ant',
+    scientificName: 'Panthera pardus',
     speed: 36,
     siteLink: 'https://en.wikipedia.org/wiki/Leopard',
     img: 'https://faster-than.s3.amazonaws.com/leopard.svg'
