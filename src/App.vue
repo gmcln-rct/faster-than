@@ -71,6 +71,7 @@ body {
   );
 }
 
+/* RESET */
 /* Box sizing rules */
 *,
 *::before,
@@ -100,6 +101,14 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
 }
 
 /* Set core body defaults */

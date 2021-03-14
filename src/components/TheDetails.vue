@@ -64,9 +64,21 @@ details {
   color: #fff;
   background-color: rgba(50, 50, 50, 0.5);
 }
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
 
 p {
-  padding: 1vmin 0 3vmin 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+  padding: 1vmin 0 1vmin 0;
 }
 summary {
   padding: 1vmin 0;
