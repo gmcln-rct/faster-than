@@ -25,6 +25,14 @@ export const animals = [
   },
   {
     id: 'animal004',
+    commonName: 'Bald eagle',
+    scientificName: 'Haliaeetus leucocephalus',
+    speed: 99,
+    siteLink: 'https://en.wikipedia.org/wiki/Bald_eagle',
+    img: 'https://faster-than.s3.amazonaws.com/baldeagle.svg'
+  },
+  {
+    id: 'animal005',
     commonName: 'Bison',
     scientificName: 'Bison',
     speed: 35,
@@ -32,7 +40,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/bison.svg'
   },
   {
-    id: 'animal005',
+    id: 'animal006',
     commonName: 'Black mamba snake',
     scientificName: 'Dendroaspis polylepis',
     speed: 12.9,
@@ -40,7 +48,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/blackmamba.svg'
   },
   {
-    id: 'animal006',
+    id: 'animal007',
     commonName: 'Blue Jay',
     scientificName: 'Cyanocitta cristata',
     speed: 25,
@@ -48,7 +56,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/bluejay.svg'
   },
   {
-    id: 'animal007',
+    id: 'animal008',
     commonName: 'Blue Shark',
     scientificName: 'Prionace glauca',
     speed: 42.88,
@@ -56,7 +64,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/blueshark.svg'
   },
   {
-    id: 'animal008',
+    id: 'animal009',
     commonName: 'Brown Bear',
     scientificName: 'Ursus arctos',
     speed: 21.7,
@@ -64,7 +72,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/brownbear.svg'
   },
   {
-    id: 'animal009',
+    id: 'animal010',
     commonName: 'Brown-throated sloth',
     scientificName: 'Aptenodytes forsteri',
     speed: 0.15,
@@ -72,7 +80,15 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/sloth.svg'
   },
   {
-    id: 'animal010',
+    id: 'animal011',
+    commonName: 'Bumblebee',
+    scientificName: 'Bombus',
+    speed: 33.6,
+    siteLink: 'https://en.wikipedia.org/wiki/Bumblebee',
+    img: 'https://faster-than.s3.amazonaws.com/bumblebee.svg'
+  },
+  {
+    id: 'animal012',
     commonName: 'Camel',
     scientificName: 'Camelus',
     speed: 40,
@@ -80,7 +96,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/camel.svg'
   },
   {
-    id: 'animal011',
+    id: 'animal013',
     commonName: 'Canada Goose',
     scientificName: 'Branta canadensis',
     speed: 60,
@@ -88,7 +104,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/goose.svg'
   },
   {
-    id: 'animal012',
+    id: 'animal014',
     commonName: 'Carpenter ant',
     scientificName: 'Camponotus',
     speed: 0.0005,
@@ -96,7 +112,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/ant.svg'
   },
   {
-    id: 'animal013',
+    id: 'animal015',
     commonName: 'Cat (domestic)',
     scientificName: 'Felis catus',
     speed: 30,
@@ -104,7 +120,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/cat.svg'
   },
   {
-    id: 'animal014',
+    id: 'animal016',
     commonName: 'Cheetah',
     scientificName: 'Acinonyx jubatus',
     speed: 74.6,
@@ -112,7 +128,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/cheetah.svg'
   },
   {
-    id: 'animal015',
+    id: 'animal017',
     commonName: 'Chicken',
     scientificName: 'Gallus gallus domesticus',
     speed: 9,
@@ -120,15 +136,31 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/chicken.svg'
   },
   {
-    id: 'animal032',
+    id: 'animal018',
+    commonName: 'Common ostrich',
+    scientificName: 'Struthio camelus',
+    speed: 43.5,
+    siteLink: 'https://en.wikipedia.org/wiki/Common_ostrich',
+    img: 'https://faster-than.s3.amazonaws.com/commonostrich.svg'
+  },
+  {
+    id: 'animal019',
+    commonName: 'Common warthog',
+    scientificName: 'Phacochoerus africanus',
+    speed: 30,
+    siteLink: 'https://en.wikipedia.org/wiki/Common_warthog',
+    img: 'https://faster-than.s3.amazonaws.com/warthog.svg'
+  },
+  {
+    id: 'animal020',
     commonName: 'Cottontail rabbit',
     scientificName: 'Oryctolagus cuniculus',
-    speed: 29.8,
+    speed: 35,
     siteLink: 'https://en.wikipedia.org/wiki/European_rabbit',
     img: 'https://faster-than.s3.amazonaws.com/cottontailrabbit.svg'
   },
   {
-    id: 'animal016',
+    id: 'animal021',
     commonName: 'Coyote',
     scientificName: 'Canis latrans',
     speed: 43,
@@ -136,7 +168,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/coyote.svg'
   },
   {
-    id: 'animal017',
+    id: 'animal022',
     commonName: 'Eastern gray squirrel',
     scientificName: 'Sciurus carolinensis',
     speed: 12.4,
@@ -144,7 +176,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/squirrel.svg'
   },
   {
-    id: 'animal018',
+    id: 'animal023',
     commonName: 'Elephant',
     scientificName: 'Loxodonta',
     speed: 24.9,
@@ -152,7 +184,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/elephant.svg'
   },
   {
-    id: 'animal019',
+    id: 'animal024',
     commonName: 'Emperor penguin',
     scientificName: 'Aptenodytes forsteri',
     speed: 5.6,
@@ -160,7 +192,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/empirepenguin.svg'
   },
   {
-    id: 'animal020',
+    id: 'animal025',
     commonName: 'Flying Fish',
     scientificName: 'Exocoetidae',
     speed: 34.8,
@@ -168,7 +200,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/flyingfish.svg'
   },
   {
-    id: 'animal021',
+    id: 'animal026',
     commonName: 'Garden snail',
     scientificName: 'Cornu aspersum',
     speed: 0.03,
@@ -176,7 +208,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/snail.svg'
   },
   {
-    id: 'animal022',
+    id: 'animal027',
     commonName: 'Giraffe',
     scientificName: 'Giraffa',
     speed: 32.3,
@@ -184,7 +216,15 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/giraffe.svg'
   },
   {
-    id: 'animal023',
+    id: 'animal028',
+    commonName: 'Golden eagle',
+    scientificName: 'Aquila chrysaetos',
+    speed: 200,
+    siteLink: 'https://en.wikipedia.org/wiki/Golden_eagle',
+    img: 'https://faster-than.s3.amazonaws.com/goldeneagle.svg'
+  },
+  {
+    id: 'animal029',
     commonName: 'Great white shark',
     scientificName: 'Carcharodon carcharias',
     speed: 35,
@@ -192,7 +232,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/greatwhiteshark.svg'
   },
   {
-    id: 'animal024',
+    id: 'animal030',
     commonName: 'Greyhound',
     scientificName: 'Canis lupus familiaris',
     speed: 45,
@@ -200,7 +240,31 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/greyhound.svg'
   },
   {
-    id: 'animal025',
+    id: 'animal031',
+    commonName: 'Hippopotamus',
+    scientificName: 'Hippopotamus amphibius',
+    speed: 19,
+    siteLink: 'https://en.wikipedia.org/wiki/Hippopotamus',
+    img: 'https://faster-than.s3.amazonaws.com/hippopotamus.svg'
+  },
+  {
+    id: 'animal032',
+    commonName: 'Homing pigeon',
+    scientificName: 'Columba livia domestica',
+    speed: 95,
+    siteLink: 'https://en.wikipedia.org/wiki/Homing_pigeon',
+    img: 'https://faster-than.s3.amazonaws.com/homingpigeon.svg'
+  },
+  {
+    id: 'animal033',
+    commonName: 'Honey badger',
+    scientificName: 'Mellivora capensis',
+    speed: 19,
+    siteLink: 'https://en.wikipedia.org/wiki/Honey_badger',
+    img: 'https://faster-than.s3.amazonaws.com/honeybadger.svg'
+  },
+  {
+    id: 'animal034',
     commonName: 'Horse',
     scientificName: 'Equus ferus caballus',
     speed: 54.7,
@@ -208,7 +272,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/horse.svg'
   },
   {
-    id: 'animal026',
+    id: 'animal035',
     commonName: 'Human',
     scientificName: 'Homo sapien',
     speed: 27.9,
@@ -216,7 +280,31 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/human.svg'
   },
   {
-    id: 'animal027',
+    id: 'animal036',
+    commonName: 'Koala',
+    scientificName: 'Phascolarctos cinereus',
+    speed: 18.6,
+    siteLink: 'https://en.wikipedia.org/wiki/Koala',
+    img: 'https://faster-than.s3.amazonaws.com/koala.svg'
+  },
+  {
+    id: 'animal037',
+    commonName: 'Komodo dragon',
+    scientificName: 'Varanus komodoensis',
+    speed: 13,
+    siteLink: 'https://en.wikipedia.org/wiki/Komodo_dragon',
+    img: 'https://faster-than.s3.amazonaws.com/komododragon.svg'
+  },
+  {
+    id: 'animal038',
+    commonName: 'Leatherback sea turtle',
+    scientificName: 'Dermochelys coriacea',
+    speed: 21.9,
+    siteLink: 'https://en.wikipedia.org/wiki/Leatherback_sea_turtle',
+    img: 'https://faster-than.s3.amazonaws.com/leatherbackseaturtle.svg'
+  },
+  {
+    id: 'animal039',
     commonName: 'Leopard',
     scientificName: 'https://en.wikipedia.org/wiki/Carpenter_ant',
     speed: 36,
@@ -224,7 +312,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/leopard.svg'
   },
   {
-    id: 'animal028',
+    id: 'animal040',
     commonName: 'Leopard Tortoise',
     scientificName: 'Stigmochelys pardalis',
     speed: 0.62,
@@ -232,7 +320,15 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/tortoise.svg'
   },
   {
-    id: 'animal029',
+    id: 'animal041',
+    commonName: 'Lion',
+    scientificName: 'Panthera leo',
+    speed: 49.7,
+    siteLink: 'https://en.wikipedia.org/wiki/Lion',
+    img: 'https://faster-than.s3.amazonaws.com/lion.svg'
+  },
+  {
+    id: 'animal042',
     commonName: 'Moose',
     scientificName: 'Alces alces',
     speed: 35,
@@ -240,7 +336,23 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/moose.svg'
   },
   {
-    id: 'animal030',
+    id: 'animal043',
+    commonName: 'Pangolin',
+    scientificName: 'Pholidota',
+    speed: 3.1,
+    siteLink: 'https://en.wikipedia.org/wiki/Pangolin',
+    img: 'https://faster-than.s3.amazonaws.com/pangolin.svg'
+  },
+  {
+    id: 'animal044',
+    commonName: 'Pelican',
+    scientificName: 'Pelecanus onocrotalus',
+    speed: 30,
+    siteLink: 'https://en.wikipedia.org/wiki/Pelican',
+    img: 'https://faster-than.s3.amazonaws.com/pelican.svg'
+  },
+  {
+    id: 'animal045',
     commonName: 'Peregrine falcon',
     scientificName: 'Falco peregrinus',
     speed: 242,
@@ -248,16 +360,15 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/falcon.svg'
   },
   {
-    id: 'animal031',
+    id: 'animal046',
     commonName: 'Plains zebra',
     scientificName: 'Equus quagga',
     speed: 40,
     siteLink: 'https://en.wikipedia.org/wiki/Plains_zebra',
     img: 'https://faster-than.s3.amazonaws.com/zebra.svg'
   },
-
   {
-    id: 'animal033',
+    id: 'animal047',
     commonName: 'Red kangaroo',
     scientificName: 'Macropus rufus',
     speed: 43.5,
@@ -265,7 +376,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/kangaroo.svg'
   },
   {
-    id: 'animal034',
+    id: 'animal048',
     commonName: 'Reindeer',
     scientificName: 'Rangifer tarandus',
     speed: 50,
@@ -273,7 +384,7 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/reindeer.svg'
   },
   {
-    id: 'animal035',
+    id: 'animal049',
     commonName: 'Roadrunner',
     scientificName: 'Geococcyx californianus',
     speed: 19.9,
@@ -281,7 +392,15 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/roadrunner.svg'
   },
   {
-    id: 'animal036',
+    id: 'animal050',
+    commonName: 'Spotted hyena',
+    scientificName: 'Crocuta crocuta',
+    speed: 39.8,
+    siteLink: 'https://en.wikipedia.org/wiki/Spotted_hyena',
+    img: 'https://faster-than.s3.amazonaws.com/spottedhyena.svg'
+  },
+  {
+    id: 'animal051',
     commonName: 'Tasmanian devil',
     scientificName: 'Sarcophilus harrisii',
     speed: 8.1,
@@ -289,11 +408,35 @@ export const animals = [
     img: 'https://faster-than.s3.amazonaws.com/tasmanian.svg'
   },
   {
-    id: 'animal037',
+    id: 'animal052',
+    commonName: "Thomson's gazelle",
+    scientificName: 'Eudorcas thomsonii',
+    speed: 40.4,
+    siteLink: "https://en.wikipedia.org/wiki/Thomson's_gazelle",
+    img: 'https://faster-than.s3.amazonaws.com/thomsonsgazelle.svg'
+  },
+  {
+    id: 'animal053',
     commonName: 'Tiger',
     scientificName: 'Panthera tigris',
     speed: 40,
     siteLink: 'https://en.wikipedia.org/wiki/Tiger',
     img: 'https://faster-than.s3.amazonaws.com/tiger.svg'
+  },
+  {
+    id: 'animal054',
+    commonName: 'White-tailed deer',
+    scientificName: 'Odocoileus virginianus',
+    speed: 30,
+    siteLink: 'https://en.wikipedia.org/wiki/White-tailed_deer',
+    img: 'https://faster-than.s3.amazonaws.com/whitetaileddeer.svg'
+  },
+  {
+    id: 'animal055',
+    commonName: 'Wildebeest',
+    scientificName: 'Connochaetes',
+    speed: 39.8,
+    siteLink: 'https://en.wikipedia.org/wiki/Wildebeest',
+    img: 'https://faster-than.s3.amazonaws.com/wildebeest.svg'
   }
 ];
