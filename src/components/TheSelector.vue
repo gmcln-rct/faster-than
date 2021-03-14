@@ -220,9 +220,9 @@ button:hover,
 button:active {
   /* border-color: #002350;
   background-color: #002350; */
-  color: var(--main-brand);
+  color: var(--highlight-yellow);
   background-color: #fff;
-  border: 3px solid var(--main-brand);
+  border: 3px solid var(--highlight-yellow);
 
   transition: 0.4s;
 }
