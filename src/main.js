@@ -1,4 +1,5 @@
 import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
 // import {
 //   createMetaManager,
 //   defaultConfig,
@@ -10,6 +11,11 @@ import App from './App.vue';
 
 import BaseCard from './components/ui/BaseCard.vue';
 import BaseSelect from './components/ui/BaseSelect.vue';
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes: []
+});
 
 const app = createApp(App);
 
