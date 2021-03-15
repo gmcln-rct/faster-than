@@ -8,13 +8,15 @@ import { createRouter, createWebHistory } from 'vue-router';
 // } from 'vue-meta';
 
 import App from './App.vue';
+import TheQuizSection from './components/quiz/TheQuizSection.vue';
+import TheCompareSection from './components/compare/TheCompareSection.vue';
 
 import BaseCard from './components/ui/BaseCard.vue';
 import BaseSelect from './components/ui/BaseSelect.vue';
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: []
+  routes: [{ path: '/compare', component }]
 });
 
 const app = createApp(App);
