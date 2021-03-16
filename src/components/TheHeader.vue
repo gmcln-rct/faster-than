@@ -107,6 +107,15 @@ a.router-link-active {
   background-color: #1a037e; */
 }
 
+.about {
+  display: inline;
+  width: 50px;
+  margin: 0 0.5vmin 0 0;
+  padding: 2vmin 1vmin 1vmin 0;
+  opacity: 0.95;
+  /* filter: invert(1); */
+}
+
 @media only screen and (max-width: 720px) {
   .logo {
     width: 50px;

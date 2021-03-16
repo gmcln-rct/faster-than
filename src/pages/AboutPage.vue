@@ -1,6 +1,6 @@
 <template>
-  <details>
-    <summary>About <em>Faster Than</em></summary>
+  <section>
+    <h2>About <em>Faster Than</em></h2>
     <p>
       Cheetah vs. lion? Rabbit vs. tortoise? <em>Faster Than</em> helps you
       answer the question: which animal is faster? Just selct the animals you
@@ -38,7 +38,7 @@
       cheetah is faster than. Daddy needed to build this website to keep her
       happy and to keep his sanity...
     </p>
-  </details>
+  </section>
 </template>
 
 <script>
@@ -50,19 +50,33 @@ export default {
 </script>
 
 <style scoped>
-details {
+section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   width: 100vw;
   /* margin: 3vmin 0 0 0; */
-  padding: 0 10vw 0 10vw;
+  padding: 2vmin 10vmin 5vmin 10vmin;
 
   font-size: var(--medium-size);
 
   color: #fff;
   background-color: rgba(50, 50, 50, 0.5);
+}
+h2 {
+  padding: 1vmin 0;
+  font-size: var(--large-size);
+  text-align: center;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+  padding: 1vmin 0 1vmin 0;
 }
 ul {
   margin-block-start: 0;
@@ -72,26 +86,12 @@ ul {
   padding-inline-start: 0;
 }
 
-p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0;
-  padding: 1vmin 0 1vmin 0;
-}
-summary {
-  padding: 1vmin 0;
-  font-size: var(--large-size);
-  text-align: center;
-}
-
 a {
   color: var(--light-accent);
 }
 
 @media only screen and (max-width: 720px) {
-  details {
+  section {
     /* width: 90vw; */
     /* margin: 0 5vw 2vw 5vw; */
     padding: 0 5vw 50 5vw;
