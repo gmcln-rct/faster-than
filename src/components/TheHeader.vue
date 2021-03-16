@@ -1,10 +1,20 @@
 <template>
   <header>
-    <img
-      class="logo"
-      src="https://faster-than.s3.amazonaws.com/faster-than-logo.svg"
-    />
-    <span class="site-name"> Faster Than</span>
+    <nav>
+      <img
+        class="logo"
+        src="https://faster-than.s3.amazonaws.com/faster-than-logo.svg"
+      />
+      <span class="site-name"> Faster Than</span>
+      <ul>
+        <li>
+          <router-link to="/teams">Teams</router-link>
+        </li>
+        <li>
+          <router-link to="/users">Users</router-link>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
