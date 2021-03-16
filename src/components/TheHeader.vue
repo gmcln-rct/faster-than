@@ -14,6 +14,13 @@
       <li>
         <router-link to="/quiz">Quiz</router-link>
       </li>
+      <li>
+        <router-link to="/about">
+          <img
+            class="about"
+            src="https://faster-than.s3.amazonaws.com/faster-about-icon.png"
+        /></router-link>
+      </li>
     </ul>
   </header>
 </template>

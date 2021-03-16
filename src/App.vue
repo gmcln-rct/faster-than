@@ -1,22 +1,24 @@
 <template>
   <the-header></the-header>
-  <router-view></router-view>
+  <main>
+    <router-view></router-view>
+  </main>
   <!-- <the-selector></the-selector> -->
   <!-- <the-footer></the-footer> -->
-  <the-details></the-details>
+  <!-- <the-details></the-details> -->
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
 // import TheSelector from './components/TheSelector';
 // import TheFooter from './components/TheFooter';
-import TheDetails from './components/TheDetails';
+// import TheDetails from './components/TheDetails';
 
 export default {
   components: {
-    TheHeader,
+    TheHeader
     // TheSelector,
-    TheDetails
+    // TheDetails
     // TheFooter
   },
   metaInfo: {
