@@ -1,8 +1,9 @@
 <template>
   <the-header></the-header>
-  <the-details></the-details>
+
   <the-selector></the-selector>
   <!-- <the-footer></the-footer> -->
+  <the-details></the-details>
 </template>
 
 <script>

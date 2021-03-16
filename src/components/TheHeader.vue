@@ -1,28 +1,29 @@
 <template>
   <header>
-    <nav>
+    <div class="logo-block">
       <img
         class="logo"
         src="https://faster-than.s3.amazonaws.com/faster-than-logo.svg"
       />
       <span class="site-name"> Faster Than</span>
-      <ul>
-        <li>
-          <router-link to="/compare">Compare</router-link>
-        </li>
-        <li>
-          <router-link to="/quiz">Quiz</router-link>
-        </li>
-      </ul>
-    </nav>
+    </div>
+    <ul>
+      <li>
+        <router-link to="/compare">Compare</router-link>
+      </li>
+      <li>
+        <router-link to="/quiz">Quiz</router-link>
+      </li>
+    </ul>
   </header>
 </template>
 
-<style scoped>
+<style scoped scss>
 @import url('https://use.typekit.net/art4tjq.css');
 
 header {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -31,6 +32,14 @@ header {
 
   -webkit-box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.24);
   box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.24);
+}
+
+.logo-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 40vmin 0 0;
 }
 
 .site-name {
@@ -53,6 +62,40 @@ header {
   padding: 1vmin 1vmin 1vmin 0;
   opacity: 0.95;
   filter: invert(1);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 1rem;
+
+  font-size: var(--medium-size);
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+}
+
+a:hover,
+a:active,
+a.active {
+  color: #f1a80a;
+  border-color: #f1a80a;
+  background-color: #1a037e;
 }
 
 @media only screen and (max-width: 720px) {
