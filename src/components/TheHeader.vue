@@ -3,7 +3,7 @@
     <div class="logo-block">
       <img
         class="logo"
-        src="https://faster-than.s3.amazonaws.com/faster-than-logo.svg"
+        src="https://faster-than.s3.amazonaws.com/faster-than-logo-3.png"
       />
       <span class="site-name"> Faster Than</span>
     </div>
@@ -57,11 +57,11 @@ header {
 
 .logo {
   display: inline;
-  width: 65px;
-  margin: 0 1vmin 0 0;
+  width: 75px;
+  margin: 0 0.5vmin 0 0;
   padding: 1vmin 1vmin 1vmin 0;
   opacity: 0.95;
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 
 ul {
