@@ -43,7 +43,7 @@ export default {
   --dark-shades: #17161c;
 
   --highlight-yellow: #d86a2c;
-  --muted-yellow: #fce7aa;
+  --muted-yellow: #ffe083;
 
   --winner: #258f5c;
   --base-size: 16px;

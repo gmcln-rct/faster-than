@@ -46,16 +46,18 @@ export default {
 <style scoped>
 /* class applies to select element itself, not a wrapper element */
 .select-css {
+  display: block;
   width: 100%;
   max-width: 100%; /* useful when width is set to anything other than 100% */
   margin: 0;
-  display: block;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+
   font-size: 16px;
   font-family: sans-serif;
   font-weight: 700;
-  color: #444;
   line-height: 1.3;
-  padding: 0.6em 1.4em 0.5em 0.8em;
+
+  color: #444;
   box-sizing: border-box;
   border: 1px solid #aaa;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);

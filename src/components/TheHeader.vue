@@ -65,34 +65,36 @@ header {
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
 }
 
 li {
-  margin: 0 1rem;
+  margin: 0 0.5vmin;
 
   font-size: var(--medium-size);
 }
 
 a {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+
   text-decoration: none;
+  color: white;
   background: transparent;
   border: 1px solid transparent;
   cursor: pointer;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  display: inline-block;
 }
 
 a:hover,
 a:active,
-a.active {
+a.router-link-active {
   color: var(--muted-yellow);
   /* border-color: #f1a80a;
   background-color: #1a037e; */
