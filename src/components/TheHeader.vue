@@ -93,9 +93,9 @@ a {
 a:hover,
 a:active,
 a.active {
-  color: #f1a80a;
-  border-color: #f1a80a;
-  background-color: #1a037e;
+  color: var(--muted-yellow);
+  /* border-color: #f1a80a;
+  background-color: #1a037e; */
 }
 
 @media only screen and (max-width: 720px) {

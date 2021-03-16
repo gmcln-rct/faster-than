@@ -1,21 +1,21 @@
 <template>
   <the-header></the-header>
-
-  <the-selector></the-selector>
+  <router-view></router-view>
+  <!-- <the-selector></the-selector> -->
   <!-- <the-footer></the-footer> -->
   <the-details></the-details>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
-import TheSelector from './components/TheSelector';
+// import TheSelector from './components/TheSelector';
 // import TheFooter from './components/TheFooter';
 import TheDetails from './components/TheDetails';
 
 export default {
   components: {
     TheHeader,
-    TheSelector,
+    // TheSelector,
     TheDetails
     // TheFooter
   },

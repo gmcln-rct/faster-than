@@ -7,7 +7,7 @@
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
-          v-on:change="onChange"
+          :selectText="selectText1"
           class="select-css"
           v-model="animal1"
         ></base-select>
@@ -19,6 +19,7 @@
         <img class="animal-img flip" :src="getAnimalImg(animal2)" />
         <base-select
           :options="animals"
+          :selectText="selectText2"
           class="select-css"
           v-model="animal2"
         ></base-select>
@@ -63,6 +64,8 @@ export default {
       animal1: 'noanimal',
       animal2: 'noanimal',
       animals: animals,
+      selectText1: '1',
+      selectText2: '2',
       animal1IsValid: true,
       animal2IsValid: true,
       currentWinner: '',
@@ -192,7 +195,7 @@ h3 {
 .vs {
   padding: 2vmin 0;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
-  color: #fff;
+  color: var(--muted-yellow);
 }
 
 button {

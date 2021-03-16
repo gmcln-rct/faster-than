@@ -17,7 +17,9 @@
         :selected="option === modelValue"
         >{{ option.commonName }}</option
       >
-      <option :value="modelValue" disabled hidden>Select Animal</option>
+      <option :value="modelValue" disabled hidden
+        >Select Animal {{ selectText }}</option
+      >
     </select>
   </div>
 </template>
@@ -33,6 +35,9 @@ export default {
     modelValue: {
       type: [String, Number],
       default: ''
+    },
+    selectText: {
+      type: [String]
     }
   }
 };
