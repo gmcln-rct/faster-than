@@ -49,9 +49,9 @@
 </template>
 
 <script>
-import TheWinner from './TheWinner';
-import TheTie from './TheTie';
-import { animals } from './data/animals.js';
+import TheWinner from '../components/TheWinner';
+import TheTie from '../components/TheTie';
+import { animals } from '../components/data/animals.js';
 
 export default {
   components: {
