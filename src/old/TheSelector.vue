@@ -51,7 +51,7 @@
 <script>
 import TheWinner from './TheWinner';
 import TheTie from './TheTie';
-import { animals } from './data/animals.js';
+import { animals } from '../components/data/animals.js';
 
 export default {
   components: {

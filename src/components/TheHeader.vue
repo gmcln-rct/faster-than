@@ -39,7 +39,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  margin: 0 40vmin 0 0;
+  margin: 0 30vmin 0 0;
 }
 
 .site-name {
