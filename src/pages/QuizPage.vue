@@ -1,6 +1,7 @@
 <template>
   <section class="quiz">
-    <h2>This is a quiz</h2>
+    <h2>Animal Speed Quiz</h2>
+    <p>Which animal is faster?</p>
   </section>
 </template>
 
