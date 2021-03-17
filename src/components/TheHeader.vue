@@ -99,10 +99,14 @@ a {
   cursor: pointer;
 }
 
-a:hover,
+a:hover {
+  color: var(--muted-yellow);
+}
+
 a:active,
 a.router-link-active {
-  color: var(--muted-yellow);
+  font-weight: 700;
+  color: var(--deep-yellow);
   /* border-color: #f1a80a;
   background-color: #1a037e; */
 }
