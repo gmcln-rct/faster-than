@@ -36,6 +36,7 @@
       :scientificName="currentWinnerObj.scientificName"
       :siteLink="currentWinnerObj.siteLink"
       :speed="currentWinnerObj.speed"
+      :image="currentWinnerObj.image"
     ></the-winner>
   </transition>
   <transition name="tie">
@@ -45,6 +46,7 @@
       :scientificName="currentWinnerObj.scientificName"
       :siteLink="currentWinnerObj.siteLink"
       :speed="currentWinnerObj.speed"
+      :img="currentWinnerObj.img"
     ></the-tie>
   </transition>
 </template>
@@ -73,7 +75,8 @@ export default {
         commonName: '',
         scientificName: '',
         siteLink: '',
-        speed: ''
+        speed: '',
+        image: ''
       },
       tie: false
     };
@@ -114,6 +117,9 @@ export default {
       this.currentWinner = winner.commonName;
 
       this.currentWinnerObj = winner;
+
+      this.currentWinnerObj.image = winner.img;
+      console.log(this.currentWinnerObj.image);
 
       if (event) {
         console.log(event.target.tagName);

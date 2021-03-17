@@ -1,26 +1,36 @@
 <template>
   <section class="winnerSection" v-if="currentWinner !== ''">
-    <h4>
-      Winner: <span class="winnerName">{{ commonName }}</span>
-    </h4>
-    <p>
-      Scientific Name: <em>{{ scientificName }}</em>
-    </p>
-    <p>Top Speed: {{ speed }} mph</p>
-    <p>Learn More: <a :href="siteLink" target="_blank">Wikipedia</a></p>
+    <img :src="image" class="winnerImage" />
+    <div class="winnerInfo">
+      <h4>
+        Winner: <span class="winnerName">{{ commonName }}</span>
+      </h4>
+      <p>
+        Scientific Name: <em>{{ scientificName }}</em>
+      </p>
+      <p>Top Speed: {{ speed }} mph</p>
+      <p>Learn More: <a :href="siteLink" target="_blank">Wikipedia</a></p>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
-  props: ['currentWinner', 'commonName', 'scientificName', 'siteLink', 'speed']
+  props: [
+    'currentWinner',
+    'commonName',
+    'scientificName',
+    'siteLink',
+    'speed',
+    'image'
+  ]
 };
 </script>
 
 <style scoped>
 .winnerSection {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
 
   width: 600px;
@@ -43,10 +53,18 @@ export default {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.winnerSection h4 {
+.winnerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 0 2vmin;
+  text-align: left;
+}
+
+.winnerInfo h4 {
   font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
-.winnerSection p {
+.winnerInfo p {
   padding: 0.2vmin 0;
   font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -55,8 +73,13 @@ export default {
   color: var(--muted-yellow);
 }
 
-.winnerSection a {
+.winnerInfo a {
   color: var(--light-shades);
+}
+
+.winnerImage {
+  width: 100px;
+  filter: invert(1);
 }
 
 @media only screen and (max-width: 720px) {
