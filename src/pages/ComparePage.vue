@@ -175,6 +175,17 @@ export default {
   background-color: #ffffff;
 }
 
+.animal-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vmin 0;
+  width: 200px;
+  height: 200px;
+  filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
+    brightness(50%) contrast(101%);
+}
+
 h2 {
   margin: 0 auto;
   padding: 1vmin 0 2vmin 0;
@@ -182,7 +193,7 @@ h2 {
 
   font-style: normal;
   font-size: var(--large-size);
-  font-weight: 600;
+  font-weight: 400;
 
   text-align: center;
   color: #fefefe;
@@ -235,14 +246,6 @@ button:active {
   border: 3px solid var(--highlight-yellow);
 
   transition: 0.4s;
-}
-
-.animal-img {
-  padding: 2vmin 0;
-  width: 200px;
-  height: 200px;
-  filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
-    brightness(50%) contrast(101%);
 }
 
 .small {
