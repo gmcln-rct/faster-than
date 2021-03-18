@@ -4,6 +4,7 @@
     <p>Which animal is faster?</p>
 
     <div>{{ buildAnimalArray() }}</div>
+    <button>Start Quiz</button>
   </section>
 </template>
 
@@ -19,25 +20,23 @@ export default {
       animals: animals,
       currentRound: 0,
       playerWin: false,
-      animalPairs: []
+      animalPairs: [],
+      questionCounter: 0,
+      userScore: 0
     };
   },
   methods: {
     buildAnimalArray() {
       let animal;
       let animalsLength = this.animals.length;
+
       while (this.animalPairs.length < 10) {
         animal = getRandomNumber(animalsLength);
-        if (!this.animalsPair.includes(animal)) {
+        if (!this.animalPairs.includes(animal)) {
           this.animalPairs.push(animal);
         }
       }
-      // for (i = 0; i < 10; i++) {
-      //   let animalsLength = this.animals.length;
-      //   // let animal = Math.floor(Math.random() * Math.floor(animalsLength));
-      //   let animal = getRandomNumber(animalsLength);
-      //   this.animalPairs.push(animal);
-      // }
+
       console.log(this.animalPairs);
     }
   }
