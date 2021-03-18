@@ -1,10 +1,12 @@
 <template>
   <section class="quiz">
     <h2>Animal Speed Quiz</h2>
-    <p>Which animal is faster?</p>
+    <p>Five questions to see if you know which animal is faster</p>
 
-    <div>{{ buildAnimalArray() }}</div>
-    <button>Start Quiz</button>
+    <!-- <div>{{ buildAnimalArray() }}</div> -->
+    <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
+      Start Quiz
+    </button>
   </section>
 </template>
 
@@ -22,7 +24,8 @@ export default {
       playerWin: false,
       animalPairs: [],
       questionCounter: 0,
-      userScore: 0
+      userScore: 0,
+      quizStarted: false
     };
   },
   methods: {
@@ -36,7 +39,7 @@ export default {
           this.animalPairs.push(animal);
         }
       }
-
+      this.quizStarted = true;
       console.log(this.animalPairs);
     }
   }
