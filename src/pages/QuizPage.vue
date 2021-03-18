@@ -3,6 +3,7 @@
     <h2>Animal Speed Quiz</h2>
     <p>Which animal is faster?</p>
     <p>{{ animals[0] }}</p>
+    <div>{{ getRandomAnimals }}</div>
   </section>
 </template>
 
@@ -18,7 +19,12 @@ export default {
     };
   },
   methods: {
-    getRandomAnimals() {}
+    getRandomAnimals() {
+      let animalsLength = this.animals.length;
+      let animal1 = Math.random(50);
+      console.log(animalsLength);
+      console.log(animal1);
+    }
   }
 };
 </script>
