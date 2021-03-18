@@ -33,7 +33,7 @@ export default {
   /* flex-direction: column; */
   justify-content: space-around;
 
-  max-width: 600px;
+  max-width: 550px;
   margin: 1vmin auto;
   padding: 2vmin 2vmin;
 
