@@ -101,6 +101,7 @@ a {
 
 a:hover {
   color: var(--muted-yellow);
+  transition: 0.3s;
 }
 
 a:active,

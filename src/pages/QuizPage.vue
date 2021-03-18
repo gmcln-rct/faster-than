@@ -2,13 +2,17 @@
   <section class="quiz">
     <h2>Animal Speed Quiz</h2>
     <p>Which animal is faster?</p>
-    <p>{{ animals[0] }}</p>
-    <div>{{ getRandomAnimals }}</div>
+
+    <div>{{ buildAnimalArray() }}</div>
   </section>
 </template>
 
 <script>
 import { animals } from '../components/data/animals.js';
+
+function getRandomNumber(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 export default {
   data() {
     return {
@@ -19,11 +23,22 @@ export default {
     };
   },
   methods: {
-    getRandomAnimals() {
+    buildAnimalArray() {
+      let animal;
       let animalsLength = this.animals.length;
-      let animal1 = Math.random(50);
-      console.log(animalsLength);
-      console.log(animal1);
+      while (this.animalPairs.length < 10) {
+        animal = getRandomNumber(animalsLength);
+        if (!this.animalsPair.includes(animal)) {
+          this.animalPairs.push(animal);
+        }
+      }
+      // for (i = 0; i < 10; i++) {
+      //   let animalsLength = this.animals.length;
+      //   // let animal = Math.floor(Math.random() * Math.floor(animalsLength));
+      //   let animal = getRandomNumber(animalsLength);
+      //   this.animalPairs.push(animal);
+      // }
+      console.log(this.animalPairs);
     }
   }
 };
