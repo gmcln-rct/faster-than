@@ -1,7 +1,10 @@
 <template>
   <section class="quiz">
-    <h2>Animal Speed Quiz</h2>
-    <p>Five questions to see if you know which animal is faster</p>
+    <!-- <h2>Animal Speed Quiz</h2> -->
+    <h2 v-if="!quizStarted">
+      Five questions to see if you know which animal is faster
+    </h2>
+    <h2 v-else>Which animal is faster?</h2>
 
     <!-- <div>{{ buildAnimalArray() }}</div> -->
     <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
@@ -57,6 +60,14 @@ export default {
 h2 {
   margin: 2vmin 0;
   font-size: var(--large-size);
+  color: #fff;
+}
+
+p {
+  margin: 2vmin 0;
+  font-size: var(--large-size);
+  font-weight: 600;
+  text-align: center;
   color: #fff;
 }
 </style>

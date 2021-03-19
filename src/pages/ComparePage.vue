@@ -11,7 +11,9 @@
           class="select-css"
           v-model="animal1"
         ></base-select>
-        <p v-if="!animal1IsValid">Please select an animal</p>
+        <p class="animal-valid" v-if="!animal1IsValid">
+          Please select an animal
+        </p>
       </span>
       <span class="vs">vs.</span>
       <span class="animal-card">
@@ -24,7 +26,9 @@
           v-model="animal2"
         ></base-select>
 
-        <p v-if="!animal2IsValid">Please select an animal</p>
+        <p class="animal-valid" v-if="!animal2IsValid">
+          Please select an animal
+        </p>
       </span>
     </div>
     <button v-on:click.stop="compareAnimals">Which is faster?</button>
@@ -93,6 +97,16 @@ export default {
   methods: {
     validateSelects() {
       console.log('This is validating');
+      if (this.animal1 === 'noanimal') {
+        this.animal1IsValid = false;
+      } else {
+        this.animal1IsValid = true;
+      }
+      if (this.animal1 === 'noanimal') {
+        this.animal2IsValid = false;
+      } else {
+        this.animal2IsValid = true;
+      }
     },
 
     compareAnimals(event) {
@@ -213,6 +227,10 @@ h3 {
   padding: 2vmin 0;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   color: var(--muted-yellow);
+}
+
+.animal-valid {
+  color: red;
 }
 
 button {
