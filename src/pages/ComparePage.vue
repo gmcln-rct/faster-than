@@ -1,6 +1,6 @@
 <template>
   <section class="compare">
-    <h2>Select animals and find out which is faster.</h2>
+    <h2>Select animals to find out which is faster.</h2>
     <div class="compare-selects">
       <span class="animal-card">
         <!-- <h3>Animal 1</h3> -->
@@ -209,7 +209,7 @@ h2 {
 
   font-style: normal;
   font-size: var(--large-size);
-  font-weight: 400;
+  font-weight: 600;
 
   text-align: center;
   color: #fefefe;
@@ -228,6 +228,7 @@ h3 {
 .vs {
   padding: 2vmin 0;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 700;
   color: var(--muted-yellow);
 }
 
