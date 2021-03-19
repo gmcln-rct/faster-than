@@ -183,7 +183,9 @@ export default {
 
 .animal-card {
   margin: 0 2vmin;
-  padding: 2vmin 4vmin;
+  padding: 2vmin 3vmin;
+
+  max-height: 300px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   background-color: #ffffff;
@@ -196,8 +198,10 @@ export default {
   align-items: center; */
   margin: 0 auto;
   padding: 2vmin 0;
-  width: 200px;
-  height: auto;
+  height: 200px;
+  width: auto;
+  max-width: 200px;
+  /* max-height: 300px; */
   filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
     brightness(50%) contrast(101%);
 }
