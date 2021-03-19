@@ -190,12 +190,14 @@ export default {
 }
 
 .animal-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
+  margin: 0 auto;
   padding: 2vmin 0;
   width: 200px;
-  height: 200px;
+  height: auto;
   filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
     brightness(50%) contrast(101%);
 }
@@ -230,7 +232,9 @@ h3 {
 }
 
 .animal-valid {
-  color: red;
+  padding: 1vmin 0 0 0;
+  text-align: center;
+  color: var(--alert);
 }
 
 button {
