@@ -233,7 +233,12 @@ h3 {
   padding: 2vmin 0;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
-  color: var(--muted-yellow);
+  color: #fff;
+
+  background-color: var(--dark-accent);
+
+  /* -webkit-text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
+  text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47); */
 }
 
 .animal-valid {
