@@ -11,11 +11,11 @@
           class="select-css"
           v-model="animal1"
         ></base-select>
-        <p class="animal-valid" v-if="!animal1IsValid">
+        <p class="animal-invalid" v-if="!animal1IsValid">
           Please select an animal
         </p>
       </span>
-      <span class="vs">vs.</span>
+      <span class="vs">vs</span>
       <span class="animal-card">
         <!-- <h3>Animal 2</h3> -->
         <img class="animal-img flip" :src="getAnimalImg(animal2)" />
@@ -26,7 +26,7 @@
           v-model="animal2"
         ></base-select>
 
-        <p class="animal-valid" v-if="!animal2IsValid">
+        <p class="animal-invalid" v-if="!animal2IsValid">
           Please select an animal
         </p>
       </span>
@@ -185,7 +185,7 @@ export default {
   margin: 0 2vmin;
   padding: 2vmin 3vmin;
 
-  max-height: 300px;
+  max-height: 310px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   background-color: #ffffff;
@@ -230,26 +230,29 @@ h3 {
 }
 
 .vs {
-  padding: 2vmin 0;
+  padding: 1vmin 2vmin;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
   color: #fff;
 
-  background-color: var(--dark-accent);
+  background-color: var(--winner);
+  border-radius: 50%;
+  border: 4px solid #fff;
 
   /* -webkit-text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
   text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47); */
 }
 
-.animal-valid {
-  padding: 1vmin 0 0 0;
+.animal-invalid {
+  padding: 1vmin 0;
   text-align: center;
+  font-size: var(--base-size);
   color: var(--alert);
 }
 
 button {
   max-width: 40vw;
-  margin: 3vmin auto 2vmin auto;
+  margin: 4vmin auto 2vmin auto;
   padding: 1vmin 3vmin;
 
   font-size: var(--large-size);
