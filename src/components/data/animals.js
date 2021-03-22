@@ -13,7 +13,7 @@ export const animals = [
     scientificName: 'Periplaneta americana',
     speed: 3.4,
     siteLink: 'https://en.wikipedia.org/wiki/American_cockroach',
-    img: 'https://faster-than.s3.amazonaws.com/periplanetaamericana.svg'
+    img: 'https://faster-than.s3.amazonaws.com/americancockroach.svg'
   },
   {
     id: 'animal003',
@@ -277,7 +277,7 @@ export const animals = [
     scientificName: 'Eratigena atrica',
     speed: 1.2,
     siteLink: 'https://en.wikipedia.org/wiki/Giant_house_spider',
-    img: 'https://faster-than.s3.amazonaws.com/eratigenaatrica.svg'
+    img: 'https://faster-than.s3.amazonaws.com/gianthousespider.svg'
   },
   {
     id: 'animal036',
