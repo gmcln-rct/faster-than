@@ -32,6 +32,9 @@
       </span>
     </div>
     <button v-on:click.stop="compareAnimals">Which is faster?</button>
+    <p class="duplicate-animal" v-show="duplicateAnimal">
+      Please select different animals.
+    </p>
   </section>
   <transition name="winner">
     <the-winner
@@ -74,6 +77,7 @@ export default {
       selectText2: '2',
       animal1IsValid: true,
       animal2IsValid: true,
+      duplicateAnimal: false,
       currentWinner: '',
       currentWinnerObj: {
         commonName: '',
@@ -97,6 +101,8 @@ export default {
   methods: {
     validateSelects() {
       console.log('This is validating');
+      this.duplicateAnimal = false;
+
       if (this.animal1 === 'noanimal') {
         this.animal1IsValid = false;
       } else {
@@ -106,6 +112,11 @@ export default {
         this.animal2IsValid = false;
       } else {
         this.animal2IsValid = true;
+      }
+      if (this.animal1 !== 'noanimal' && this.animal1 === this.animal2) {
+        this.duplicateAnimal = true;
+      } else {
+        this.duplicateAnimal = false;
       }
     },
 
@@ -283,6 +294,10 @@ button:active {
   transition: 0.4s;
 }
 
+.duplicate-animal {
+  text-align: center;
+  color: #fff;
+}
 .small {
   padding: 5vmin;
 }
