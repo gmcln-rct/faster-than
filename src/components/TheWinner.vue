@@ -34,7 +34,7 @@ export default {
   justify-content: space-around;
 
   max-width: 600px;
-  margin: 1vmin auto;
+  margin: 2vmin auto;
   padding: 2vmin 2vmin;
 
   font-family: var(--roboto);
@@ -45,7 +45,7 @@ export default {
   background-color: var(--winner);
 
   border-radius: 10px;
-  border: 5px solid rgba(255, 255, 255, 0.6);
+  border: 5px solid rgba(255, 255, 255, 0.9);
 
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),

@@ -10,6 +10,7 @@
     <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
       Start Quiz
     </button>
+    <h3 v-if="quizStarted">Question {{ questionCounter }}</h3>
   </section>
 </template>
 
@@ -43,6 +44,7 @@ export default {
         }
       }
       this.quizStarted = true;
+      this.questionCounter = 1;
       console.log(this.animalPairs);
     }
   }
