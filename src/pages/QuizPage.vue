@@ -4,26 +4,30 @@
     <h2 v-if="!quizStarted">
       Five questions to see if you know which animal is faster
     </h2>
-    <h2 v-else>Which animal is faster?</h2>
+
     <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
       Start Quiz
     </button>
 
     <!-- <div>{{ buildAnimalArray() }}</div> -->
-    <section v-if="quizStarted">
-      <h3 v-if="quizStarted">Question {{ questionCounter }}</h3>
-      <base-card v-on:click.stop="checkQuestion" class="quiz-card">
-        <img :src="animals[currentPair[0]].img" />
-        <p>{{ animals[currentPair[0]].commonName }}</p>
-      </base-card>
-      <base-card v-on:click.stop="checkQuestion" class="quiz-card">
-        <img :src="animals[currentPair[1]].img" />
-        <p>{{ animals[currentPair[1]].commonName }}</p>
-      </base-card>
+    <section v-if="quizStarted" class="quiz-question">
+      <h3>Question {{ questionCounter }}</h3>
+      <h2>Click on faster animal</h2>
+      <div class="quiz-options">
+        <base-card v-on:click.stop="checkQuestion(0)" class="quiz-card">
+          <img :src="animals[currentPair[0]].img" />
+          <p>{{ animals[currentPair[0]].commonName }}</p>
+        </base-card>
+        <span class="vs">or</span>
+        <base-card v-on:click.stop="checkQuestion(1)" class="quiz-card">
+          <img :src="animals[currentPair[1]].img" />
+          <p>{{ animals[currentPair[1]].commonName }}</p>
+        </base-card>
+      </div>
 
-      <button v-on:click.stop="checkQuestion">
+      <!-- <button v-on:click.stop="checkQuestion">
         Which is dast
-      </button>
+      </button> -->
     </section>
   </main>
 </template>
@@ -66,7 +70,8 @@ export default {
       console.log(this.animalPairs);
       console.log('Current Pair ', this.currentPair);
     },
-    checkQuestion() {
+    checkQuestion(animalNum) {
+      console.log('Animal num ' + { animalNum });
       console.log('Checking question');
     }
   }
@@ -81,6 +86,12 @@ export default {
   align-items: center;
 }
 
+.quiz-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .quiz-card img {
   background-color: green;
   margin: 0 auto;
@@ -88,6 +99,12 @@ export default {
   height: 200px;
   width: auto;
   max-width: 200px;
+}
+
+.quiz-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
