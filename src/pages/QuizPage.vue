@@ -11,14 +11,15 @@
 
     <!-- <div>{{ buildAnimalArray() }}</div> -->
     <section v-if="quizStarted" class="quiz-question">
-      <h3>Question {{ questionCounter }}</h3>
-      <h2>Click on faster animal</h2>
+      <h3>Your Score {{ userScore }}</h3>
+      <h4>Question {{ questionCounter }}</h4>
+      <h5>Click on faster animal</h5>
       <div class="quiz-options">
         <base-card v-on:click.stop="checkQuestion(0)" class="quiz-card">
           <img :src="animals[currentPair[0]].img" />
           <p>{{ animals[currentPair[0]].commonName }}</p>
         </base-card>
-        <span class="vs">or</span>
+        <span class="or">or</span>
         <base-card v-on:click.stop="checkQuestion(1)" class="quiz-card">
           <img :src="animals[currentPair[1]].img" />
           <p>{{ animals[currentPair[1]].commonName }}</p>
@@ -143,5 +144,19 @@ p {
   font-weight: 600;
   text-align: center;
   color: #fff;
+}
+
+.or {
+  padding: 1vmin 2vmin;
+  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 700;
+  color: var(--winner);
+
+  background-color: #fff;
+  border-radius: 50%;
+  border: 4px solid var(--winner);
+
+  /* -webkit-text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
+  text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47); */
 }
 </style>

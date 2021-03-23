@@ -46,7 +46,7 @@ export default {
 
   --highlight-yellow: #d86a2c;
   --muted-yellow: #fde8a9;
-  --deep-yellow: #fcda76;
+  --deep-yellow: #f7e963;
   --amber: #fcdd60;
   --alert: #e63122;
 
