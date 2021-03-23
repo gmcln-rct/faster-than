@@ -11,6 +11,7 @@
 
     <!-- <div>{{ buildAnimalArray() }}</div> -->
     <section v-if="quizStarted" class="quiz-question">
+      <h3>Current Round: {{ currentRound }}</h3>
       <h3>Your Score {{ userScore }}</h3>
       <h4>Question {{ questionCounter }}</h4>
       <h5>Click on faster animal</h5>
@@ -75,9 +76,13 @@ export default {
     },
     checkQuestion(animalNum) {
       let currentWinner;
-      console.log('Animal num ' + animalNum);
-      console.log('Checking question');
-      if (animals[this.currentPair[0]].speed > animals[this.currentPair[1]]) {
+      console.log('Selected Animal ' + animalNum);
+      // console.log('type ' + typeof animalNum);
+      console.log('Animal 1 speed ' + this.currentPair[0].speed);
+      console.log('Animal 2 speed ' + this.currentPair[1].speed); // console.log('Checking question');
+      if (
+        animals[this.currentPair[0]].speed > animals[this.currentPair[1]].speed
+      ) {
         currentWinner = 0;
       } else {
         currentWinner = 1;
@@ -94,6 +99,8 @@ export default {
       } else {
         this.quizEnded = true;
       }
+      this.currentRound++;
+      this.currentPair = this.animalPairs.splice(0, 2);
       console.log('Current winner ' + currentWinner);
       console.log('Userscore ' + this.userScore);
       // let animal1 = animals[this.currentPair[0]];
