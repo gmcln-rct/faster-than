@@ -49,6 +49,7 @@ export default {
       questionCounter: 0,
       userScore: 0,
       quizStarted: false,
+      quizEnded: false,
       currentPair: []
     };
   },
@@ -64,6 +65,7 @@ export default {
         }
       }
       this.quizStarted = true;
+      this.quizEnded = false;
       this.questionCounter = 1;
       this.currentPair = this.animalPairs.splice(0, 2);
 
@@ -71,8 +73,30 @@ export default {
       console.log('Current Pair ', this.currentPair);
     },
     checkQuestion(animalNum) {
-      console.log('Animal num ' + { animalNum });
+      let currentWinner;
+      console.log('Animal num ' + animalNum);
       console.log('Checking question');
+      if (animals[this.currentPair[0]].speed > animals[this.currentPair[1]]) {
+        currentWinner = 0;
+      } else {
+        currentWinner = 1;
+      }
+      if ((animalNum = currentWinner)) {
+        console.log('You are correct');
+        this.userScore++;
+      } else {
+        console.log('Nein');
+      }
+      if (this.animalPairs > 0) {
+        this.currentPair = this.animalPairs.splice(0, 2);
+        console.log('Current Pair ' + this.currentPair);
+      } else {
+        this.quizEnded = true;
+      }
+      console.log('Current winner ' + currentWinner);
+      console.log('Userscore ' + this.userScore);
+      // let animal1 = animals[this.currentPair[0]];
+      // let animal2 = animals[this.currentPair[1]];
     }
   }
 };
