@@ -24,14 +24,12 @@
         </base-card>
         <span class="or">or</span>
         <base-card v-on:click.stop="checkQuestion(1)" class="quiz-card">
-          <img :src="animals[currentPair[1]].img" />
+          <img :src="animals[currentPair[1]].img" class="flip" />
           <p>{{ animals[currentPair[1]].commonName }}</p>
         </base-card>
       </div>
 
-      <!-- <button v-on:click.stop="checkQuestion">
-        Which is dast
-      </button> -->
+      <p class="correct-answer">A is faster than B</p>
     </section>
     <section v-if="quizEnded">
       <p>Quiz ended</p>
@@ -61,6 +59,8 @@ export default {
       userScore: 0,
       quizStarted: false,
       quizEnded: false,
+      currentWinner: null,
+      currentLoser: null,
       currentPair: []
     };
   },
@@ -101,7 +101,7 @@ export default {
         console.log('You are correct');
         this.userScore++;
       } else {
-        console.log('Nein');
+        console.log('Dumbkopf!');
       }
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
@@ -149,10 +149,19 @@ export default {
 .quiz-card img {
   /* background-color: green; */
   margin: 0 auto;
-  padding: 2vmin 0;
+  padding: 2vmin 1vmin;
   height: 200px;
   width: 250px;
   /* max-width: 200px; */
+
+  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(120deg)
+    brightness(60%) contrast(101%);
+}
+
+.quiz-card .flip {
+  transform: scaleX(-1);
+  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(120deg)
+    brightness(80%) contrast(101%);
 }
 
 .quiz-options {
@@ -177,7 +186,7 @@ p {
   font-size: var(--large-size);
   font-weight: 600;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 .or {
@@ -190,8 +199,15 @@ p {
   background-color: #fff;
   border-radius: 50%;
   border: 4px solid var(--winner);
-
-  /* -webkit-text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
-  text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47); */
 }
+
+.correct-answer {
+  color: #fff;
+}
+/* 
+.flip {
+  transform: scaleX(-1);
+  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(120deg)
+    brightness(80%) contrast(101%);
+} */
 </style>
