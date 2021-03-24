@@ -13,9 +13,9 @@
 
     <!-- <div>{{ buildAnimalArray() }}</div> -->
     <section v-if="quizStarted && !quizEnded" class="quiz-question">
-      <h3>Current Round: {{ currentRound }}</h3>
+      <h3>Question #: {{ currentRound }}</h3>
       <h3>Your Score {{ userScore }}</h3>
-      <h4>Question {{ questionCounter }}</h4>
+      <!-- <h4>Question {{ questionCounter }}</h4> -->
       <h5>Click on faster animal</h5>
       <div class="quiz-options">
         <base-card v-on:click.stop="checkQuestion(0)" class="quiz-card">
@@ -29,9 +29,13 @@
         </base-card>
       </div>
       <div v-show="currentWinner" class="correct-answer">
-        <p>
-          {{ animals[currentPair[currentWinner]].commonName }} is faster than
-          {{ animals[currentPair[currentLoser]].commonName }}
+        <p v-show="isCorrect">Correct!</p>
+        <p v-show="!isCorrect">Incorrect</p>
+
+        <p v-show="currentWinner">
+          {{ currentPair[0].commonName }}
+          <!-- {{ animals[currentPair[currentWinner]].commonName }} is faster than
+          {{ animals[currentPair[currentLoser]].commonName }} -->
         </p>
         <button v-on:click.stop="nextQuestion">
           Next Question
@@ -93,20 +97,26 @@ export default {
       console.log('Current Pair ', this.currentPair);
     },
     checkQuestion(selectedAnimal) {
+      let winnerIndex;
       console.log('Selected Animal ' + selectedAnimal);
       // console.log('type ' + typeof selectedAnimal);
-      console.log('Animal 1 speed ' + this.currentPair[0].speed);
-      console.log('Animal 2 speed ' + this.currentPair[1].speed); // console.log('Checking question');
+
+      console.log('Animal 1 speed: ' + animals[this.currentPair[0]].speed);
+      console.log('Animal 2 speed: ' + animals[this.currentPair[1]].speed);
+
       if (
         animals[this.currentPair[0]].speed > animals[this.currentPair[1]].speed
       ) {
-        this.currentWinner = 0;
-        this.currentLoser = 1;
+        winnerIndex = 0;
+        this.currentWinner = animals[this.currentPair[0]];
+        this.currentLoser = animals[this.currentPair[1]];
       } else {
-        this.currentWinner = 1;
-        this.currentLoser = 0;
+        winnerIndex = 1;
+        this.currentWinner = animals[this.currentPair[1]];
+        this.currentLoser = animals[this.currentPair[0]];
       }
-      if ((selectedAnimal = this.currentWinner)) {
+      console.log('current winner ' + this.currentWinner.commonName);
+      if (selectedAnimal === winnerIndex) {
         console.log('You are correct');
         this.isCorrect = true;
         this.userScore++;
