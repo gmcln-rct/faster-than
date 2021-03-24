@@ -109,7 +109,11 @@ export default {
       } else if (this.animalPairs === 0) {
         this.quizEnded = true;
       }
-      this.currentRound++;
+      if (this.currentRound >= 5) {
+        this.quizEnded = true;
+      } else {
+        this.currentRound++;
+      }
       this.currentPair = this.animalPairs.splice(0, 2);
       console.log('Current winner ' + currentWinner);
       console.log('Userscore ' + this.userScore);
@@ -132,13 +136,23 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
+.quiz-card {
+  margin: 0 2vmin;
+  padding: 2vmin 3vmin;
+
+  max-height: 310px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background-color: #ffffff;
+}
 .quiz-card img {
-  background-color: green;
+  /* background-color: green; */
   margin: 0 auto;
   padding: 2vmin 0;
   height: 200px;
-  width: auto;
-  max-width: 200px;
+  width: 250px;
+  /* max-width: 200px; */
 }
 
 .quiz-options {
