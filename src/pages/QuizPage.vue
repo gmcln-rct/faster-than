@@ -28,8 +28,15 @@
           <p>{{ animals[currentPair[1]].commonName }}</p>
         </base-card>
       </div>
-
-      <p class="correct-answer">A is faster than B</p>
+      <div v-show="currentWinner" class="correct-answer">
+        <p>
+          {{ animals[currentPair[currentWinner]].commonName }} is faster than
+          {{ animals[currentPair[currentLoser]].commonName }}
+        </p>
+        <button v-on:click.stop="nextQuestion">
+          Next Question
+        </button>
+      </div>
     </section>
     <section v-if="quizEnded">
       <p>Quiz ended</p>
@@ -52,16 +59,17 @@ export default {
   data() {
     return {
       animals: animals,
-      currentRound: 0,
       playerWin: false,
       animalPairs: [],
       questionCounter: 0,
       userScore: 0,
       quizStarted: false,
       quizEnded: false,
+      currentRound: 0,
       currentWinner: null,
       currentLoser: null,
-      currentPair: []
+      currentPair: [],
+      isCorrect: false
     };
   },
   methods: {
@@ -84,25 +92,45 @@ export default {
       console.log(this.animalPairs);
       console.log('Current Pair ', this.currentPair);
     },
-    checkQuestion(animalNum) {
-      let currentWinner;
-      console.log('Selected Animal ' + animalNum);
-      // console.log('type ' + typeof animalNum);
+    checkQuestion(selectedAnimal) {
+      console.log('Selected Animal ' + selectedAnimal);
+      // console.log('type ' + typeof selectedAnimal);
       console.log('Animal 1 speed ' + this.currentPair[0].speed);
       console.log('Animal 2 speed ' + this.currentPair[1].speed); // console.log('Checking question');
       if (
         animals[this.currentPair[0]].speed > animals[this.currentPair[1]].speed
       ) {
-        currentWinner = 0;
+        this.currentWinner = 0;
+        this.currentLoser = 1;
       } else {
-        currentWinner = 1;
+        this.currentWinner = 1;
+        this.currentLoser = 0;
       }
-      if ((animalNum = currentWinner)) {
+      if ((selectedAnimal = this.currentWinner)) {
         console.log('You are correct');
+        this.isCorrect = true;
         this.userScore++;
       } else {
+        this.isCorrect = false;
         console.log('Dumbkopf!');
       }
+      // if (this.animalPairs > 0) {
+      //   this.currentPair = this.animalPairs.splice(0, 2);
+      //   console.log('Current Pair ' + this.currentPair);
+      // } else if (this.animalPairs === 0) {
+      //   this.quizEnded = true;
+      // }
+      // if (this.currentRound >= 5) {
+      //   this.quizEnded = true;
+      // } else {
+      //   this.currentRound++;
+      // }
+      // this.currentPair = this.animalPairs.splice(0, 2);
+      // console.log('Current winner ' + currentWinner);
+      // console.log('Userscore ' + this.userScore);
+    },
+    nextQuestion() {
+      console.log('Next round');
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
         console.log('Current Pair ' + this.currentPair);
@@ -115,7 +143,7 @@ export default {
         this.currentRound++;
       }
       this.currentPair = this.animalPairs.splice(0, 2);
-      console.log('Current winner ' + currentWinner);
+      console.log('Current winner ' + this.currentWinner);
       console.log('Userscore ' + this.userScore);
     }
   }
@@ -146,6 +174,23 @@ export default {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   background-color: #ffffff;
 }
+
+.quiz-card:hover,
+.quiz-card:active {
+  background-color: var(--winner);
+  transition: 0.3s;
+}
+
+.quiz-card:hover img {
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+.quiz-card:hover p {
+  color: #fff;
+  transition: 0.3s;
+}
+
 .quiz-card img {
   /* background-color: green; */
   margin: 0 auto;
