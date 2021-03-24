@@ -1,16 +1,18 @@
 <template>
   <main class="quiz">
     <!-- <h2>Animal Speed Quiz</h2> -->
-    <h2 v-if="!quizStarted">
-      Five questions to see if you know which animal is faster
-    </h2>
+    <section v-if="!quizStarted">
+      <h2>
+        Five questions to see if you know which animal is faster
+      </h2>
 
-    <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
-      Start Quiz
-    </button>
+      <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
+        Start Quiz
+      </button>
+    </section>
 
     <!-- <div>{{ buildAnimalArray() }}</div> -->
-    <section v-if="quizStarted" class="quiz-question">
+    <section v-if="quizStarted && !quizEnded" class="quiz-question">
       <h3>Current Round: {{ currentRound }}</h3>
       <h3>Your Score {{ userScore }}</h3>
       <h4>Question {{ questionCounter }}</h4>
@@ -30,6 +32,13 @@
       <!-- <button v-on:click.stop="checkQuestion">
         Which is dast
       </button> -->
+    </section>
+    <section v-if="quizEnded">
+      <p>Quiz ended</p>
+      <h3>Your Score {{ userScore }}</h3>
+      <button v-on:click.stop="buildAnimalArray">
+        Start New Quiz
+      </button>
     </section>
   </main>
 </template>
@@ -69,6 +78,7 @@ export default {
       this.quizStarted = true;
       this.quizEnded = false;
       this.questionCounter = 1;
+      this.currentRound++;
       this.currentPair = this.animalPairs.splice(0, 2);
 
       console.log(this.animalPairs);
@@ -96,15 +106,13 @@ export default {
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
         console.log('Current Pair ' + this.currentPair);
-      } else {
+      } else if (this.animalPairs === 0) {
         this.quizEnded = true;
       }
       this.currentRound++;
       this.currentPair = this.animalPairs.splice(0, 2);
       console.log('Current winner ' + currentWinner);
       console.log('Userscore ' + this.userScore);
-      // let animal1 = animals[this.currentPair[0]];
-      // let animal2 = animals[this.currentPair[1]];
     }
   }
 };
@@ -144,6 +152,11 @@ h2 {
   font-size: var(--large-size);
   color: #fff;
 }
+h5 {
+  font-size: var(--large-size);
+
+  color: #fff;
+}
 
 p {
   margin: 2vmin 0;
@@ -154,6 +167,7 @@ p {
 }
 
 .or {
+  margin: 0 2vmin;
   padding: 1vmin 2vmin;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
