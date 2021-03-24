@@ -257,39 +257,6 @@ h3 {
   color: var(--alert);
 }
 
-button {
-  max-width: 40vw;
-  margin: 4vmin auto 2vmin auto;
-  padding: 1vmin 3vmin;
-
-  font-size: var(--large-size);
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-  background-color: var(--highlight-yellow);
-  color: #fff;
-  border: 3px solid #fff;
-  cursor: pointer;
-  border-radius: 10px;
-
-  -webkit-box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
-  box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
-
-  transition: 0.4s;
-}
-
-button:hover,
-button:active {
-  /* border-color: #002350;
-  background-color: #002350; */
-  color: var(--highlight-yellow);
-  background-color: #fff;
-  border: 3px solid var(--highlight-yellow);
-
-  transition: 0.4s;
-}
-
 .duplicate-animal {
   text-align: center;
   color: #fff;

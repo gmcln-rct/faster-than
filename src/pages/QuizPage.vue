@@ -1,29 +1,28 @@
 <template>
   <main class="quiz">
-    <!-- <h2>Animal Speed Quiz</h2> -->
-    <section v-if="!quizStarted">
+    <!-- Quiz Start -->
+    <section v-if="!quizStarted" class="center">
       <h2>
         Five questions to see if you know which animal is faster
       </h2>
-
       <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
         Start Quiz
       </button>
     </section>
 
-    <!-- <div>{{ buildAnimalArray() }}</div> -->
-    <section v-if="quizStarted && !quizEnded" class="quiz-question">
-      <h3>Question #: {{ currentRound }}</h3>
+    <!-- Question -->
+    <section v-if="quizStarted && !quizEnded" class="center">
+      <h3>Question #: {{ questionCounter }}</h3>
       <h3>Your Score {{ userScore }}</h3>
       <!-- <h4>Question {{ questionCounter }}</h4> -->
       <h5>Click on faster animal</h5>
       <div class="quiz-options">
-        <base-card v-on:click.stop="checkQuestion(0)" class="quiz-card">
+        <base-card @click.stop="checkQuestion(0)" :class="cardClass">
           <img :src="animals[currentPair[0]].img" />
           <p>{{ animals[currentPair[0]].commonName }}</p>
         </base-card>
         <span class="or">or</span>
-        <base-card v-on:click.stop="checkQuestion(1)" class="quiz-card">
+        <base-card @click.stop="checkQuestion(1)" :class="cardClass">
           <img :src="animals[currentPair[1]].img" class="flip" />
           <p>{{ animals[currentPair[1]].commonName }}</p>
         </base-card>
@@ -32,17 +31,16 @@
         <p v-show="isCorrect">Correct!</p>
         <p v-show="!isCorrect">Incorrect</p>
 
-        <p v-show="currentWinner">
-          {{ currentPair[0].commonName }}
-          <!-- {{ animals[currentPair[currentWinner]].commonName }} is faster than
-          {{ animals[currentPair[currentLoser]].commonName }} -->
+        <p v-show="currentWinner !== null">
+          <!-- {{ currentWinner.commonName }} is faster than
+          {{ currentLoser.commonName }} -->
         </p>
         <button v-on:click.stop="nextQuestion">
           Next Question
         </button>
       </div>
     </section>
-    <section v-if="quizEnded">
+    <section v-if="quizEnded" class="center">
       <p>Quiz ended</p>
       <h3>Your Score {{ userScore }}</h3>
       <button v-on:click.stop="buildAnimalArray">
@@ -63,7 +61,6 @@ export default {
   data() {
     return {
       animals: animals,
-      playerWin: false,
       animalPairs: [],
       questionCounter: 0,
       userScore: 0,
@@ -73,9 +70,11 @@ export default {
       currentWinner: null,
       currentLoser: null,
       currentPair: [],
-      isCorrect: false
+      isCorrect: false,
+      cardClass: 'quiz-card'
     };
   },
+
   methods: {
     buildAnimalArray() {
       let animal;
@@ -90,7 +89,6 @@ export default {
       this.quizStarted = true;
       this.quizEnded = false;
       this.questionCounter = 1;
-      this.currentRound++;
       this.currentPair = this.animalPairs.splice(0, 2);
 
       console.log(this.animalPairs);
@@ -98,6 +96,9 @@ export default {
     },
     checkQuestion(selectedAnimal) {
       let winnerIndex;
+
+      // this.btnDisabled = true;
+      this.cardClass = 'quiz-card disabled';
       console.log('Selected Animal ' + selectedAnimal);
       // console.log('type ' + typeof selectedAnimal);
 
@@ -124,33 +125,20 @@ export default {
         this.isCorrect = false;
         console.log('Dumbkopf!');
       }
-      // if (this.animalPairs > 0) {
-      //   this.currentPair = this.animalPairs.splice(0, 2);
-      //   console.log('Current Pair ' + this.currentPair);
-      // } else if (this.animalPairs === 0) {
-      //   this.quizEnded = true;
-      // }
-      // if (this.currentRound >= 5) {
-      //   this.quizEnded = true;
-      // } else {
-      //   this.currentRound++;
-      // }
-      // this.currentPair = this.animalPairs.splice(0, 2);
-      // console.log('Current winner ' + currentWinner);
-      // console.log('Userscore ' + this.userScore);
     },
     nextQuestion() {
       console.log('Next round');
+      this.cardClass = 'quiz-card';
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
         console.log('Current Pair ' + this.currentPair);
       } else if (this.animalPairs === 0) {
         this.quizEnded = true;
       }
-      if (this.currentRound >= 5) {
+      if (this.questionCounter >= 5) {
         this.quizEnded = true;
       } else {
-        this.currentRound++;
+        this.questionCounter++;
       }
       this.currentPair = this.animalPairs.splice(0, 2);
       console.log('Current winner ' + this.currentWinner);
@@ -168,7 +156,7 @@ export default {
   align-items: center;
 }
 
-.quiz-question {
+.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,8 +173,7 @@ export default {
   background-color: #ffffff;
 }
 
-.quiz-card:hover,
-.quiz-card:active {
+.quiz-card:hover {
   background-color: var(--winner);
   transition: 0.3s;
 }
@@ -258,6 +245,12 @@ p {
 
 .correct-answer {
   color: #fff;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: gray;
+  /* background-color: gray; */
 }
 /* 
 .flip {

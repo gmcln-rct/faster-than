@@ -34,49 +34,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-* {
-  box-sizing: border-box;
-
-  --light-shades: #f5eff1;
-  --light-accent: #7de4f8;
-  --main-brand: #7c5a9c;
-  --dark-accent: #004d7a;
-  --dark-shades: #17161c;
-
-  --highlight-yellow: #d86a2c;
-  --muted-yellow: #fde8a9;
-  --deep-yellow: #f7e963;
-  --amber: #fcdd60;
-  --alert: #e63122;
-
-  --winner: #258f5c;
-  --base-size: 16px;
-  --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
-  --large-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
-  --huge-size: calc(42px + (56 - 42) * ((100vw - 300px) / (1600 - 300)));
-
-  --roboto: 'Roboto', sans-serif;
-}
-
-html {
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  margin: 0;
-  letter-spacing: 1px;
-
-  background-image: linear-gradient(
-    to right top,
-    #272e3a,
-    #004d7a,
-    #2d878f,
-    #4bbe90,
-    #c5ee6d
-  );
-}
-
 /* RESET */
 /* Box sizing rules */
 *,
@@ -164,5 +121,80 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+* {
+  box-sizing: border-box;
+
+  --light-shades: #f5eff1;
+  --light-accent: #7de4f8;
+  --main-brand: #7c5a9c;
+  --dark-accent: #004d7a;
+  --dark-shades: #17161c;
+
+  --highlight-yellow: #d86a2c;
+  --muted-yellow: #fde8a9;
+  --deep-yellow: #f7e963;
+  --amber: #fcdd60;
+  --alert: #e63122;
+
+  --winner: #258f5c;
+  --base-size: 16px;
+  --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
+  --large-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+  --huge-size: calc(42px + (56 - 42) * ((100vw - 300px) / (1600 - 300)));
+
+  --roboto: 'Roboto', sans-serif;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  letter-spacing: 1px;
+
+  background-image: linear-gradient(
+    to right top,
+    #272e3a,
+    #004d7a,
+    #2d878f,
+    #4bbe90,
+    #c5ee6d
+  );
+}
+
+button {
+  max-width: 40vw;
+  margin: 4vmin auto 2vmin auto;
+  padding: 1vmin 3vmin;
+
+  font-size: var(--large-size);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: var(--highlight-yellow);
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+  border-radius: 10px;
+
+  -webkit-box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
+  box-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
+
+  transition: 0.4s;
+}
+
+button:hover,
+button:active {
+  /* border-color: #002350;
+  background-color: #002350; */
+  color: var(--highlight-yellow);
+  background-color: #fff;
+  border: 3px solid var(--highlight-yellow);
+
+  transition: 0.4s;
 }
 </style>
