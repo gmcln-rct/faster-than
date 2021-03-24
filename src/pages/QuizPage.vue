@@ -1,5 +1,6 @@
 <template>
   <main class="quiz">
+    <h1>Animal Speed Quiz</h1>
     <!-- Quiz Start -->
     <section v-if="!quizStarted" class="center">
       <h2>
@@ -12,10 +13,10 @@
 
     <!-- Question -->
     <section v-if="quizStarted && !quizEnded" class="center">
-      <h3>Question #: {{ questionCounter }}</h3>
-      <h3>Your Score {{ userScore }}</h3>
-      <!-- <h4>Question {{ questionCounter }}</h4> -->
-      <h5>Click on faster animal</h5>
+      <div class="quiz-stats center">
+        <h3>Question #{{ questionCounter }}</h3>
+        <h3>Current Score: {{ userScore }}</h3>
+      </div>
       <div class="quiz-options">
         <base-card @click.stop="checkQuestion(0)" :class="cardClass">
           <img :src="animals[currentPair[0]].img" />
@@ -27,6 +28,8 @@
           <p>{{ animals[currentPair[1]].commonName }}</p>
         </base-card>
       </div>
+      <h5 v-show="!currentWinner"><em>Click on faster animal</em></h5>
+
       <div v-show="currentWinner" class="correct-answer">
         <p v-show="isCorrect">Correct!</p>
         <p v-show="!isCorrect">Incorrect</p>
@@ -41,9 +44,9 @@
       </div>
     </section>
     <section v-if="quizEnded" class="center">
-      <p>Quiz ended</p>
-      <h3>Your Score {{ userScore }}</h3>
-      <button v-on:click.stop="buildAnimalArray">
+      <p>Quiz Complete!</p>
+      <h3>Your Score: {{ userScore }} out of 5</h3>
+      <button v-on:click.stop="buildAnimalArray" class="new-quiz-btn">
         Start New Quiz
       </button>
     </section>
@@ -149,6 +152,25 @@ export default {
 </script>
 
 <style scoped scss>
+h1 {
+  width: 100%;
+  padding: 1vmin 0;
+  font-size: var(--extra-large-size);
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #fff;
+}
+
+h3 {
+  font-size: var(--large-size);
+}
 .quiz {
   display: flex;
   flex-direction: column;
@@ -156,16 +178,16 @@ export default {
   align-items: center;
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.quiz-stats {
+  margin: 1vmin 0 2vmin 0;
+  padding: 1vmin 2vmin;
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
 }
 
 .quiz-card {
   margin: 0 2vmin;
-  padding: 2vmin 3vmin;
+  padding: 2vmin 3vmin 1vmin 3vmin;
 
   max-height: 310px;
   border-radius: 12px;
@@ -212,6 +234,12 @@ export default {
   align-items: center;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 h2 {
   margin: 2vmin 0;
   font-size: var(--large-size);
@@ -224,7 +252,7 @@ h5 {
 }
 
 p {
-  margin: 2vmin 0;
+  margin: 2vmin 0 1vmin 0;
   font-size: var(--large-size);
   font-weight: 600;
   text-align: center;
@@ -243,7 +271,14 @@ p {
   border: 4px solid var(--winner);
 }
 
-.correct-answer {
+button {
+  margin: 1vmin auto 2vmin auto;
+}
+
+.new-quiz-btn {
+  margin: 3vmin 0;
+}
+.correct-answer p {
   color: #fff;
 }
 

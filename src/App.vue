@@ -123,6 +123,8 @@ select {
   }
 }
 
+/* End Reset */
+
 * {
   box-sizing: border-box;
 
@@ -142,6 +144,7 @@ select {
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   --large-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+  --extra-large-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
   --huge-size: calc(42px + (56 - 42) * ((100vw - 300px) / (1600 - 300)));
 
   --roboto: 'Roboto', sans-serif;
@@ -167,7 +170,7 @@ body {
 
 button {
   max-width: 40vw;
-  margin: 4vmin auto 2vmin auto;
+  margin: 3vmin auto;
   padding: 1vmin 3vmin;
 
   font-size: var(--large-size);

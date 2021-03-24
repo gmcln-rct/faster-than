@@ -85,7 +85,7 @@ ul {
 li {
   margin: 0 0.5vmin;
 
-  font-size: var(--medium-size);
+  font-size: var(--large-size);
 }
 
 a {
@@ -106,8 +106,8 @@ a:hover {
 
 a:active,
 a.router-link-active {
-  font-weight: 700;
-  color: var(--deep-yellow);
+  font-weight: 500;
+  color: var(--muted-yellow);
   /* border-color: #f1a80a;
   background-color: #1a037e; */
 }

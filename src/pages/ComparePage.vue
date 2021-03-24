@@ -242,7 +242,7 @@ h3 {
   font-weight: 700;
   color: #fff;
 
-  background-color: var(--winner);
+  background-color: var(--dark-accent);
   border-radius: 50%;
   border: 4px solid #fff;
 
