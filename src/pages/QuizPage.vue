@@ -4,7 +4,7 @@
     <!-- Quiz Start -->
     <section v-if="!quizStarted" class="center">
       <h2>
-        Five questions to see if you know which animal is faster
+        Five pairs of animals. Can you pick which one is faster?
       </h2>
       <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
         Start Quiz
@@ -14,9 +14,12 @@
     <!-- Question -->
     <section v-if="quizStarted && !quizEnded" class="center">
       <div class="quiz-stats center">
-        <h3>Question #{{ questionCounter }}</h3>
-        <h3>Current Score: {{ userScore }}</h3>
+        <p>Question #{{ questionCounter }}</p>
+        <p>Current Score: {{ userScore }}</p>
       </div>
+      <h3>
+        Which is faster?
+      </h3>
       <div class="quiz-options">
         <transition name="animal1">
           <base-card @click.stop="checkQuestion(0)" :class="cardClass">
@@ -102,7 +105,7 @@ export default {
     checkQuestion(selectedAnimal) {
       let winnerIndex;
 
-      // this.btnDisabled = true;
+      // Once user clicks, disable card
       this.cardClass = 'quiz-card disabled';
       console.log('Selected Animal ' + selectedAnimal);
       // console.log('type ' + typeof selectedAnimal);
@@ -170,9 +173,19 @@ h5 {
   color: #fff;
 }
 
-h3 {
-  font-size: var(--large-size);
+h2 {
+  font-size: var(--extra-large-size);
 }
+
+h3 {
+  font-size: var(--extra-large-size);
+}
+
+h5 {
+  padding: 1vmin 0 0 0;
+  color: #999;
+}
+
 .quiz {
   display: flex;
   flex-direction: column;
@@ -186,6 +199,13 @@ h3 {
   /* background-color: rgba(0, 0, 0, 0.26); */
   background-color: var(--dark-accent);
   border-radius: 10px;
+}
+
+.quiz-stats p {
+  margin: 0;
+  padding: 0.4vmin 0;
+  font-size: var(--large-size);
+  color: #fff;
 }
 
 .quiz-card {
