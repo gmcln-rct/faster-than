@@ -6,7 +6,11 @@
       <h2>
         Five pairs of animals. Can you pick which one is faster?
       </h2>
-      <button v-on:click.stop="buildAnimalArray" v-if="!quizStarted">
+      <button
+        v-on:click.stop="buildAnimalArray"
+        v-if="!quizStarted"
+        class="quiz-btn"
+      >
         Start Quiz
       </button>
     </section>
@@ -18,7 +22,7 @@
         <p>Current Score: {{ userScore }}</p>
       </div>
       <h3>
-        Which is faster?
+        Which animal is faster?
       </h3>
       <div class="quiz-options">
         <transition name="animal1">
@@ -39,11 +43,8 @@
         <p v-show="isCorrect">Correct!</p>
         <p v-show="!isCorrect">Incorrect</p>
 
-        <p v-show="currentWinner !== null">
-          <!-- {{ currentWinner.commonName }} is faster than
-          {{ currentLoser.commonName }} -->
-        </p>
-        <button v-on:click.stop="nextQuestion">
+        <p v-show="currentWinner !== null"></p>
+        <button v-on:click.stop="nextQuestion" class="quiz-btn">
           Next Question
         </button>
       </div>
@@ -183,7 +184,16 @@ h3 {
 
 h5 {
   padding: 1vmin 0 0 0;
-  color: #999;
+  font-size: var(--large-size);
+  color: rgb(216, 216, 216);
+}
+
+p {
+  margin: 2vmin 0 1vmin 0;
+  font-size: var(--large-size);
+  font-weight: 600;
+  text-align: center;
+  color: #000;
 }
 
 .quiz {
@@ -197,7 +207,8 @@ h5 {
   margin: 1vmin 0 2vmin 0;
   padding: 1vmin 2vmin;
   /* background-color: rgba(0, 0, 0, 0.26); */
-  background-color: var(--dark-accent);
+  background-color: var(--dark-green);
+  border: 2px solid #fff;
   border-radius: 10px;
 }
 
@@ -219,7 +230,7 @@ h5 {
 }
 
 .quiz-card:hover {
-  background-color: var(--dark-accent);
+  background-color: var(--dark-green);
   transition: 0.3s;
 }
 
@@ -240,13 +251,13 @@ h5 {
   width: 250px;
   /* max-width: 200px; */
 
-  filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
+  filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(120deg)
     brightness(50%) contrast(101%);
 }
 
 .quiz-card .flip {
   transform: scaleX(-1);
-  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(163deg)
+  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(120deg)
     brightness(97%) contrast(101%);
 }
 
@@ -262,23 +273,16 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-h2 {
-  margin: 2vmin 0;
-  font-size: var(--large-size);
-  color: #fff;
-}
-h5 {
-  font-size: var(--large-size);
 
-  color: #fff;
+.quiz-btn {
+  background-color: var(--dark-green);
 }
 
-p {
-  margin: 2vmin 0 1vmin 0;
-  font-size: var(--large-size);
-  font-weight: 600;
-  text-align: center;
-  color: #000;
+.quiz-btn:hover,
+.quiz-btn:active {
+  color: var(--dark-green);
+  background-color: #fff;
+  border: 2px solid var(--dark-green);
 }
 
 .or {
@@ -288,7 +292,7 @@ p {
   font-weight: 700;
   color: #fff;
 
-  background-color: var(--dark-accent);
+  background-color: var(--dark-green);
   border-radius: 50%;
   border: 4px solid #fff;
 }

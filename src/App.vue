@@ -141,6 +141,8 @@ select {
   --alert: #e63122;
 
   --winner: #258f5c;
+  --dark-green: #258f5c;
+  --lighter-green: #258f1e;
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   --large-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
