@@ -40,7 +40,11 @@ header {
   align-items: center;
   width: 100%;
 
-  background-color: rgba(0, 77, 122, 0.8);
+  text-align: center;
+  /* position: fixed; */
+  z-index: 999;
+
+  background-color: var(--header-blue);
 
   -webkit-box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.24);
   box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.24);
@@ -53,10 +57,20 @@ header {
 
   margin: 0 30vmin 0 0;
 }
+.logo {
+  display: inline;
+  width: 75px;
+  margin: 0 0.5vmin 0 0;
+  padding: 1vmin 1vmin 1vmin 0;
+  opacity: 0.95;
+  /* filter: invert(1); */
+}
 
 .site-name {
   /* margin: 0; */
   padding: 0.5vmin 0;
+  width: 200px;
+
   font-family: bilo, sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -65,15 +79,6 @@ header {
   vertical-align: middle;
 
   color: #fff;
-}
-
-.logo {
-  display: inline;
-  width: 75px;
-  margin: 0 0.5vmin 0 0;
-  padding: 1vmin 1vmin 1vmin 0;
-  opacity: 0.95;
-  /* filter: invert(1); */
 }
 
 ul {
@@ -227,20 +232,24 @@ nav a:hover {
 
 @media screen and (min-width: 800px) {
   .logo {
-    width: 50px;
+    width: 100px;
+  }
+
+  .site-name {
+    width: 600px;
   }
   .nav-toggle-label {
     display: none;
   }
 
-  header {
+  /* header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
   .logo {
     grid-column: 2 / 3;
-  }
+  } */
 
   nav {
     /* the following lines are not from my video, but add Edge support */
@@ -253,10 +262,10 @@ nav a:hover {
     left: initial;
     /* end Edge support stuff */
 
-    grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    grid-column: 3 / 4;
   }
 
   nav ul {

@@ -134,6 +134,8 @@ select {
   --dark-accent: #004d7a;
   --dark-shades: #17161c;
 
+  --header-blue: rgba(0, 77, 122, 0.8);
+
   --highlight-yellow: #d86a2c;
   --muted-yellow: #fde8a9;
   --deep-yellow: #f7e963;
@@ -143,11 +145,12 @@ select {
   --winner: #258f5c;
   --dark-green: #258f5c;
   --lighter-green: #258f1e;
+
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   --large-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
   --extra-large-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
-  --huge-size: calc(42px + (56 - 42) * ((100vw - 300px) / (1600 - 300)));
+  --huge-size: calc(28px + (56 - 28) * ((100vw - 300px) / (1600 - 300)));
 
   --roboto: 'Roboto', sans-serif;
 }
