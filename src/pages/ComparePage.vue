@@ -17,7 +17,6 @@
       </span>
       <span class="vs">vs</span>
       <span class="animal-card">
-        <!-- <h3>Animal 2</h3> -->
         <img class="animal-img flip" :src="getAnimalImg(animal2)" />
         <base-select
           :options="animals"
@@ -199,10 +198,6 @@ export default {
 }
 
 .animal-img {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center;
-  align-items: center; */
   margin: 0 auto;
   padding: 2vmin 0;
   height: 200px;
@@ -245,9 +240,6 @@ h3 {
   background-color: var(--dark-accent);
   border-radius: 50%;
   border: 4px solid #fff;
-
-  /* -webkit-text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47);
-  text-shadow: inset 0px 0px 16px -1px rgba(117, 117, 117, 0.47); */
 }
 
 .animal-invalid {

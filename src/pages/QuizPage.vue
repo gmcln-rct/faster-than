@@ -18,17 +18,19 @@
         <h3>Current Score: {{ userScore }}</h3>
       </div>
       <div class="quiz-options">
-        <base-card @click.stop="checkQuestion(0)" :class="cardClass">
-          <img :src="animals[currentPair[0]].img" />
-          <p>{{ animals[currentPair[0]].commonName }}</p>
-        </base-card>
+        <transition name="animal1">
+          <base-card @click.stop="checkQuestion(0)" :class="cardClass">
+            <img :src="animals[currentPair[0]].img" />
+            <p>{{ animals[currentPair[0]].commonName }}</p>
+          </base-card>
+        </transition>
         <span class="or">or</span>
         <base-card @click.stop="checkQuestion(1)" :class="cardClass">
           <img :src="animals[currentPair[1]].img" class="flip" />
           <p>{{ animals[currentPair[1]].commonName }}</p>
         </base-card>
       </div>
-      <h5 v-show="!currentWinner"><em>Click on faster animal</em></h5>
+      <h5 v-show="!currentWinner"><em>Click on the faster animal</em></h5>
 
       <div v-show="currentWinner" class="correct-answer">
         <p v-show="isCorrect">Correct!</p>
@@ -151,7 +153,7 @@ export default {
 };
 </script>
 
-<style scoped scss>
+<style scoped>
 h1 {
   width: 100%;
   padding: 1vmin 0;
@@ -181,7 +183,8 @@ h3 {
 .quiz-stats {
   margin: 1vmin 0 2vmin 0;
   padding: 1vmin 2vmin;
-  background-color: rgba(0, 0, 0, 0.26);
+  /* background-color: rgba(0, 0, 0, 0.26); */
+  background-color: var(--dark-accent);
   border-radius: 10px;
 }
 
@@ -196,7 +199,7 @@ h3 {
 }
 
 .quiz-card:hover {
-  background-color: var(--winner);
+  background-color: var(--dark-accent);
   transition: 0.3s;
 }
 
@@ -211,21 +214,20 @@ h3 {
 }
 
 .quiz-card img {
-  /* background-color: green; */
   margin: 0 auto;
   padding: 2vmin 1vmin;
   height: 200px;
   width: 250px;
   /* max-width: 200px; */
 
-  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(120deg)
-    brightness(60%) contrast(101%);
+  filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
+    brightness(50%) contrast(101%);
 }
 
 .quiz-card .flip {
   transform: scaleX(-1);
-  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(120deg)
-    brightness(80%) contrast(101%);
+  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(163deg)
+    brightness(97%) contrast(101%);
 }
 
 .quiz-options {
@@ -264,11 +266,11 @@ p {
   padding: 1vmin 2vmin;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
-  color: var(--winner);
+  color: #fff;
 
-  background-color: #fff;
+  background-color: var(--dark-accent);
   border-radius: 50%;
-  border: 4px solid var(--winner);
+  border: 4px solid #fff;
 }
 
 button {
@@ -285,12 +287,19 @@ button {
 .disabled {
   cursor: not-allowed;
   color: gray;
-  /* background-color: gray; */
 }
-/* 
-.flip {
-  transform: scaleX(-1);
-  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(120deg)
-    brightness(80%) contrast(101%);
-} */
+
+/* Transition */
+.animal1-enter-from {
+  opacity: 0;
+  transform: translateX(-100px) scale(0.4);
+}
+
+.animal1-enter-active {
+  transition: all 3s ease-in;
+}
+.animal1-enter-to {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
 </style>
