@@ -130,96 +130,54 @@ a.router-link-active {
   opacity: 0.95;
   /* filter: invert(1); */
 }
-
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, 0.75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
 nav {
-  position: absolute;
+  /* the following lines are not from my video, but add Edge support */
+  position: relative;
   text-align: left;
-  top: 100%;
-  left: 0;
-  background: var(--background);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
+  transition: none;
+  transform: scale(1, 1);
+  background: none;
+  top: initial;
+  left: initial;
+  /* end Edge support stuff */
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-column: 3 / 4;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex;
 }
 
 nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin-left: 3em;
+  margin-bottom: 0;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  opacity: 1;
+  position: relative;
 }
 
-nav a:hover {
-  color: #000;
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: -0.75em;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
 }
 
-.nav-toggle:checked ~ nav {
+nav a:hover::before {
   transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
  *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
@@ -230,7 +188,7 @@ nav a:hover {
                                                                                                                           
  */
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 720px) {
   .logo {
     width: 100px;
   }
@@ -251,52 +209,94 @@ nav a:hover {
     grid-column: 2 / 3;
   } */
 
-  nav {
-    /* the following lines are not from my video, but add Edge support */
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-    /* end Edge support stuff */
+  .nav-toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
 
+  .nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid rgba(lightblue, 0.75);
+  }
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    grid-column: 3 / 4;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+    bottom: 7px;
+  }
+
+  .nav-toggle-label span::after {
+    top: 7px;
+  }
+
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
   }
 
   nav ul {
-    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
   }
 
   nav a {
-    opacity: 1;
-    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
   }
 
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -0.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
+  nav a:hover {
+    color: #000;
   }
 
-  nav a:hover::before {
+  .nav-toggle:checked ~ nav {
     transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
   }
 }
 </style>
