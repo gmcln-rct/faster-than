@@ -175,6 +175,7 @@ h5 {
 }
 
 h2 {
+  margin: 2vmin 0;
   font-size: var(--extra-large-size);
   text-align: center;
 }
@@ -275,7 +276,7 @@ p {
   align-items: center;
 }
 
-.quiz-btn {
+/* .quiz-btn {
   background-color: var(--dark-green);
 }
 
@@ -284,7 +285,7 @@ p {
   color: var(--dark-green);
   background-color: #fff;
   border: 2px solid var(--dark-green);
-}
+} */
 
 .or {
   margin: 0 2vmin;
