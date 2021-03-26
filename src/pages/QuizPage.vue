@@ -44,9 +44,11 @@
         <p v-show="!isCorrect">Incorrect</p>
 
         <p v-show="currentWinner !== null"></p>
-        <button v-on:click.stop="nextQuestion" class="quiz-btn">
+        <button v-on:click.stop="nextQuestion" class="next-quiz-btn">
           Next Question
         </button>
+
+        <p v-show="!isValid" class="error-msg">Please select an animal</p>
       </div>
     </section>
     <section v-if="quizEnded" class="center">
@@ -81,6 +83,7 @@ export default {
       currentLoser: null,
       currentPair: [],
       isCorrect: false,
+      isValid: true,
       cardClass: 'quiz-card'
     };
   },
@@ -109,6 +112,8 @@ export default {
 
       // Once user clicks, disable card
       this.cardClass = 'quiz-card disabled';
+
+      this.isValid = true;
       console.log('Selected Animal ' + selectedAnimal);
       // console.log('type ' + typeof selectedAnimal);
 
@@ -147,6 +152,9 @@ export default {
     },
     nextQuestion() {
       console.log('Next round');
+      if (this.answerCounter < this.questionCounter) {
+        this.isValid = false;
+      }
       this.cardClass = 'quiz-card';
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
@@ -286,16 +294,16 @@ p {
   align-items: center;
 }
 
-/* .quiz-btn {
+.next-quiz-btn {
   background-color: var(--dark-green);
 }
 
-.quiz-btn:hover,
-.quiz-btn:active {
+.next-quiz-btn:hover,
+.next-quiz-btn:active {
   color: var(--dark-green);
   background-color: #fff;
   border: 2px solid var(--dark-green);
-} */
+}
 
 .or {
   margin: 0 2vmin;
