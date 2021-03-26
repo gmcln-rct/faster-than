@@ -39,7 +39,7 @@
       </div>
       <h5 v-show="!currentWinner"><em>Click on the faster animal</em></h5>
 
-      <div v-show="currentWinner" class="correct-answer">
+      <div v-show="answerCounter === questionCounter" class="correct-answer">
         <p v-show="isCorrect">Correct!</p>
         <p v-show="!isCorrect">Incorrect</p>
 
@@ -48,7 +48,7 @@
           Next Question
         </button>
 
-        <p v-show="!isValid" class="error-msg">Please select an animal</p>
+        <!-- <p v-show="!isValid" class="error-msg">Please select an animal</p> -->
       </div>
     </section>
     <section v-if="quizEnded" class="center">
@@ -151,7 +151,6 @@ export default {
       }
     },
     nextQuestion() {
-      console.log('Next round');
       if (this.answerCounter < this.questionCounter) {
         this.isValid = false;
       }
@@ -168,8 +167,8 @@ export default {
         this.questionCounter++;
       }
       this.currentPair = this.animalPairs.splice(0, 2);
-      console.log('Current winner ' + this.currentWinner);
-      console.log('Userscore ' + this.userScore);
+      // console.log('Current winner ' + this.currentWinner);
+      // console.log('Userscore ' + this.userScore);
     }
   }
 };
@@ -224,10 +223,14 @@ p {
 }
 
 .quiz-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 1vmin 0 2vmin 0;
   padding: 1vmin 2vmin;
-  /* background-color: rgba(0, 0, 0, 0.26); */
-  background-color: var(--dark-green);
+  background-color: rgba(0, 0, 0, 0.26);
+  /* background-color: var(--dark-green); */
   border: 2px solid #fff;
   border-radius: 10px;
 }
@@ -369,6 +372,14 @@ button {
  */
 
 @media screen and (max-width: 720px) {
+  .quiz-stats {
+    flex-direction: row;
+  }
+
+  .quiz-stats p {
+    margin: 1vmin auto;
+    padding: 1vmin 2vmin;
+  }
   .quiz-options {
     flex-direction: column;
     width: 300px;
@@ -380,6 +391,14 @@ button {
 
     margin: 0 auto;
     padding: 1vmin;
+  }
+
+  button {
+    max-width: 80vw;
+  }
+
+  h1 {
+    display: none;
   }
 }
 </style>

@@ -24,9 +24,6 @@
         </li>
       </ul>
     </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
   </header>
 </template>
 
@@ -98,7 +95,7 @@ li {
   font-size: var(--large-size);
 }
 
-a {
+li a {
   display: inline-block;
   padding: 0.5rem 1.5rem;
 
@@ -130,35 +127,6 @@ a.router-link-active {
   opacity: 0.95;
   /* filter: invert(1); */
 }
-nav {
-  /* the following lines are not from my video, but add Edge support */
-  /* position: relative;
-  text-align: left;
-  transition: none; */
-  transform: scale(1, 1);
-  /* background: none; */
-  /* top: initial;
-  left: initial; */
-  /* end Edge support stuff */
-}
-
-router-link::before {
-  content: '';
-  display: block;
-  height: 3px;
-  background: var(--muted-yellow);
-  position: absolute;
-  /* top: -0.75em; */
-  bottom: 1em;
-  left: 50px;
-  right: 0;
-  transform: scale(0, 1);
-  transition: transform ease-in-out 250ms;
-}
-
-router-link:hover::before {
-  transform: scale(1, 1);
-}
 
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
@@ -171,6 +139,13 @@ router-link:hover::before {
  */
 
 @media screen and (max-width: 720px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo-block {
+    padding: 0.01vmin 0;
+  }
   .logo {
     width: 60px;
   }
@@ -178,17 +153,16 @@ router-link:hover::before {
   .site-name {
     width: 200px;
   }
-  .nav-toggle-label {
-    display: none;
-  }
 
-  /* header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
+  nav {
+    width: 100%;
+    padding: 0;
 
-  .logo {
-    grid-column: 2 / 3;
-  } */
+    line-height: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  li a {
+    padding: 0.1vmin 2vmin;
+  }
 }
 </style>
