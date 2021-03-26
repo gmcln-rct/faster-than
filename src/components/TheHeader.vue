@@ -35,7 +35,6 @@
 
 header {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -55,12 +54,12 @@ header {
   justify-content: center;
   align-items: center;
 
-  margin: 0 30vmin 0 0;
+  /* margin: 0 30vmin 0 0; */
 }
 .logo {
   display: inline;
   width: 75px;
-  margin: 0 0.5vmin 0 0;
+  /* margin: 0 0.5vmin 0 0; */
   padding: 1vmin 1vmin 1vmin 0;
   opacity: 0.95;
   /* filter: invert(1); */
@@ -69,12 +68,13 @@ header {
 .site-name {
   /* margin: 0; */
   padding: 0.5vmin 0;
-  width: 200px;
+  width: 600px;
 
   font-family: bilo, sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: var(--huge-size);
+  text-align: left;
 
   vertical-align: middle;
 
@@ -190,11 +190,11 @@ nav a:hover::before {
 
 @media screen and (max-width: 720px) {
   .logo {
-    width: 100px;
+    width: 60px;
   }
 
   .site-name {
-    width: 600px;
+    width: 200px;
   }
   .nav-toggle-label {
     display: none;
