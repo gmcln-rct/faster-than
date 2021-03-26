@@ -26,7 +26,7 @@
       </h3>
       <div class="quiz-options">
         <transition name="animal1">
-          <base-card @click.stop="checkQuestion(0)" :class="cardClass">
+          <base-card @click.prevent="checkQuestion(0)" :class="cardClass">
             <img :src="animals[currentPair[0]].img" />
             <p>{{ animals[currentPair[0]].commonName }}</p>
           </base-card>
@@ -72,6 +72,7 @@ export default {
       animals: animals,
       animalPairs: [],
       questionCounter: 0,
+      answerCounter: 0,
       userScore: 0,
       quizStarted: false,
       quizEnded: false,
@@ -113,7 +114,9 @@ export default {
 
       console.log('Animal 1 speed: ' + animals[this.currentPair[0]].speed);
       console.log('Animal 2 speed: ' + animals[this.currentPair[1]].speed);
-
+      if (this.answerCounter === this.questionCounter) {
+        return;
+      }
       if (
         animals[this.currentPair[0]].speed > animals[this.currentPair[1]].speed
       ) {
@@ -125,14 +128,21 @@ export default {
         this.currentWinner = animals[this.currentPair[1]];
         this.currentLoser = animals[this.currentPair[0]];
       }
+      console.log('Question ounter ' + this.questionCounter);
+      console.log('Answer ounter ' + this.answerCounter);
       console.log('current winner ' + this.currentWinner.commonName);
-      if (selectedAnimal === winnerIndex) {
+      if (
+        selectedAnimal === winnerIndex &&
+        this.answerCounter < this.questionCounter
+      ) {
         console.log('You are correct');
         this.isCorrect = true;
         this.userScore++;
+        this.answerCounter++;
       } else {
         this.isCorrect = false;
         console.log('Dumbkopf!');
+        this.answerCounter++;
       }
     },
     nextQuestion() {
@@ -313,6 +323,18 @@ button {
 .disabled {
   cursor: not-allowed;
   color: gray;
+}
+
+.disabled img,
+.disabled .flip {
+  cursor: not-allowed;
+  background-color: gray;
+  filter: none;
+}
+
+.disabled:hover img,
+.disabled:hover .flip {
+  filter: none;
 }
 
 /* Transition */
