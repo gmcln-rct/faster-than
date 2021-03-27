@@ -239,6 +239,7 @@ p {
   margin: 0;
   padding: 0.4vmin 0;
   font-size: var(--large-size);
+  line-height: var(--large-size);
   color: #fff;
 }
 
@@ -393,8 +394,20 @@ button {
     padding: 1vmin;
   }
 
+  .quiz-options p {
+    padding: 1.5vmin 0 0 0;
+    line-height: 16px;
+  }
+
   button {
     max-width: 80vw;
+  }
+
+  .or {
+    margin: 2vmin 0;
+    border: none;
+    color: green;
+    background-color: #fff;
   }
 
   h1 {

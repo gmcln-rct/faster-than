@@ -147,7 +147,8 @@ a.router-link-active {
     padding: 0.01vmin 0;
   }
   .logo {
-    width: 60px;
+    margin: 1vmin;
+    width: 50px;
   }
 
   .site-name {
