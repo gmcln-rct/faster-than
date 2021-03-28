@@ -171,6 +171,10 @@ li a.router-link-active {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  li {
+    margin: 0 2vmin;
+  }
+
   li a {
     padding: 0.5rem;
   }

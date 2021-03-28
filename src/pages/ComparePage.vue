@@ -297,7 +297,7 @@ h3 {
 
   button {
     max-width: 80vw;
-    margin: 8vmin auto;
+    margin: 6vmin auto 4vmin;
     padding: 2vmin 6vmin;
   }
 

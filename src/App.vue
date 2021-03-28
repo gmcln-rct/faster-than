@@ -140,7 +140,7 @@ select {
   --muted-yellow: #fde8a9;
   --deep-yellow: #f7e963;
   --amber: #fcdd60;
-  --alert: #e63122;
+  --alert: #f84130;
 
   --winner: #258f5c;
   --dark-green: #258f5c;

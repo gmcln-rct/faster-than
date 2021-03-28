@@ -4,7 +4,8 @@
     <!-- Quiz Start -->
     <section v-if="!quizStarted" class="center">
       <h2>
-        Five pairs of animals. Can you pick which one is faster?
+        Five pairs of animals. <br />Can you pick which one in each pair is
+        faster?
       </h2>
       <button
         v-on:click.stop="buildAnimalArray"
@@ -44,8 +45,8 @@
       <h5 v-show="!currentWinner"><em>Click on the faster animal</em></h5>
 
       <div v-show="answerCounter === questionCounter" class="correct-answer">
-        <p v-show="isCorrect">Correct!</p>
-        <p v-show="!isCorrect">Incorrect</p>
+        <p v-show="isCorrect" class="correct">Correct!</p>
+        <p v-show="!isCorrect" class="incorrect">Incorrect</p>
 
         <p v-show="currentWinner !== null"></p>
         <button v-on:click.stop="nextQuestion" class="next-quiz-btn">
@@ -168,7 +169,7 @@ export default {
         this.answerCounter++;
       } else {
         this.isCorrect = false;
-        console.log('Dumbkopf!');
+        console.log('Incorrect');
         this.answerCounter++;
       }
     },
@@ -189,8 +190,6 @@ export default {
         this.questionCounter++;
       }
       this.currentPair = this.animalPairs.splice(0, 2);
-      // console.log('Current winner ' + this.currentWinner);
-      // console.log('Userscore ' + this.userScore);
     }
   }
 };
@@ -215,8 +214,10 @@ h5 {
 }
 
 h2 {
-  margin: 2vmin 0;
+  margin: 2vmin;
+  padding: 0 2vmin;
   font-size: var(--large-size);
+  line-height: 24px;
   text-align: center;
 }
 
@@ -232,11 +233,11 @@ h5 {
 }
 
 p {
-  margin: 2vmin 0 1vmin 0;
+  margin: 1vmin 0 1vmin 0;
   font-size: var(--large-size);
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 
 .quiz {
@@ -375,6 +376,16 @@ button {
 .disabled:hover img,
 .disabled:hover .flip {
   filter: none;
+}
+
+p.correct {
+  color: var(--amber);
+}
+
+p.incorrect {
+  margin: 1vmin 0;
+
+  color: var(--alert);
 }
 
 /* Transition */
