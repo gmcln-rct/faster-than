@@ -93,6 +93,7 @@ li {
   margin: 0 0.5vmin;
 
   font-size: var(--extra-large-size);
+  font-weight: 500;
 }
 
 li a {
@@ -106,17 +107,15 @@ li a {
   cursor: pointer;
 }
 
-a:hover {
+li a:hover {
   color: var(--muted-yellow);
   transition: 0.3s;
 }
 
-a:active,
-a.router-link-active {
-  font-weight: 500;
+li a:active,
+li a.router-link-active {
+  font-weight: 600;
   color: var(--muted-yellow);
-  /* border-color: #f1a80a;
-  background-color: #1a037e; */
 }
 
 .about {
@@ -125,7 +124,11 @@ a.router-link-active {
   margin: 0 0.5vmin 0 0;
   padding: 2vmin 1vmin 1vmin 0;
   opacity: 0.95;
-  /* filter: invert(1); */
+}
+
+.about:hover {
+  filter: invert(43%) saturate(2042%) hue-rotate(10deg) brightness(97%)
+    contrast(101%);
 }
 
 /***

@@ -34,9 +34,9 @@
       <a href="https://www.glennmcclanan.com/" target="_blank"
         >Glenn McClanan</a
       >
-      after his 4-year-old spent weeks quizzing him about which animals a
-      cheetah is faster than. Daddy needed to build this website to keep her
-      happy and to keep his sanity...
+      after his 4-year-old daughter spent weeks quizzing him about which animala
+      are faster or slower than a cheetahn. Daddy decided that hed needed to
+      build this website to keep her happy and to keep his sanity...
     </p>
   </section>
 </template>
