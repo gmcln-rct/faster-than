@@ -254,10 +254,10 @@ p {
 }
 
 .quiz-card {
+  max-height: 275px;
   margin: 0 2vmin;
   padding: 2vmin 3vmin 1vmin 3vmin;
 
-  max-height: 275px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   background-color: #ffffff;
@@ -279,10 +279,10 @@ p {
 }
 
 .quiz-card img {
+  width: 250px;
+  height: 200px;
   margin: 0 auto;
   padding: 2vmin 1vmin;
-  height: 200px;
-  width: 250px;
   /* max-width: 200px; */
 
   filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(120deg)
@@ -324,8 +324,8 @@ p {
   padding: 1vmin 2vmin;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
-  color: #fff;
 
+  color: #fff;
   background-color: var(--dark-green);
   border-radius: 50%;
   border: 4px solid #fff;
