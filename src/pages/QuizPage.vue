@@ -94,13 +94,22 @@ export default {
 
   methods: {
     buildAnimalArray() {
-      let animal;
+      let animalNum;
+      let lastAnimalNum;
       let animalsLength = this.animals.length;
 
       while (this.animalPairs.length < 10) {
-        animal = getRandomNumber(animalsLength);
-        if (!this.animalPairs.includes(animal)) {
-          this.animalPairs.push(animal);
+        animalNum = getRandomNumber(animalsLength);
+
+        if (!this.animalPairs.includes(animalNum)) {
+          if (this.animalPairs.length % 2 === 0) {
+            lastAnimalNum = this.animalPairs[this.animalPairs.length - 1];
+
+            if (animals[animalNum].speed !== animals[lastAnimalNum].speed) {
+              console.log('Inside dunction');
+            }
+            this.animalPairs.push(animalNum);
+          }
         }
       }
       this.quizStarted = true;
@@ -108,8 +117,8 @@ export default {
       this.questionCounter = 1;
       this.currentPair = this.animalPairs.splice(0, 2);
 
-      console.log(this.animalPairs);
-      console.log('Current Pair ', this.currentPair);
+      // console.log(this.animalPairs);
+      // console.log('Current Pair ', this.currentPair);
     },
     checkQuestion(selectedAnimal) {
       let winnerIndex;
