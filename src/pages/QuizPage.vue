@@ -95,30 +95,40 @@ export default {
   methods: {
     buildAnimalArray() {
       let animalNum;
-      let lastAnimalNum;
+      // let lastAnimalNum;
       let animalsLength = this.animals.length;
 
       while (this.animalPairs.length < 10) {
         animalNum = getRandomNumber(animalsLength);
-
-        if (!this.animalPairs.includes(animalNum)) {
-          if (this.animalPairs.length % 2 === 0) {
-            lastAnimalNum = this.animalPairs[this.animalPairs.length - 1];
-
-            if (animals[animalNum].speed !== animals[lastAnimalNum].speed) {
-              console.log('Inside dunction');
-            }
-            this.animalPairs.push(animalNum);
-          }
+        if (this.animalPairs.length < 1) {
+          this.animalPairs.push(animalNum);
+        } else if (!this.animalPairs.includes(animalNum)) {
+          this.animalPairs.push(animalNum);
+          // if (this.animalPairs.length % 2 === 0) {
+          //   lastAnimalNum = this.animalPairs[this.animalPairs.length - 1];
+          //   console.log('Vurrenbt speed ' + this.animals[animalNum].speed);
+          //   console.log(
+          //     'Vurrenbt speed 2nd  ' + this.animals[lastAnimalNum].speed
+          //   );
+          //   console.log(
+          //     'Same? ' + this.animals[animalNum].speed !==
+          //       this.animals[lastAnimalNum].speed
+          //   );
+          //   if (
+          //     this.animals[animalNum].speed !==
+          //     this.animals[lastAnimalNum].speed
+          //   ) {
+          //     console.log('Inside dunction');
+          //     this.animalPairs.push(animalNum);
+          //   }
+          // }
         }
       }
+      console.log('Animal pairs ' + this.animalPairs);
       this.quizStarted = true;
       this.quizEnded = false;
       this.questionCounter = 1;
       this.currentPair = this.animalPairs.splice(0, 2);
-
-      // console.log(this.animalPairs);
-      // console.log('Current Pair ', this.currentPair);
     },
     checkQuestion(selectedAnimal) {
       let winnerIndex;
@@ -128,7 +138,6 @@ export default {
 
       this.isValid = true;
       console.log('Selected Animal ' + selectedAnimal);
-      // console.log('type ' + typeof selectedAnimal);
 
       console.log('Animal 1 speed: ' + animals[this.currentPair[0]].speed);
       console.log('Animal 2 speed: ' + animals[this.currentPair[1]].speed);
@@ -136,7 +145,7 @@ export default {
         return;
       }
       if (
-        animals[this.currentPair[0]].speed > animals[this.currentPair[1]].speed
+        animals[this.currentPair[0]].speed >= animals[this.currentPair[1]].speed
       ) {
         winnerIndex = 0;
         this.currentWinner = animals[this.currentPair[0]];
