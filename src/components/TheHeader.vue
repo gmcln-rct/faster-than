@@ -92,7 +92,7 @@ ul {
 li {
   margin: 0 0.5vmin;
 
-  font-size: var(--large-size);
+  font-size: var(--extra-large-size);
 }
 
 li a {
@@ -157,13 +157,17 @@ a.router-link-active {
 
   nav {
     width: 100%;
-    padding: 0;
+    padding: 3vmin 0;
 
-    line-height: 12px;
+    line-height: 16px;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  li a {
-    padding: 0.1vmin 2vmin;
+  /* nav li {
+    padding: 0.1vmin 5vmin;
+  } */
+
+  .about {
+    display: none;
   }
 }
 </style>

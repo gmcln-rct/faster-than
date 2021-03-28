@@ -193,7 +193,7 @@ h5 {
 
 h2 {
   margin: 2vmin 0;
-  font-size: var(--extra-large-size);
+  font-size: var(--large-size);
   text-align: center;
 }
 
@@ -247,7 +247,7 @@ p {
   margin: 0 2vmin;
   padding: 2vmin 3vmin 1vmin 3vmin;
 
-  max-height: 310px;
+  max-height: 275px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   background-color: #ffffff;
@@ -388,7 +388,7 @@ button {
 
   .quiz-options img {
     width: 200px;
-    height: 120px;
+    height: 100px;
 
     margin: 0 auto;
     padding: 1vmin;
