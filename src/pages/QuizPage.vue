@@ -18,8 +18,12 @@
     <!-- Question -->
     <section v-if="quizStarted && !quizEnded" class="center">
       <div class="quiz-stats center">
-        <p>Question #{{ questionCounter }}</p>
-        <p>Current Score: {{ userScore }}</p>
+        <p>
+          Question <span class="yellow">#{{ questionCounter }}</span>
+        </p>
+        <p>
+          Current Score: <span class="yellow">{{ userScore }}</span>
+        </p>
       </div>
       <h3>
         Which animal is faster?
@@ -179,6 +183,7 @@ h1 {
   width: 100%;
   padding: 1vmin 0;
   font-size: var(--extra-large-size);
+  line-height: var(--extra-large-size);
   text-align: center;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.26);
@@ -199,6 +204,7 @@ h2 {
 
 h3 {
   font-size: var(--extra-large-size);
+  line-height: var(--extra-large-size);
 }
 
 h5 {
@@ -241,6 +247,10 @@ p {
   font-size: var(--large-size);
   line-height: var(--large-size);
   color: #fff;
+}
+
+.yellow {
+  color: var(--muted-yellow);
 }
 
 .quiz-card {
@@ -374,6 +384,7 @@ button {
 
 @media screen and (max-width: 720px) {
   .quiz-stats {
+    margin: 2vmin 0 0 0;
     flex-direction: row;
   }
 
@@ -387,8 +398,8 @@ button {
   }
 
   .quiz-options img {
-    width: 200px;
-    height: 100px;
+    min-width: 200px;
+    height: 90px;
 
     margin: 0 auto;
     padding: 1vmin;
@@ -412,6 +423,10 @@ button {
 
   h1 {
     display: none;
+  }
+
+  h3 {
+    margin: 4vmin 0;
   }
 }
 </style>
