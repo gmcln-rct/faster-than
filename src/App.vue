@@ -223,8 +223,8 @@ button:active {
 
 @media screen and (max-width: 720px) {
   button {
-    width: 50vw;
-    padding: 1vmin 3vmin;
+    max-width: 70vw;
+    padding: 2vmin 3vmin;
   }
 }
 </style>

@@ -49,8 +49,15 @@
         <p v-show="!isCorrect" class="incorrect">Incorrect</p>
 
         <p v-show="currentWinner !== null"></p>
-        <button v-on:click.stop="nextQuestion" class="next-quiz-btn">
+        <button
+          v-if="questionCounter < 5"
+          v-on:click.stop="nextQuestion"
+          class="next-quiz-btn"
+        >
           Next Question
+        </button>
+        <button v-else v-on:click.stop="nextQuestion" class="next-quiz-btn">
+          Finish
         </button>
 
         <!-- <p v-show="!isValid" class="error-msg">Please select an animal</p> -->
@@ -452,7 +459,7 @@ p.incorrect {
   }
 
   button {
-    max-width: 80vw;
+    width: 90vw;
   }
 
   .or {
