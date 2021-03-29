@@ -1,6 +1,6 @@
 <template>
   <section class="compare">
-    <h2>Select animals to find out which is faster.</h2>
+    <h2>Select two animals to compare top speed.</h2>
     <div class="compare-selects">
       <span class="animal-card">
         <!-- <h3>Animal 1</h3> -->

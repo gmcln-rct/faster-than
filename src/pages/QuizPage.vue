@@ -138,10 +138,12 @@ export default {
       this.cardClass = 'quiz-card disabled';
 
       this.isValid = true;
-      console.log('Selected Animal ' + selectedAnimal);
+      // console.log('Selected Animal ' + selectedAnimal);
 
-      console.log('Animal 1 speed: ' + animals[this.currentPair[0]].speed);
-      console.log('Animal 2 speed: ' + animals[this.currentPair[1]].speed);
+      // console.log('Animal 1 speed: ' + animals[this.currentPair[0]].speed);
+      // console.log('Animal 2 speed: ' + animals[this.currentPair[1]].speed);
+
+      // Check if question has already been answered
       if (this.answerCounter === this.questionCounter) {
         return;
       }
@@ -156,20 +158,22 @@ export default {
         this.currentWinner = animals[this.currentPair[1]];
         this.currentLoser = animals[this.currentPair[0]];
       }
-      console.log('Question ounter ' + this.questionCounter);
-      console.log('Answer ounter ' + this.answerCounter);
-      console.log('current winner ' + this.currentWinner.commonName);
+      // console.log('Question ounter ' + this.questionCounter);
+      // console.log('Answer ounter ' + this.answerCounter);
+      // console.log('current winner ' + this.currentWinner.commonName);
+
+      // Check if selected animal is correct and reconfirm question ahs not been answered already
       if (
         selectedAnimal === winnerIndex &&
         this.answerCounter < this.questionCounter
       ) {
-        console.log('You are correct');
+        // console.log('You are correct');
         this.isCorrect = true;
         this.userScore++;
         this.answerCounter++;
       } else {
+        // console.log('Incorrect');
         this.isCorrect = false;
-        console.log('Incorrect');
         this.answerCounter++;
       }
     },
@@ -214,10 +218,10 @@ h5 {
 }
 
 h2 {
-  margin: 2vmin;
+  margin: 8vmin 1vmin 4vmin 1vmin;
   padding: 0 2vmin;
   font-size: var(--large-size);
-  line-height: 24px;
+  line-height: var(--large-line);
   text-align: center;
 }
 
@@ -361,6 +365,7 @@ button {
   color: #fff;
 }
 
+/* Disabled, after animal selected */
 .disabled {
   cursor: not-allowed;
   color: gray;
@@ -372,6 +377,9 @@ button {
   background-color: gray;
   filter: none;
 }
+.disabled p {
+  color: gray;
+}
 
 .disabled:hover img,
 .disabled:hover .flip {
@@ -380,10 +388,13 @@ button {
 
 p.correct {
   color: var(--amber);
+  text-transform: uppercase;
 }
 
 p.incorrect {
   margin: 1vmin 0;
+  text-transform: uppercase;
+  text-shadow: 1px 0 0 #777, 0 1px 0 #777, -1px 0 0 #777, 0 -1px 0 #777;
 
   color: var(--alert);
 }
@@ -437,6 +448,7 @@ p.incorrect {
   .quiz-options p {
     padding: 1.5vmin 0 0 0;
     line-height: 16px;
+    color: #000;
   }
 
   button {

@@ -148,8 +148,15 @@ select {
 
   --base-size: 16px;
   --medium-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
-  --large-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+  --medium-large-size: calc(
+    20px + (24 - 20) * ((100vw - 300px) / (1600 - 300))
+  );
+  --large-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
+  --large-line: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+
   --extra-large-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+  --extra-large-line: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+
   --huge-size: calc(28px + (56 - 28) * ((100vw - 300px) / (1600 - 300)));
 
   --roboto: 'Roboto', sans-serif;
@@ -179,6 +186,7 @@ button {
   padding: 1vmin 3vmin;
 
   font-size: var(--large-size);
+  line-height: var(--large-line);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -197,12 +205,26 @@ button {
 
 button:hover,
 button:active {
-  /* border-color: #002350;
-  background-color: #002350; */
   color: var(--highlight-yellow);
   background-color: #fff;
   border: 3px solid var(--highlight-yellow);
 
   transition: 0.4s;
+}
+
+/***
+ *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+ *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+ *    |  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+ *    |  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \    
+ *    |  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |   
+ *    |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/                                                                                                                            
+ */
+
+@media screen and (max-width: 720px) {
+  button {
+    width: 50vw;
+    padding: 1vmin 3vmin;
+  }
 }
 </style>
