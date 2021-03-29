@@ -7,7 +7,7 @@ import AboutPage from './pages/AboutPage.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', redirect: '/compare' },
+    { path: '/', component: ComparePage },
     { path: '/compare', component: ComparePage },
 
     { path: '/quiz', component: QuizPage },
