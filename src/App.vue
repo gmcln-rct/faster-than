@@ -151,7 +151,7 @@ select {
     20px + (24 - 20) * ((100vw - 300px) / (1600 - 300))
   );
   --large-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
-  --large-line: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
+  --large-line: calc(26px + (36 - 26) * ((100vw - 300px) / (1600 - 300)));
 
   --extra-large-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
   --extra-large-line: calc(24px + (40 - 24) * ((100vw - 300px) / (1600 - 300)));

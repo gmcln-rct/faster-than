@@ -103,9 +103,6 @@ export default {
   methods: {
     buildAnimalArray() {
       let animalNum;
-
-      this.answerCounter = 0;
-      this.userScore = 0;
       let animalsLength = this.animals.length;
 
       while (this.animalPairs.length < 10) {
@@ -134,10 +131,13 @@ export default {
           // }
         }
       }
-      console.log('Animal pairs ' + this.animalPairs);
+      // console.log('Animal pairs ' + this.animalPairs);
       this.quizStarted = true;
       this.quizEnded = false;
       this.questionCounter = 1;
+      this.answerCounter = 0;
+      this.userScore = 0;
+      this.quizEnded = false;
       this.currentPair = this.animalPairs.splice(0, 2);
     },
     checkQuestion(selectedAnimal) {

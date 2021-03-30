@@ -2,10 +2,10 @@
   <main>
     <h1>What is <span class="yellow">Faster Than</span>?</h1>
     <p>
-      <span class="yellow">Faster Than</span> is an web-based app that helps
-      kids and parents explore the speeds of diffferent animals throughout the
-      Animal Kingdom. <br />Compare top speed or take a quiz to test your
-      animal-speed knowledge.<br />
+      <span class="yellow">Faster Than</span>is a web app that helps kids and
+      parents explore the speeds of different animals throughout the Animal
+      Kingdom. <br />Compare top speeds or take a quiz to test your animal-speed
+      knowledge.<br />
     </p>
   </main>
 </template>
@@ -18,7 +18,7 @@ main {
   align-items: center;
 
   width: 70vw;
-  margin: 0 auto;
+  margin: 0 15vw;
   color: #fff;
 }
 
@@ -33,8 +33,26 @@ p {
 }
 
 .yellow {
+  padding: 0 1vmin 0 0;
   color: var(--amber);
   font-style: italic;
   font-weight: 700;
+}
+
+/***
+ *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+ *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+ *    |  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+ *    |  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \    
+ *    |  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |   
+ *    |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/                                                                                                                            
+ */
+
+@media screen and (max-width: 720px) {
+}
+main {
+  width: 80vw;
+  margin: 0 10vw;
+  color: #fff;
 }
 </style>
