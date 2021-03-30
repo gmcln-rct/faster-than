@@ -1,7 +1,7 @@
 <template>
   <header>
     <!-- <div > -->
-    <router-link to="/" class="logo-block">
+    <router-link to="/faster-than" class="logo-block">
       <img
         class="logo"
         src="https://faster-than.s3.amazonaws.com/faster-than-logo-3.png"
@@ -12,17 +12,18 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/compare">Compare</router-link>
+          <router-link to="/faster-than/compare">Compare</router-link>
         </li>
         <li>
-          <router-link to="/quiz">Quiz</router-link>
+          <router-link to="/faster-than/quiz">Quiz</router-link>
         </li>
         <li>
-          <router-link to="/about">
-            <img
+          <router-link to="/faster-than/about">
+            <span class="icon icon-about"></span>
+            <!-- <img
               class="about"
-              src="https://faster-than.s3.amazonaws.com/faster-about-icon.png"
-          /></router-link>
+              src="https://faster-than.s3.amazonaws.com/faster-about-icon.png" -->
+          </router-link>
         </li>
       </ul>
     </nav>
@@ -112,6 +113,7 @@ li a {
 
 li a:hover {
   color: var(--amber);
+  /* transform: scale(1.05); */
   transition: 0.3s;
 }
 

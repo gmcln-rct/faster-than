@@ -8,11 +8,11 @@ import AboutPage from './pages/AboutPage.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: LandingPage },
-    { path: '/compare', component: ComparePage },
+    { path: '/faster-than', component: LandingPage },
+    { path: '/faster-than/compare', component: ComparePage },
 
-    { path: '/quiz', component: QuizPage },
-    { path: '/about', component: AboutPage }
+    { path: '/faster-than/quiz', component: QuizPage },
+    { path: '/faster-than/about', component: AboutPage }
   ]
 });
 

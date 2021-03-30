@@ -10,11 +10,13 @@
     </p>
 
     <section class="icon-block">
-      <router-link to="/compare">
+      <router-link to="/faster-than/compare">
         <span class="icon icon-compare"></span>
+        <p>Compare</p>
       </router-link>
-      <router-link to="/compare">
+      <router-link to="/faster-than/quiz">
         <span class="icon icon-quiz"></span>
+        <p>Quiz</p>
       </router-link>
 
       <!-- <router-link to="/compare">
@@ -54,48 +56,64 @@ p {
 
 .yellow {
   padding: 0 1vmin 0 0;
-  color: var(--amber);
   font-style: italic;
   font-weight: 700;
+
+  color: var(--amber);
 }
 
 .icon-block {
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 0 20vw 2vh;
 }
 
+.icon-block a {
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  line-height: 18px;
+  color: #fff;
+}
+
+.icon-block a p {
+  line-height: 18px;
+  color: var(--amber);
+}
+/* .icon-block:hover p {
+  color: red;
+  transition: 0.3s;
+} */
 /* .icon {
   width: 150px;
   fill: #fff;
 } */
 
-.icon {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  margin: 2vmin 5vmin;
-  background-size: cover;
-}
 .icon-compare {
   background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-compare.svg);
   filter: invert(1);
 }
-.icon-quiz {
-  background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
-  filter: invert(1);
-}
+
 .icon-compare:hover,
 .icon-compare:focus {
   filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(163deg)
     brightness(97%) contrast(101%);
+  transform: scale(1.1);
   transition: 0.3s;
+}
+
+.icon-quiz {
+  background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
+  filter: invert(1);
 }
 
 .icon-quiz:hover,
 .icon-quiz:focus {
-  filter: invert(89%) sepia(98%) saturate(379%) hue-rotate(19deg)
-    brightness(98%) contrast(91%);
+  filter: invert(62%) sepia(10%) saturate(1948%) hue-rotate(104deg)
+    brightness(103%) contrast(90%);
+
+  transform: scale(1.1);
   transition: 0.3s;
 }
 
