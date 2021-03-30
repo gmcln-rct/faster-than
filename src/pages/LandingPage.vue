@@ -2,11 +2,20 @@
   <main>
     <h1>What is <span class="yellow">Faster Than</span>?</h1>
     <p>
-      <span class="yellow">Faster Than</span>is a web app that helps kids and
-      parents explore the speeds of different animals throughout the Animal
-      Kingdom. <br />Compare top speeds or take a quiz to test your animal-speed
-      knowledge.<br />
+      <em>Faster Than</em> is a web app that helps kids and parents explore the
+      speeds of different animals throughout the Animal Kingdom.
     </p>
+    <p>
+      Compare top speeds or take a quiz to test your animal-speed knowledge.
+    </p>
+
+    <section class="icon-block">
+      <router-link to="/compare">
+        <img
+          class="icon"
+          src="https://faster-than.s3.amazonaws.com/icons/icon-compare.svg"
+      /></router-link>
+    </section>
   </main>
 </template>
 
@@ -17,17 +26,20 @@ main {
   justify-content: center;
   align-items: center;
 
-  width: 70vw;
-  margin: 0 15vw;
+  width: 100vw;
+  /* margin: 0 auto; */
   color: #fff;
 }
 
 h1 {
   margin: 5vmin 0 0 0;
+
+  text-align: center;
   font-size: var(--extra-large-size);
 }
 p {
-  margin: 1vmin 0 2vmin 0;
+  margin: 0 auto;
+  padding: 0 20vw 2vh;
   font-size: var(--large-size);
   line-height: var(--large-line);
 }
@@ -51,8 +63,13 @@ p {
 @media screen and (max-width: 720px) {
 }
 main {
-  width: 80vw;
-  margin: 0 10vw;
+  /* width: 80vw; */
+  /* margin: 0 auto; */
   color: #fff;
+}
+
+p {
+  padding: 0 5vw 2vh;
+  text-align: center;
 }
 </style>
