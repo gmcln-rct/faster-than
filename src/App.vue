@@ -156,7 +156,8 @@ select {
   --extra-large-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
   --extra-large-line: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
 
-  --huge-size: calc(28px + (56 - 28) * ((100vw - 300px) / (1600 - 300)));
+  --huge-size: calc(28px + (48 - 28) * ((100vw - 300px) / (1600 - 300)));
+  --huge-line: calc(32px + (52 - 32) * ((100vw - 300px) / (1600 - 300)));
 
   --roboto: 'Roboto', sans-serif;
 }
