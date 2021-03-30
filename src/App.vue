@@ -151,10 +151,10 @@ select {
     20px + (24 - 20) * ((100vw - 300px) / (1600 - 300))
   );
   --large-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
-  --large-line: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+  --large-line: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
 
-  --extra-large-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
-  --extra-large-line: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+  --extra-large-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+  --extra-large-line: calc(24px + (40 - 24) * ((100vw - 300px) / (1600 - 300)));
 
   --huge-size: calc(28px + (48 - 28) * ((100vw - 300px) / (1600 - 300)));
   --huge-line: calc(32px + (52 - 32) * ((100vw - 300px) / (1600 - 300)));

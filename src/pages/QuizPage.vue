@@ -103,7 +103,9 @@ export default {
   methods: {
     buildAnimalArray() {
       let animalNum;
-      // let lastAnimalNum;
+
+      this.answerCounter = 0;
+      this.userScore = 0;
       let animalsLength = this.animals.length;
 
       while (this.animalPairs.length < 10) {

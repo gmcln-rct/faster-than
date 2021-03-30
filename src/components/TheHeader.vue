@@ -95,7 +95,7 @@ ul {
 li {
   margin: 0 0.5vmin;
 
-  font-size: var(--extra-large-size);
+  font-size: var(--large-size);
   font-weight: 500;
 }
 
@@ -111,14 +111,14 @@ li a {
 }
 
 li a:hover {
-  color: var(--muted-yellow);
+  color: var(--amber);
   transition: 0.3s;
 }
 
 li a:active,
 li a.router-link-active {
   font-weight: 600;
-  color: var(--muted-yellow);
+  color: var(--amber);
 }
 
 .about {
