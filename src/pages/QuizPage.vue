@@ -59,12 +59,10 @@
         <button v-else v-on:click.stop="nextQuestion" class="next-quiz-btn">
           Finish
         </button>
-
-        <!-- <p v-show="!isValid" class="error-msg">Please select an animal</p> -->
       </div>
     </section>
     <section v-if="quizEnded" class="center">
-      <p>Quiz Complete!</p>
+      <h3>Quiz Complete!</h3>
       <h3>Your Score: {{ userScore }} out of 5</h3>
       <button v-on:click.stop="buildAnimalArray" class="new-quiz-btn">
         Start New Quiz
@@ -90,12 +88,10 @@ export default {
       userScore: 0,
       quizStarted: false,
       quizEnded: false,
-      currentRound: 0,
       currentWinner: null,
       currentLoser: null,
       currentPair: [],
       isCorrect: false,
-      isValid: true,
       cardClass: 'quiz-card'
     };
   },
@@ -146,7 +142,6 @@ export default {
       // Once user clicks, disable card
       this.cardClass = 'quiz-card disabled';
 
-      this.isValid = true;
       // console.log('Selected Animal ' + selectedAnimal);
 
       // console.log('Animal 1 speed: ' + animals[this.currentPair[0]].speed);
@@ -187,9 +182,6 @@ export default {
       }
     },
     nextQuestion() {
-      if (this.answerCounter < this.questionCounter) {
-        this.isValid = false;
-      }
       this.cardClass = 'quiz-card';
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
@@ -211,6 +203,7 @@ export default {
 <style scoped>
 h1 {
   width: 100%;
+  margin: 0 0 2vmin 0;
   padding: 1vmin 0;
   font-size: var(--extra-large-size);
   line-height: var(--extra-large-size);
@@ -235,6 +228,7 @@ h2 {
 }
 
 h3 {
+  margin: 1vmin 0;
   font-size: var(--extra-large-size);
   line-height: var(--extra-large-size);
 }
@@ -293,6 +287,10 @@ p {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   background-color: #ffffff;
+}
+
+.quiz-card p {
+  color: #000;
 }
 
 .quiz-card:hover {
@@ -476,7 +474,7 @@ p.incorrect {
   }
 
   h3 {
-    margin: 4vmin 0;
+    margin: 6vmin 0 3vmin 0;
   }
 }
 </style>

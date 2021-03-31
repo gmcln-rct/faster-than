@@ -187,7 +187,7 @@ li a.router-link-active {
     padding: 0.1vmin 5vmin;
   } */
 
-  .about {
+  .icon-about {
     display: none;
   }
 }
