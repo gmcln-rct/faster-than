@@ -35,8 +35,8 @@
         >Glenn McClanan</a
       >
       after his 4-year-old daughter spent weeks quizzing him about which animala
-      are faster or slower than a cheetahn. Daddy decided that hed needed to
-      build this website to keep her happy and to keep his sanity...
+      are faster or slower than a cheetah. Daddy decided that he needed to build
+      a website to keep her happy and to keep his sanity...
     </p>
   </section>
 </template>
