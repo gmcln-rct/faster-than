@@ -30,7 +30,7 @@
         Which animal is faster?
       </h3>
       <div class="quiz-options">
-        <transition name="animal1">
+        <transition name="animalmove">
           <base-card @click.prevent="checkQuestion(0)" :class="cardClass">
             <img :src="animals[currentPair[0]].img" />
             <p>{{ animals[currentPair[0]].commonName }}</p>
@@ -407,18 +407,31 @@ p.incorrect {
 }
 
 /* Transition */
-.animal1-enter-from {
+/* .animal-enter-from {
   opacity: 0;
   transform: translateX(-100px) scale(0.4);
 }
 
-.animal1-enter-active {
+.animal-enter-active {
   transition: all 3s ease-in;
 }
-.animal1-enter-to {
+.animal-enter-to {
   opacity: 1;
   transform: translateX(0) scale(1);
+} */
+
+.animalmove-enter {
+  opacity: 0;
+  transform: translateY(-50px) scale(0.4);
 }
+
+.animalmove-enter-active {
+  transition: all 0.5s ease-out;
+}
+/* .animal-enter-to {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+} */
 
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.

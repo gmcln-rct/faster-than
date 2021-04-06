@@ -106,15 +106,22 @@ p {
 .icon-quiz {
   background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
   filter: invert(1);
+  border-radius: 20px;
 }
 
 .icon-quiz:hover,
 .icon-quiz:focus {
   filter: invert(62%) sepia(10%) saturate(1948%) hue-rotate(104deg)
-    brightness(103%) contrast(90%);
+    brightness(60%) contrast(90%);
 
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+.icon-quiz:hover {
+  border-radius: 20px;
+  border: 10px solid blue;
+  background-color: blue;
 }
 
 /***
