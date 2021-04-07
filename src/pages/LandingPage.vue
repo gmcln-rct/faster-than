@@ -120,8 +120,8 @@ p {
 
 .icon-quiz:hover {
   border-radius: 20px;
-  border: 10px solid blue;
-  background-color: blue;
+  border: 3px solid blue;
+  /* background-color: blue; */
 }
 
 /***
