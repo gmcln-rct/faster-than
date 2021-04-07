@@ -1,7 +1,7 @@
 <template>
   <header>
     <!-- <div > -->
-    <router-link to="/faster-than" class="logo-block">
+    <router-link to="/" class="logo-block">
       <img
         class="logo"
         src="https://faster-than.s3.amazonaws.com/faster-than-logo-3.png"
@@ -12,13 +12,13 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/faster-than/compare">Compare</router-link>
+          <router-link to="/compare">Compare</router-link>
         </li>
         <li>
-          <router-link to="/faster-than/quiz">Quiz</router-link>
+          <router-link to="/quiz">Quiz</router-link>
         </li>
         <li>
-          <router-link to="/faster-than/about">
+          <router-link to="/about">
             <span class="icon icon-about"></span>
             <!-- <img
               class="about"

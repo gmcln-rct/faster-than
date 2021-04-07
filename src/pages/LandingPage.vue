@@ -10,11 +10,11 @@
     </p>
 
     <section class="icon-block">
-      <router-link to="/faster-than/compare">
+      <router-link to="/compare">
         <span class="icon icon-compare"></span>
         <p>Compare</p>
       </router-link>
-      <router-link to="/faster-than/quiz">
+      <router-link to="/quiz">
         <span class="icon icon-quiz"></span>
         <p>Quiz</p>
       </router-link>
