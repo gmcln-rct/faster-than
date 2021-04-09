@@ -63,7 +63,7 @@ header {
   width: 75px;
   height: 75px;
   /* margin: 0 0.5vmin 0 0; */
-  padding: 1vmin 1vmin 1vmin 0;
+  padding: 1vmin;
   opacity: 0.95;
   /* filter: invert(1); */
 }
