@@ -61,6 +61,7 @@ section {
   padding: 2vmin 10vmin 5vmin 10vmin;
 
   font-size: var(--medium-size);
+  font-display: swap;
 
   color: #fff;
   background-color: rgba(50, 50, 50, 0.5);

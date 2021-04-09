@@ -164,6 +164,7 @@ select {
 
 html {
   font-family: 'Roboto', sans-serif;
+  font-display: swap;
 }
 
 body {

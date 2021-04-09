@@ -214,12 +214,13 @@ export default {
 
 h2 {
   margin: 0 auto;
+
   padding: 1vmin 0 2vmin 0;
   font-family: merriweather, serif;
-
   font-style: normal;
   font-size: var(--large-size);
   font-weight: 600;
+  font-display: swap;
 
   text-align: center;
   color: #fefefe;

@@ -39,6 +39,7 @@ export default {
 
   font-family: var(--roboto);
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-display: swap;
   text-align: center;
 
   color: #fff;
