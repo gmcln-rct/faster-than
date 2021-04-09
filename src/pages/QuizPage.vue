@@ -32,13 +32,13 @@
       <div class="quiz-options">
         <transition name="animalmove">
           <base-card @click.prevent="checkQuestion(0)" :class="cardClass">
-            <img :src="animals[currentPair[0]].img" />
+            <img :src="animals[currentPair[0]].img" alt="animal 1" />
             <p>{{ animals[currentPair[0]].commonName }}</p>
           </base-card>
         </transition>
         <span class="or">or</span>
         <base-card @click.stop="checkQuestion(1)" :class="cardClass">
-          <img :src="animals[currentPair[1]].img" class="flip" />
+          <img :src="animals[currentPair[1]].img" class="flip" alt="animal 2" />
           <p>{{ animals[currentPair[1]].commonName }}</p>
         </base-card>
       </div>

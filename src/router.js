@@ -8,11 +8,35 @@ import AboutPage from './pages/AboutPage.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: LandingPage },
-    { path: '/compare', component: ComparePage },
+    {
+      path: '/',
+      component: LandingPage,
+      meta: {
+        title: 'Landing Page'
+      }
+    },
+    {
+      path: '/compare',
+      component: ComparePage,
+      meta: {
+        title: 'Compare Page'
+      }
+    },
 
-    { path: '/quiz', component: QuizPage },
-    { path: '/about', component: AboutPage }
+    {
+      path: '/quiz',
+      component: QuizPage,
+      meta: {
+        title: 'Quiz Page'
+      }
+    },
+    {
+      path: '/about',
+      component: AboutPage,
+      meta: {
+        title: 'About Page'
+      }
+    }
   ]
 });
 

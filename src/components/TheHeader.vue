@@ -5,6 +5,7 @@
       <img
         class="logo"
         src="https://faster-than.s3.amazonaws.com/faster-than-logo-3.png"
+        alt="logo"
       />
       <span class="site-name"> Faster Than</span>
     </router-link>
