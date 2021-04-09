@@ -92,6 +92,7 @@ p {
 
 @media screen and (max-width: 720px) {
   .social-share {
+    margin: 4vmin 0 0 0;
     padding: 2vmin 0 0 0;
     border-top: 1px solid #fff;
   }
