@@ -6,16 +6,19 @@
   <!-- <the-selector></the-selector> -->
   <!-- <the-footer></the-footer> -->
   <!-- <the-details></the-details> -->
+  <the-share-card></the-share-card>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
+import TheShareCard from './components/TheShareCard';
 
 // import TheFooter from './components/TheFooter';
 
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    TheShareCard
     // TheSelector,
     // TheDetails
     // TheFooter
