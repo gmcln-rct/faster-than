@@ -49,9 +49,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: flex-end;
+  /* align-content: flex-end; */
 
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
   padding: 2vmin 0 0 0;
 
@@ -66,7 +66,7 @@ p {
 .share-icon {
   width: 45px;
   height: 45px;
-  margin: 0 4vmin;
+  margin: 0 3vmin;
 
   opacity: 1;
 
@@ -74,9 +74,31 @@ p {
 }
 
 .share-icon:hover,
-.share-icon:focys {
+.share-icon:focus {
   /* opacity: 0.8; */
   filter: brightness(1.2);
   transform: scale(1.2);
+}
+
+/***
+ *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+ *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+ *    |  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+ *    |  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \
+ *    |  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |
+ *    |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/
+
+ */
+
+@media screen and (max-width: 720px) {
+  .social-share {
+    padding: 2vmin 0 0 0;
+    border-top: 1px solid #fff;
+  }
+  .share-icon {
+    width: 45px;
+    height: 45px;
+    margin: 2vmin 4vmin;
+  }
 }
 </style>
