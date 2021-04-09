@@ -1,8 +1,7 @@
 <template>
   <section class="social-share">
-    <p alt="Share website">Share:</p>
     <a
-      href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwriteword.site%2F"
+      href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffasterthan.net%2F"
       target="_blank"
       alt="Share on Facebook"
       rel="noopener noreferrer"
@@ -17,14 +16,14 @@
     </a>
 
     <a
-      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwriteword.site%2F"
+      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffasterthan.net%2F"
       target="_blank"
       alt="Share on Twitter"
       rel="noopener noreferrer"
       aria-label="share on twitter"
     >
       <img
-        src="https://faster-than.s3.amazonaws.com/social/fb.svg"
+        src="https://faster-than.s3.amazonaws.com/social/twitter.svg"
         alt="Share on Twitter"
         class="share-icon"
         aria-label="Share on Twitter Icon"
@@ -32,11 +31,15 @@
     </a>
 
     <a
-      href="mailto:?Subject=The Write Word&amp;Body=Thought%20you%20might%20like%20to%20find%20The%20Write%20Word!%20 https://writeword.site"
+      href="mailto:?Subject=Faster Than&amp;Body=Thought%20you%20might%20like%20to%20find%20Write%20Word!%20 https://writeword.site"
       alt="Share via Email"
       aria-label="share via email"
     >
-      <Email class="share-icon" alt="Share via Email" />
+      <img
+        src="https://faster-than.s3.amazonaws.com/social/email.svg"
+        class="share-icon"
+        alt="Share via Email"
+      />
     </a>
   </section>
 </template>
@@ -48,22 +51,25 @@
   justify-content: center;
   align-content: flex-end;
 
-  position: fixed;
   width: 200px;
-  top: 30px;
-  right: 30px;
+  margin: 0 auto;
+
+  color: red;
 
   cursor: pointer;
 
   z-index: 3;
 }
 
+p {
+  color: #fff;
+}
 .share-icon {
-  width: 40px;
-  height: 40px;
-  padding: 0 1vmin;
+  width: 50px;
+  height: 50px;
+  margin: 0 2vmin;
 
-  opacity: 0.5;
+  opacity: 1;
 
   transition: 400ms;
 }
