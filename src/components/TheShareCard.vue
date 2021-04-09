@@ -53,8 +53,7 @@
 
   width: 200px;
   margin: 0 auto;
-
-  color: red;
+  padding: 2vmin 0 0 0;
 
   cursor: pointer;
 
@@ -67,7 +66,7 @@ p {
 .share-icon {
   width: 50px;
   height: 50px;
-  margin: 0 2vmin;
+  margin: 0 4vmin;
 
   opacity: 1;
 
