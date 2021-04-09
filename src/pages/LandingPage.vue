@@ -98,7 +98,7 @@ p {
 .icon-compare:hover,
 .icon-compare:focus {
   filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(163deg)
-    brightness(97%) contrast(101%);
+    brightness(140%) contrast(101%);
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -112,7 +112,7 @@ p {
 .icon-quiz:hover,
 .icon-quiz:focus {
   filter: invert(62%) sepia(10%) saturate(1948%) hue-rotate(104deg)
-    brightness(60%) contrast(90%);
+    brightness(120%) contrast(90%);
 
   transform: scale(1.1);
   transition: 0.3s;
