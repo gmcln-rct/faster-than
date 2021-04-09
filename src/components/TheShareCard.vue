@@ -31,7 +31,7 @@
     </a>
 
     <a
-      href="mailto:?Subject=Faster Than&amp;Body=Thought%20you%20might%20like%20to%20find%20Write%20Word!%20 https://writeword.site"
+      href="mailto:?Subject=Faster Than - Which animal is faster? &amp;Body=Thought%20you%20might%20like%20to%20find%20the%20fastest%20animal!%20 https://fasterthan.net/"
       alt="Share via Email"
       aria-label="share via email"
     >
@@ -64,8 +64,8 @@ p {
   color: #fff;
 }
 .share-icon {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   margin: 0 4vmin;
 
   opacity: 1;
@@ -73,8 +73,10 @@ p {
   transition: 400ms;
 }
 
-.share-icon:hover {
-  opacity: 0.8;
+.share-icon:hover,
+.share-icon:focys {
+  /* opacity: 0.8; */
+  filter: brightness(1.2);
   transform: scale(1.2);
 }
 </style>
