@@ -4,7 +4,7 @@
     <div class="compare-selects">
       <span class="animal-card">
         <!-- <h3>Animal 1</h3> -->
-        <img class="animal-img" :src="getAnimalImg(animal1)" />
+        <img class="animal-img" :src="getAnimalImg(animal1)" alt="animal 1" />
         <base-select
           :options="animals"
           :selectText="selectText1"
@@ -17,7 +17,11 @@
       </span>
       <span class="vs">vs</span>
       <span class="animal-card">
-        <img class="animal-img flip" :src="getAnimalImg(animal2)" />
+        <img
+          class="animal-img flip"
+          :src="getAnimalImg(animal2)"
+          alt="animal 2"
+        />
         <base-select
           :options="animals"
           :selectText="selectText2"

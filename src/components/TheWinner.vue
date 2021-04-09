@@ -1,6 +1,6 @@
 <template>
   <section class="winnerSection" v-if="currentWinner !== ''">
-    <img :src="image" class="winnerImage" />
+    <img :src="image" class="winnerImage" alt="winning animal" />
     <div class="winnerInfo">
       <h4>
         Winner: <span class="winnerName">{{ commonName }}</span>
