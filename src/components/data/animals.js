@@ -81,7 +81,7 @@ export const animals = [
   },
   {
     id: 'animal011',
-    commonName: 'Blue Jay',
+    commonName: 'Blue jay',
     scientificName: 'Cyanocitta cristata',
     speed: 25,
     siteLink: 'https://en.wikipedia.org/wiki/Blue_jay',
@@ -89,7 +89,7 @@ export const animals = [
   },
   {
     id: 'animal012',
-    commonName: 'Blue Shark',
+    commonName: 'Blue shark',
     scientificName: 'Prionace glauca',
     speed: 42.88,
     siteLink: 'https://en.wikipedia.org/wiki/Blue_shark',
@@ -433,7 +433,7 @@ export const animals = [
   },
   {
     id: 'animal055',
-    commonName: 'Leopard Tortoise',
+    commonName: 'Leopard tortoise',
     scientificName: 'Stigmochelys pardalis',
     speed: 0.62,
     siteLink: 'https://en.wikipedia.org/wiki/Leopard_tortoise',

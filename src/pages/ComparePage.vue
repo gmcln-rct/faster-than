@@ -3,7 +3,6 @@
     <h2>Select two animals to compare top speed.</h2>
     <div class="compare-selects">
       <span class="animal-card">
-        <!-- <h3>Animal 1</h3> -->
         <img class="animal-img" :src="getAnimalImg(animal1)" alt="animal 1" />
         <base-select
           :options="animals"
@@ -49,15 +48,8 @@
       :image="currentWinnerObj.image"
     ></the-winner>
   </transition>
-  <transition name="tie">
-    <the-tie
-      :currenttie="currentWinner"
-      :commonName="currentWinnerObj.commonName"
-      :scientificName="currentWinnerObj.scientificName"
-      :siteLink="currentWinnerObj.siteLink"
-      :speed="currentWinnerObj.speed"
-      :img="currentWinnerObj.img"
-    ></the-tie>
+  <transition name="winner">
+    <the-tie :currentTie="currentTie" :speed="animal1Speed"></the-tie>
   </transition>
 </template>
 
@@ -75,12 +67,15 @@ export default {
     return {
       animal1: 'noanimal',
       animal2: 'noanimal',
+      animal1Speed: '',
       animals: animals,
+
       selectText1: '1',
       selectText2: '2',
       animal1IsValid: true,
       animal2IsValid: true,
       duplicateAnimal: false,
+
       currentWinner: '',
       currentWinnerObj: {
         commonName: '',
@@ -89,7 +84,7 @@ export default {
         speed: '',
         image: ''
       },
-      tie: false
+      currentTie: false
     };
   },
 
@@ -111,7 +106,7 @@ export default {
       } else {
         this.animal1IsValid = true;
       }
-      if (this.animal1 === 'noanimal') {
+      if (this.animal2 === 'noanimal') {
         this.animal2IsValid = false;
       } else {
         this.animal2IsValid = true;
@@ -127,23 +122,26 @@ export default {
       this.validateSelects();
       let selectedAnimal1 = this.animals.find(x => x.id === this.animal1);
       let selectedAnimal2 = this.animals.find(x => x.id === this.animal2);
+      this.animal1Speed = selectedAnimal1.speed;
 
       let winner;
 
       if (selectedAnimal1.speed > selectedAnimal2.speed) {
         winner = selectedAnimal1;
+        this.currentTie = false;
       } else if (selectedAnimal2.speed > selectedAnimal1.speed) {
         winner = selectedAnimal2;
-      } else {
-        this.tie = true;
+        this.currentTie = false;
+      } else if (selectedAnimal1.speed === selectedAnimal2.speed) {
+        this.currentTie = true;
       }
 
-      this.currentWinner = winner.commonName;
-
-      this.currentWinnerObj = winner;
-
-      this.currentWinnerObj.image = winner.img;
-      console.log(this.currentWinnerObj.image);
+      if (!this.currentTie) {
+        this.currentWinner = winner.commonName;
+        this.currentWinnerObj = winner;
+        this.currentWinnerObj.image = winner.img;
+        // console.log(this.currentWinnerObj.image);
+      }
 
       if (event) {
         console.log(event.target.tagName);

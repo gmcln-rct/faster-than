@@ -1,9 +1,6 @@
 <template>
-  <section
-    class="tieSection"
-    v-if="currentWinner !== '' && currentTie === true"
-  >
-    <h4>Tie: {{ name1 }} vs. {{ name2 }}</h4>
+  <section class="tieSection" v-if="currentTie === true">
+    <h4>It's a Tie!</h4>
 
     <p>Speed: {{ speed }} mph</p>
   </section>
@@ -11,7 +8,7 @@
 
 <script>
 export default {
-  props: ['name1', 'name2', 'speed', 'currentTie']
+  props: ['currentTie', 'speed']
 };
 </script>
 
@@ -23,7 +20,7 @@ export default {
 
   width: 500px;
   margin: 1vmin auto;
-  padding: 2vmin 2vmin;
+  padding: 1vmin 2vmin;
 
   font-family: var(--roboto);
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
@@ -41,22 +38,21 @@ export default {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.winnerSection h4 {
-  color: var(--highlight-yellow);
-  font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
+.tieSection h4 {
+  color: var(--amber);
+  font-size: var(--extra-large-size);
+  line-height: var(---extra-large-line);
 }
-.winnerSection p {
-  padding: 0.2vmin 0;
-  font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.winnerSection a {
-  color: var(--light-shades);
+.tieSection p {
+  /* padding: 0.2vmin 0; */
+  font-size: var(--extra-large-size);
+  line-height: var(---extra-large-line);
 }
 
 @media only screen and (max-width: 720px) {
-  .winnerSection {
-    width: 80vw;
+  .tieSection {
+    margin: 0 auto;
+    width: 90vw;
   }
 }
 </style>
