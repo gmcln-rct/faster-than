@@ -1,7 +1,6 @@
 <template>
   <section class="tieSection" v-if="currentTie === true">
     <h4>It's a Tie!</h4>
-
     <p>Speed: {{ speed }} mph</p>
   </section>
 </template>
@@ -19,7 +18,7 @@ export default {
   justify-content: center;
 
   width: 500px;
-  margin: 1vmin auto;
+  margin: 2vmin auto;
   padding: 1vmin 2vmin;
 
   font-family: var(--roboto);

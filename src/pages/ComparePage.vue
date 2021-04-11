@@ -65,10 +65,10 @@ export default {
   },
   data() {
     return {
+      animals: animals,
       animal1: 'noanimal',
       animal2: 'noanimal',
       animal1Speed: '',
-      animals: animals,
 
       selectText1: '1',
       selectText2: '2',
@@ -89,16 +89,19 @@ export default {
   },
 
   watch: {
+    // Reset when user selects new animal
     animal1() {
       this.currentWinner = '';
+      this.currentTie = false;
     },
     animal2() {
       this.currentWinner = '';
+      this.currentTie = false;
     }
   },
   methods: {
     validateSelects() {
-      console.log('This is validating');
+      // console.log('This is validating');
       this.duplicateAnimal = false;
 
       if (this.animal1 === 'noanimal') {
@@ -166,7 +169,7 @@ export default {
         let animal = animals.find(x => x.id === animalId);
         selectedAnimal = animal;
       }
-      console.log(selectedAnimal);
+      // console.log(selectedAnimal);
       return selectedAnimal;
     }
   }
@@ -175,11 +178,9 @@ export default {
 
 <style scoped scss>
 .compare {
-  /* max-width: 40rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: 1vmin auto; */
   padding: 2vmin 0 0 0;
 }
 
@@ -278,6 +279,19 @@ h3 {
 .winner-enter-to {
   opacity: 1;
   transform: translateY(0) scale(1);
+}
+
+.winner-leave-from {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.winner-leave-active {
+  transition: all 0.5s ease-out;
+}
+.winner-leave-to {
+  opacity: 0;
+  transform: translateY(-50px) scale(0.4);
 }
 
 /***
