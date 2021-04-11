@@ -1,21 +1,14 @@
 <template>
   <footer>
-    <!-- <p>Copyright @2021 Glenn McClanan.</p> -->
+    <p>@{{ currentYear }} Glenn McClanan. All right reserved.</p>
   </footer>
 </template>
+
 <script>
 export default {
   data() {
     return {
-      link1Text: 'Texas',
-      link1:
-        'https://tpwd.texas.gov/publications/nonpwdpubs/young_naturalist/animals/animal_speeds/',
-      link2Text: 'Hawaii',
-      link2: 'http://www.pbrc.hawaii.edu/~petra/animal_olympians.html',
-      link3Text: 'Natural HIstory Magazine',
-
-      link3:
-        'https://www.factmonster.com/math-science/biology/plants-animals/speed-of-animals'
+      currentYear: new Date().getFullYear()
     };
   }
 };
@@ -29,23 +22,35 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 
-  /* position: fixed; */
-  left: 0;
-  bottom: 0;
   width: 100%;
-
-  margin: 2vmin 0 0 0;
-  padding: 2vmin 0;
+  margin: 10vmin 0 0 0;
+  padding: 2vmin;
 
   /* height: 5rem; */
-  background-color: rgba(50, 50, 50, 0.5);
+  /* background-color: rgba(50, 50, 50, 0.5); */
 }
 
 footer p {
-  padding: 1vmin 0;
+  padding: 1vmin 5vmin;
   font-size: var(--base-size);
-  color: #fff;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/***
+ *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+ *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+ *    |  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+ *    |  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \
+ *    |  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |
+ *    |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/
+
+ */
+
+@media only screen and (max-width: 720px) {
+  footer p {
+    padding: 1vmin 20vmin;
+  }
 }
 </style>

@@ -4,24 +4,24 @@
     <router-view></router-view>
   </main>
   <!-- <the-selector></the-selector> -->
-  <!-- <the-footer></the-footer> -->
   <!-- <the-details></the-details> -->
   <the-share-card></the-share-card>
+  <the-footer></the-footer>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
 import TheShareCard from './components/TheShareCard';
 
-// import TheFooter from './components/TheFooter';
+import TheFooter from './components/TheFooter';
 
 export default {
   components: {
     TheHeader,
-    TheShareCard
+    TheShareCard,
     // TheSelector,
     // TheDetails
-    // TheFooter
+    TheFooter
   },
   metaInfo: {
     title: 'My Example App',
