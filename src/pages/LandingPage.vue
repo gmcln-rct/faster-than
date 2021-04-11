@@ -18,13 +18,6 @@
         <span class="icon icon-quiz"></span>
         <p>Quiz</p>
       </router-link>
-
-      <!-- <router-link to="/compare">
-        <img
-          class="icon"
-          src="https://faster-than.s3.amazonaws.com/icons/icon-compare.svg"
-        />
-      </router-link> -->
     </section>
   </main>
 </template>
@@ -81,18 +74,12 @@ p {
   line-height: 18px;
   color: var(--amber);
 }
-/* .icon-block:hover p {
-  color: red;
-  transition: 0.3s;
-} */
-/* .icon {
-  width: 150px;
-  fill: #fff;
-} */
 
 .icon-compare {
   background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-compare.svg);
+  border-radius: 20px;
   filter: invert(1);
+  transition: 0.3s;
 }
 
 .icon-compare:hover,
@@ -107,21 +94,15 @@ p {
   background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
   filter: invert(1);
   border-radius: 20px;
+  transition: 0.3s;
 }
 
 .icon-quiz:hover,
 .icon-quiz:focus {
-  filter: invert(62%) sepia(10%) saturate(1948%) hue-rotate(104deg)
+  filter: invert(62%) sepia(10%) saturate(1948%) hue-rotate(95deg)
     brightness(120%) contrast(90%);
-
   transform: scale(1.1);
   transition: 0.3s;
-}
-
-.icon-quiz:hover {
-  border-radius: 20px;
-  border: 3px solid blue;
-  /* background-color: blue; */
 }
 
 /***

@@ -116,14 +116,14 @@ select {
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */
 
 /* End Reset */
 
@@ -179,8 +179,7 @@ body {
     #272e3a,
     #004d7a,
     #2d878f,
-    #4bbe90,
-    #c5ee6d
+    #4bbe90 /* #c5ee6d */
   );
 }
 

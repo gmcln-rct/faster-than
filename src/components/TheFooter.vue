@@ -24,11 +24,8 @@ footer {
   align-items: center;
 
   width: 100%;
-  margin: 10vmin 0 0 0;
+  margin: 15vmin 0 0 0;
   padding: 2vmin;
-
-  /* height: 5rem; */
-  /* background-color: rgba(50, 50, 50, 0.5); */
 }
 
 footer p {
