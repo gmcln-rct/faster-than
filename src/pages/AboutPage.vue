@@ -1,55 +1,56 @@
 <template>
-  <transition name="about">
-    <section>
-      <h2>About <em>Faster Than</em></h2>
-      <p>
-        Cheetah vs. lion? Rabbit vs. tortoise? <em>Faster Than</em> helps you
-        answer the question: which animal is faster? Just selct the animals you
-        want to compare and click "Compare."
-      </p>
-      <p>
-        The comparisons are based on top speed of each animal, with data
-        compiled from different sources:
-      </p>
-      <ul>
-        <li>
-          <a
-            href="https://tpwd.texas.gov/publications/nonpwdpubs/young_naturalist/animals/animal_speeds/"
-            target="_blank"
-            >Young Naturalist - Texas A&M Press</a
-          >
-        </li>
-        <li>
-          <a href="https://www.speedofanimals.com/" target="_blank"
-            >Speed of Animals</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://en.wikipedia.org/wiki/Fastest_animals"
-            target="_blank"
-            >Wikipedia - Fastest Animals</a
-          >
-        </li>
-      </ul>
-      <p>
-        The site was built using Vue.js and CSS3, and created by New York-based
-        Front End Developer
-        <a href="https://www.glennmcclanan.com/" target="_blank"
-          >Glenn McClanan</a
+  <section>
+    <h2>About <em>Faster Than</em></h2>
+    <p>
+      Cheetah vs. lion? Rabbit vs. tortoise? <em>Faster Than</em> helps you
+      answer the question: which animal is faster? Just selct the animals you
+      want to compare and click "Compare."
+    </p>
+    <p>
+      The comparisons are based on top speed of each animal, with data compiled
+      from different sources:
+    </p>
+    <ul>
+      <li>
+        <a
+          href="https://tpwd.texas.gov/publications/nonpwdpubs/young_naturalist/animals/animal_speeds/"
+          target="_blank"
+          >Young Naturalist - Texas A&M Press</a
         >
-        after his 4-year-old daughter spent weeks quizzing him about which
-        animala are faster or slower than a cheetah. Daddy decided that he
-        needed to build a website to keep her happy and to keep his sanity...
-      </p>
-    </section>
-  </transition>
+      </li>
+      <li>
+        <a href="https://www.speedofanimals.com/" target="_blank"
+          >Speed of Animals</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Fastest_animals" target="_blank"
+          >Wikipedia - Fastest Animals</a
+        >
+      </li>
+    </ul>
+    <p>
+      The site was built using Vue.js and CSS3, and created by New York-based
+      Front End Developer
+      <a href="https://www.glennmcclanan.com/" target="_blank"
+        >Glenn McClanan</a
+      >
+      after his 4-year-old daughter spent weeks quizzing him about which animala
+      are faster or slower than a cheetah. Daddy decided that he needed to build
+      a website to keep her happy and to keep his sanity...
+    </p>
+    <the-share-card></the-share-card>
+  </section>
 </template>
 
 <script>
+import TheShareCard from '../components/TheShareCard.vue';
 export default {
   data() {
     // sources: [];
+  },
+  components: {
+    TheShareCard
   }
 };
 </script>

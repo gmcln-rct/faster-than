@@ -23,8 +23,10 @@ footer {
   flex-direction: column;
   align-items: center;
 
+  position: absolute;
+  bottom: 10px;
   width: 100%;
-  margin: 15vmin 0 0 0;
+  /* margin: 15vmin 0 0 0; */
   padding: 2vmin;
 }
 
@@ -47,7 +49,7 @@ footer p {
 
 @media only screen and (max-width: 720px) {
   footer p {
-    padding: 1vmin 20vmin;
+    padding: 1vmin;
   }
 }
 </style>

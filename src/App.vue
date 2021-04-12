@@ -5,19 +5,19 @@
   </main>
   <!-- <the-selector></the-selector> -->
   <!-- <the-details></the-details> -->
-  <the-share-card></the-share-card>
+  <!-- <the-share-card></the-share-card> -->
   <the-footer></the-footer>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader';
-import TheShareCard from './components/TheShareCard';
+// import TheShareCard from './components/TheShareCard';
 import TheFooter from './components/TheFooter';
 
 export default {
   components: {
     TheHeader,
-    TheShareCard,
+    // TheShareCard,
     TheFooter
   },
   metaInfo: {

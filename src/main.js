@@ -13,4 +13,6 @@ app.component('base-select', BaseSelect);
 
 app.use(router);
 
-app.mount('#app');
+router.isReady().then(function() {
+  app.mount('#app');
+});

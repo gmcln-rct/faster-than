@@ -1,5 +1,5 @@
 <template>
-  <section class="social-share">
+  <div class="social-share">
     <a
       href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffasterthan.net%2F"
       target="_blank"
@@ -41,7 +41,7 @@
         alt="Share via Email"
       />
     </a>
-  </section>
+  </div>
 </template>
 
 <style scoped>
@@ -57,7 +57,7 @@
 
   cursor: pointer;
 
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 p {
