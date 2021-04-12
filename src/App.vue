@@ -12,15 +12,12 @@
 <script>
 import TheHeader from './components/TheHeader';
 import TheShareCard from './components/TheShareCard';
-
 import TheFooter from './components/TheFooter';
 
 export default {
   components: {
     TheHeader,
     TheShareCard,
-    // TheSelector,
-    // TheDetails
     TheFooter
   },
   metaInfo: {
