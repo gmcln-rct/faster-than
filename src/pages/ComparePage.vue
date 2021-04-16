@@ -1,5 +1,5 @@
 <template>
-  <section class="compare">
+  <main class="compare">
     <h2>Select two animals to compare top speed.</h2>
     <div class="compare-selects">
       <span class="animal-card">
@@ -37,20 +37,20 @@
     <p class="duplicate-animal" v-show="duplicateAnimal">
       Please select different animals.
     </p>
-  </section>
-  <transition name="winner">
-    <the-winner
-      :currentWinner="currentWinner"
-      :commonName="currentWinnerObj.commonName"
-      :scientificName="currentWinnerObj.scientificName"
-      :siteLink="currentWinnerObj.siteLink"
-      :speed="currentWinnerObj.speed"
-      :image="currentWinnerObj.image"
-    ></the-winner>
-  </transition>
-  <transition name="winner">
-    <the-tie :currentTie="currentTie" :speed="animal1Speed"></the-tie>
-  </transition>
+    <transition name="winner">
+      <the-winner
+        :currentWinner="currentWinner"
+        :commonName="currentWinnerObj.commonName"
+        :scientificName="currentWinnerObj.scientificName"
+        :siteLink="currentWinnerObj.siteLink"
+        :speed="currentWinnerObj.speed"
+        :image="currentWinnerObj.image"
+      ></the-winner>
+    </transition>
+    <transition name="winner">
+      <the-tie :currentTie="currentTie" :speed="animal1Speed"></the-tie>
+    </transition>
+  </main>
 </template>
 
 <script>
@@ -135,7 +135,10 @@ export default {
       } else if (selectedAnimal2.speed > selectedAnimal1.speed) {
         winner = selectedAnimal2;
         this.currentTie = false;
-      } else if (selectedAnimal1.speed === selectedAnimal2.speed) {
+      } else if (
+        selectedAnimal1.speed === selectedAnimal2.speed &&
+        selectedAnimal1 !== selectedAnimal2
+      ) {
         this.currentTie = true;
       }
 

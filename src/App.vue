@@ -1,8 +1,8 @@
 <template>
   <the-header></the-header>
-  <main>
+  <transition name="route-transition">
     <router-view></router-view>
-  </main>
+  </transition>
   <!-- <the-selector></the-selector> -->
   <!-- <the-details></the-details> -->
   <!-- <the-share-card></the-share-card> -->
@@ -236,6 +236,19 @@ button:active {
   transition: 0.3s;
 }
 
+/* Transitions */
+.route-transition-enter-from {
+  opacity: 0;
+  transform: translateY(-50px) scale(0.4);
+}
+
+.route-transition-enter-active {
+  transition: all 0.5s ease-in;
+}
+.route-transition-enter-to {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
  *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
