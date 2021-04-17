@@ -565,7 +565,7 @@ export const animals = [
     scientificName: 'Isurus oxyrinchus',
     speed: 45,
     siteLink: 'https://en.wikipedia.org/wiki/Shortfin_mako_shark',
-    img: 'https://faster-than.s3.amazonaws.com/makoshark.svg'
+    img: 'https://faster-than.s3.amazonaws.com/shortfinmakoshark.svg'
   },
   {
     id: 'animal072',

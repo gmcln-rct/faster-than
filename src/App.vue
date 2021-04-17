@@ -1,8 +1,13 @@
 <template>
   <the-header></the-header>
-  <transition name="route-transition">
+  <router-view v-slot="{ Component }">
+    <transition name="route-transition" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
+  <!-- <transition name="route-transition">
     <router-view></router-view>
-  </transition>
+  </transition> -->
   <!-- <the-selector></the-selector> -->
   <!-- <the-details></the-details> -->
   <!-- <the-share-card></the-share-card> -->
@@ -239,7 +244,7 @@ button:active {
 /* Transitions */
 .route-transition-enter-from {
   opacity: 0;
-  transform: translateY(-50px) scale(0.4);
+  /* transform: translateY(-50px) scale(0.4); */
 }
 
 .route-transition-enter-active {
@@ -247,7 +252,7 @@ button:active {
 }
 .route-transition-enter-to {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  /* transform: translateY(0) scale(1); */
 }
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
