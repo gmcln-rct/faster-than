@@ -6,7 +6,7 @@
       speeds of different animals throughout the Animal Kingdom.
     </p>
     <p>
-      Compare top speeds or take a quiz to test your animal-speed knowledge.
+      Compare top speeds or take a quiz to test your animal-speed knowledge:
     </p>
 
     <section class="icon-block">

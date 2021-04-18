@@ -2,36 +2,40 @@
   <main class="compare">
     <h2>Select two animals to compare top speed.</h2>
     <div class="compare-selects">
-      <span class="animal-card">
-        <img class="animal-img" :src="getAnimalImg(animal1)" alt="animal 1" />
-        <base-select
-          :options="animals"
-          :selectText="selectText1"
-          class="select-css"
-          v-model="animal1"
-        ></base-select>
-        <p class="animal-invalid" v-if="!animal1IsValid">
-          Please select an animal
-        </p>
-      </span>
+      <transition name="slideinleft" appear>
+        <span class="animal-card">
+          <img class="animal-img" :src="getAnimalImg(animal1)" alt="animal 1" />
+          <base-select
+            :options="animals"
+            :selectText="selectText1"
+            class="select-css"
+            v-model="animal1"
+          ></base-select>
+          <p class="animal-invalid" v-if="!animal1IsValid">
+            Please select an animal
+          </p>
+        </span>
+      </transition>
       <span class="vs">vs</span>
-      <span class="animal-card">
-        <img
-          class="animal-img flip"
-          :src="getAnimalImg(animal2)"
-          alt="animal 2"
-        />
-        <base-select
-          :options="animals"
-          :selectText="selectText2"
-          class="select-css"
-          v-model="animal2"
-        ></base-select>
+      <transition name="slideinright" appear>
+        <span class="animal-card">
+          <img
+            class="animal-img flip"
+            :src="getAnimalImg(animal2)"
+            alt="animal 2"
+          />
+          <base-select
+            :options="animals"
+            :selectText="selectText2"
+            class="select-css"
+            v-model="animal2"
+          ></base-select>
 
-        <p class="animal-invalid" v-if="!animal2IsValid">
-          Please select an animal
-        </p>
-      </span>
+          <p class="animal-invalid" v-if="!animal2IsValid">
+            Please select an animal
+          </p>
+        </span>
+      </transition>
     </div>
     <button v-on:click.stop="compareAnimals">Which is faster?</button>
     <p class="duplicate-animal" v-show="duplicateAnimal">
@@ -295,6 +299,33 @@ h3 {
 .winner-leave-to {
   opacity: 0;
   transform: translateY(-50px) scale(0.4);
+}
+
+/* Transition - SlideIn */
+.slideinleft-enter-from {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+.slideinleft-enter-active {
+  transition: all 1s ease-in-out;
+}
+.slideinleft-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slideinright-enter-from {
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+.slideinright-enter-active {
+  transition: all 1s ease-in-out;
+}
+.slideinright-enter-to {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /***
