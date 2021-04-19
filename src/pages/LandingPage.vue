@@ -2,11 +2,12 @@
   <main>
     <h1>What is <span class="yellow">Faster Than</span>?</h1>
     <p>
-      <em>Faster Than</em> is a web app that helps kids and parents explore the
-      speeds of different animals throughout the Animal Kingdom.
+      <em>Faster Than</em> is a web app created to help kids and parents explore
+      the top speeds of different animals throughout the Animal Kingdom.
     </p>
     <p>
-      Compare top speeds or take a quiz to test your animal-speed knowledge:
+      You can compare top speeds or take a quiz to test your animal-speed
+      knowledge:
     </p>
 
     <section class="icon-block">
