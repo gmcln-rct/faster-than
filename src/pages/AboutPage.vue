@@ -7,8 +7,8 @@
       want to compare and click "Compare."
     </p>
     <p>
-      The comparisons are based on top speed of each animal, with data compiled
-      from different sources:
+      The comparisons are based each animal's top speed, with data compiled from
+      these sources:
     </p>
     <ul>
       <li>
@@ -36,8 +36,11 @@
         >Glenn McClanan</a
       >
       after his 4-year-old daughter spent weeks quizzing him about which animala
-      are faster or slower than a cheetah. Daddy decided that he needed to build
-      a website to keep her happy and to keep his sanity...
+      are faster or slower than a cheetah.
+      <span class="desktop-only"
+        >Daddy decided that he needed to build a website to keep her happy and
+        to keep his sanity...</span
+      >
     </p>
     <the-share-card></the-share-card>
   </section>

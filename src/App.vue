@@ -267,5 +267,15 @@ button:active {
     max-width: 70vw;
     padding: 2vmin 3vmin;
   }
+
+  .icon-about {
+    margin: 2px 0 0 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
 }
 </style>

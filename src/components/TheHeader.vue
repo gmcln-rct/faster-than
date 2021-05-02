@@ -191,7 +191,7 @@ li a.router-link-active {
   } */
 
   .icon-about {
-    display: none;
+    /* display: none; */
   }
 }
 </style>
