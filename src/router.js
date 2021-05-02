@@ -10,6 +10,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name: 'home',
       component: LandingPage,
       meta: {
         title: 'Landing Page'
@@ -17,6 +18,7 @@ const router = createRouter({
     },
     {
       path: '/compare',
+      name: 'compare',
       component: ComparePage,
       meta: {
         title: 'Compare Page'
@@ -25,6 +27,7 @@ const router = createRouter({
 
     {
       path: '/quiz',
+      name: 'quiz',
       component: QuizPage,
       meta: {
         title: 'Quiz Page'
@@ -32,6 +35,7 @@ const router = createRouter({
     },
     {
       path: '/about',
+      name: 'about',
       component: AboutPage,
       meta: {
         title: 'About Page'

@@ -41,6 +41,7 @@ header {
   width: 100%;
 
   text-align: center;
+  font-display: swap;
   /* position: fixed; */
   z-index: 999;
 

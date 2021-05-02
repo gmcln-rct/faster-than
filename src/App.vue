@@ -174,7 +174,7 @@ html {
 body {
   margin: 0;
   letter-spacing: 1px;
-
+  font-display: swap;
   background-image: linear-gradient(
     to right top,
     #272e3a,
@@ -194,6 +194,7 @@ button {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-display: swap;
 
   background-color: var(--highlight-yellow);
   color: #fff;
