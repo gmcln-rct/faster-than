@@ -48,8 +48,17 @@ footer p {
  */
 
 @media only screen and (max-width: 720px) {
+  footer {
+    display: none;
+    /* position: relative;
+    bottom: 10px;
+    width: 100%;
+    margin: 15vmin 0 0 0;
+    padding: 2vmin; */
+  }
   footer p {
     padding: 1vmin;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 </style>

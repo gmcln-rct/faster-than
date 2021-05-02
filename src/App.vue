@@ -22,7 +22,6 @@ import TheFooter from './components/TheFooter';
 export default {
   components: {
     TheHeader,
-    // TheShareCard,
     TheFooter
   },
   metaInfo: {
