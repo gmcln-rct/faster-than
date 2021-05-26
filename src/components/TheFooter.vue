@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>@{{ currentYear }} Glenn McClanan. All right reserved.</p>
+    <p>@{{ currentYear }} Glenn McClanan. All rights reserved.</p>
   </footer>
 </template>
 
@@ -50,11 +50,6 @@ footer p {
 @media only screen and (max-width: 720px) {
   footer {
     display: none;
-    /* position: relative;
-    bottom: 10px;
-    width: 100%;
-    margin: 15vmin 0 0 0;
-    padding: 2vmin; */
   }
   footer p {
     padding: 1vmin;
