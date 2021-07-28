@@ -149,7 +149,7 @@ li a.router-link-active {
 
  */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1020px) {
   header {
     flex-direction: column;
   }
@@ -168,7 +168,7 @@ li a.router-link-active {
   }
 
   .site-name {
-    width: 200px;
+    width: 250px;
   }
 
   nav {
