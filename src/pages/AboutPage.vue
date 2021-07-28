@@ -43,6 +43,9 @@
       >
     </p>
     <the-share-card></the-share-card>
+    <p class="copyright-mobile">
+      @{{ currentYear }} Glenn McClanan. All rights reserved.
+    </p>
   </section>
 </template>
 
@@ -50,7 +53,9 @@
 import TheShareCard from '../components/TheShareCard.vue';
 export default {
   data() {
-    // sources: [];
+    return {
+      currentYear: new Date().getFullYear()
+    };
   },
   components: {
     TheShareCard
@@ -114,11 +119,29 @@ a {
   transform: translateY(0) scale(1);
 }
 
+.copyright-mobile {
+  display: hidden;
+}
+
+/***
+ *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+ *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+ *    |  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+ *    |  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \
+ *    |  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |
+ *    |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/
+
+ */
+
 @media only screen and (max-width: 720px) {
   section {
     /* width: 90vw; */
     /* margin: 0 5vw 2vw 5vw; */
     padding: 0 5vw 50 5vw;
+  }
+
+  .copyright-mobile {
+    display: block;
   }
 }
 </style>
