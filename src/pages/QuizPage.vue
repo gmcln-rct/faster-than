@@ -1,6 +1,6 @@
 <template>
   <main class="quiz">
-    <h1>Animal Speed Quiz</h1>
+    <!-- <h1>Animal Speed Quiz</h1> -->
     <!-- Quiz Start -->
     <section v-if="!quizStarted" class="center">
       <h2>

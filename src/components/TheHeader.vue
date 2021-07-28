@@ -105,7 +105,7 @@ li {
 
 li a {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
+  padding: 0 1.5rem;
 
   text-decoration: none;
   color: white;
@@ -174,7 +174,7 @@ li a.router-link-active {
   nav {
     width: 100%;
 
-    padding: 2vmin 0;
+    padding: 0.5vmin 0;
 
     line-height: 16px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -185,7 +185,7 @@ li a.router-link-active {
   }
 
   li a {
-    padding: 0.5rem;
+    padding: 0 0.5rem;
   }
   /* nav li {
     padding: 0.1vmin 5vmin;
@@ -193,6 +193,12 @@ li a.router-link-active {
 
   .icon-about {
     /* display: none; */
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .icon-about {
+    margin: 10px 0;
   }
 }
 </style>
