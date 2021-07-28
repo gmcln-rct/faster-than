@@ -58,7 +58,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* padding: 0 0 0 2vmin; */
+  padding: 0 0 0 2vmin;
   text-align: left;
 }
 
@@ -82,6 +82,7 @@ export default {
 .winnerImage {
   width: 100px;
   filter: invert(1);
+  padding: 0 0.5vmin;
 }
 
 /***
@@ -99,6 +100,10 @@ export default {
     width: 90vw;
 
     /* line-height: 16px; */
+  }
+
+  .winnerInfo {
+    padding: 0 0 0 1vmin;
   }
 
   .winnerImage {
