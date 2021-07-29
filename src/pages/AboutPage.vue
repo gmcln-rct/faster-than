@@ -35,11 +35,11 @@
       <a href="https://www.glennmcclanan.com/" target="_blank"
         >Glenn McClanan</a
       >
-      after his 4-year-old daughter spent weeks quizzing him about which animala
+      after his 4-year-old daughter spent weeks quizzing him about which animals
       are faster or slower than a cheetah.
       <span class="desktop-only"
         >Daddy decided that he needed to build a website to keep her happy and
-        to keep his sanity...</span
+        to keep him sane.</span
       >
     </p>
     <the-share-card></the-share-card>
