@@ -153,9 +153,9 @@ export default {
         // console.log(this.currentWinnerObj.image);
       }
 
-      if (event) {
-        console.log(event.target.tagName);
-      }
+      // if (event) {
+      //   console.log(event.target.tagName);
+      // }
     },
     getAnimalImg(animalId) {
       // let animalId = this.animal2;

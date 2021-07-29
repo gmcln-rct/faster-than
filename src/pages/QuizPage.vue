@@ -185,7 +185,7 @@ export default {
       this.cardClass = 'quiz-card';
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
-        console.log('Current Pair ' + this.currentPair);
+        // console.log('Current Pair ' + this.currentPair);
       } else if (this.animalPairs === 0) {
         this.quizEnded = true;
       }
