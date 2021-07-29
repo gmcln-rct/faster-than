@@ -120,7 +120,8 @@ a {
 }
 
 .copyright-mobile {
-  display: hidden;
+  padding: 3vmin 0 0 0;
+  display: none;
 }
 
 /***
@@ -133,11 +134,9 @@ a {
 
  */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   section {
-    /* width: 90vw; */
-    /* margin: 0 5vw 2vw 5vw; */
-    padding: 0 5vw 50 5vw;
+    padding: 0 5vw 50px 5vw;
   }
 
   .copyright-mobile {

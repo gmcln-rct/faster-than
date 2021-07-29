@@ -47,12 +47,12 @@ footer p {
 
  */
 @media only screen and (max-width: 960px) {
-  footer p {
-    margin: 3vmin 0 0 0;
+  footer {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 720px) {
+/* @media only screen and (max-width: 720px) {
   footer {
     display: none;
   }
@@ -60,5 +60,5 @@ footer p {
     padding: 1vmin;
     color: rgba(255, 255, 255, 0.7);
   }
-}
+} */
 </style>
