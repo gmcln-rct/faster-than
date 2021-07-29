@@ -125,7 +125,7 @@ export default {
       }
     },
 
-    compareAnimals(event) {
+    compareAnimals() {
       this.validateSelects();
       let selectedAnimal1 = this.animals.find(x => x.id === this.animal1);
       let selectedAnimal2 = this.animals.find(x => x.id === this.animal2);
