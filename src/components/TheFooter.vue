@@ -46,6 +46,11 @@ footer p {
  *    |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/
 
  */
+@media only screen and (max-width: 960px) {
+  footer p {
+    margin: 3vmin 0 0 0;
+  }
+}
 
 @media only screen and (max-width: 720px) {
   footer {
