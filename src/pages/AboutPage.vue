@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>About <em>Faster Than</em></h2>
+    <h2>About <span class="yellow">Faster Than</span></h2>
     <p>
       Cheetah vs. lion? Rabbit vs. tortoise? <em>Faster Than</em> helps you
       answer the question: which animal is faster? Just selct the animals you
@@ -100,7 +100,13 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 0;
 }
+.yellow {
+  padding: 0 1vmin 0 0;
+  font-style: italic;
+  font-weight: 700;
 
+  color: var(--amber);
+}
 a {
   color: var(--light-accent);
 }
