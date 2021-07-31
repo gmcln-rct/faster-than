@@ -30,8 +30,8 @@
       </li>
     </ul>
     <p>
-      The site was built using Vue.js and CSS3, and created by New York-based
-      Front End Developer
+      The app was built using Vue.js and CSS3 and designed. It was created,
+      designed and developed by New York-based Front End Developer
       <a href="https://www.glennmcclanan.com/" target="_blank"
         >Glenn McClanan</a
       >
