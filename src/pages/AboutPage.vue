@@ -32,11 +32,12 @@
     <p>
       The app was built using Vue.js and CSS3 and designed. It was created,
       designed and developed by New York-based Front End Developer
-      <a href="https://www.glennmcclanan.com/" target="_blank"
-        >Glenn McClanan</a
-      >
-      after his 4-year-old daughter spent weeks quizzing him about which animals
-      are faster or slower than a cheetah.
+      <a href="https://www.glennmcclanan.com/" target="_blank">Glenn McClanan</a
+      >, who also created apps
+      <a href="https://writeword.site/" target="_blank">The Write Word</a> and
+      <a href="https://www.copoecolher.com/" target="_blank">Copo e colher</a>.
+      The idea for Faster Than came after his 4-year-old daughter spent weeks
+      quizzing him about which animals are faster or slower than a cheetah.
       <span class="desktop-only"
         >Daddy decided that he needed to build a website to keep her happy and
         to keep him sane.</span
