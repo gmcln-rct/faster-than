@@ -167,6 +167,8 @@ select {
   --roboto: 'Roboto', sans-serif;
 }
 
+/* Start Styling */
+
 html {
   font-family: 'Roboto', sans-serif;
   font-display: swap;
@@ -177,7 +179,7 @@ body {
   letter-spacing: 1px;
   font-display: swap;
   background-image: linear-gradient(
-    to left bottom,
+    to right top,
     #272e3a,
     #004d7a,
     #2d878f,
