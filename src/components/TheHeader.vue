@@ -149,13 +149,13 @@ li a.router-link-active {
 
  */
 
- @media screen and (max-width: 720px) {
+ @media screen and (max-width: 1020px) {
      .site-name {
     width: 250px;
   }
  }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 720px) {
   header {
     flex-direction: column;
   }
@@ -183,7 +183,7 @@ li a.router-link-active {
     padding: 0.5vmin 0;
 
     line-height: 16px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--subheader-blue);
   }
 
   li {
@@ -207,4 +207,6 @@ li a.router-link-active {
     margin: 5px 0;
   }
 }
+
+
 </style>

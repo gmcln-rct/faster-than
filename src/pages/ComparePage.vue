@@ -248,9 +248,9 @@ h3 {
   font-weight: 700;
   color: #fff;
 
-  background-color: var(--dark-accent);
+  background-color: var(--subheader-blue);
   border-radius: 50%;
-  border: 4px solid #fff;
+  /* border: 4px solid #fff; */
 }
 
 .animal-invalid {
@@ -348,7 +348,7 @@ h3 {
 
   button {
     max-width: 80vw;
-    margin: 6vmin auto 4vmin;
+    margin: 4vmin auto 4vmin;
     padding: 2vmin 6vmin;
   }
 

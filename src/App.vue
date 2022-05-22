@@ -137,7 +137,8 @@ select {
   --dark-accent: #004d7a;
   --dark-shades: #17161c;
 
-  --header-blue: rgba(0, 77, 122, 0.8);
+  --header-blue: rgba(0, 77, 122, 1);
+  --subheader-blue: #002D47;
 
   --highlight-yellow: #d86a2c;
   --muted-yellow: #fde8a9;
