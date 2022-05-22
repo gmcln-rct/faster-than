@@ -149,12 +149,14 @@ li a.router-link-active {
 
  */
 
+/* Tablet */
  @media screen and (max-width: 1020px) {
-     .site-name {
+  .site-name {
     width: 250px;
   }
  }
 
+/* Mobile */
 @media screen and (max-width: 720px) {
   header {
     flex-direction: column;
@@ -174,7 +176,7 @@ li a.router-link-active {
   }
 
   .site-name {
-    width: 200px;
+    width: 100%;
   }
 
   nav {
@@ -198,15 +200,15 @@ li a.router-link-active {
   } */
 
   .icon-about {
-    /* display: none; */
+    margin: 2px 0;
   }
 }
 
-@media screen and (max-width: 1020px) {
+/* @media screen and (max-width: 1020px) {
   .icon-about {
-    margin: 5px 0;
+    margin: 2px 0;
   }
-}
+} */
 
 
 </style>
