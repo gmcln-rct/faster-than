@@ -92,7 +92,7 @@ ul {
 
   margin: 0;
   padding: 0;
-  height: 100%;
+  /* height: 100%; */
   list-style: none;
 }
 
@@ -149,6 +149,12 @@ li a.router-link-active {
 
  */
 
+ @media screen and (max-width: 720px) {
+     .site-name {
+    width: 250px;
+  }
+ }
+
 @media screen and (max-width: 1020px) {
   header {
     flex-direction: column;
@@ -168,7 +174,7 @@ li a.router-link-active {
   }
 
   .site-name {
-    width: 250px;
+    width: 200px;
   }
 
   nav {
@@ -198,7 +204,7 @@ li a.router-link-active {
 
 @media screen and (max-width: 1020px) {
   .icon-about {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 }
 </style>

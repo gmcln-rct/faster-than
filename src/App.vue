@@ -176,7 +176,7 @@ body {
   letter-spacing: 1px;
   font-display: swap;
   background-image: linear-gradient(
-    to right top,
+    to left bottom,
     #272e3a,
     #004d7a,
     #2d878f,
