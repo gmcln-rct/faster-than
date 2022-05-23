@@ -158,7 +158,6 @@ export default {
       // }
     },
     getAnimalImg(animalId) {
-      // let animalId = this.animal2;
       let animalImg;
       if (animalId !== 'noanimal') {
         let animal = animals.find(x => x.id === animalId);
