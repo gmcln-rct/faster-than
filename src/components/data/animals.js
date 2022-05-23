@@ -17,7 +17,7 @@ export const animals = [
     },
     {
      "id": "animal003",
-     "commonName": "Anna'S Hummingbird",
+     "commonName": "Anna's Hummingbird",
      "scientificName": "Calypte anna",
      "speed": 61.06,
      "siteLink": "https:///en.wikipedia.org/wiki/Anna%27s_hummingbird",
