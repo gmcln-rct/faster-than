@@ -36,11 +36,11 @@
       >, who also created apps
       <a href="https://writeword.site/" target="_blank">The Write Word</a> and
       <a href="https://www.copoecolher.com/" target="_blank">Copo e colher</a>.
-      The idea for Faster Than came after his 4-year-old daughter spent weeks
+      The idea for Faster Than came after his daughters spent weeks
       quizzing him about which animals are faster or slower than a cheetah.
       <span class="desktop-only"
-        >Daddy decided that he needed to build a website to keep her happy and
-        to keep him sane.</span
+        >Daddy decided that he needed to build a website to keep them happy and
+        to keep himself sane...</span
       >
     </p>
     <the-share-card></the-share-card>
