@@ -133,6 +133,7 @@ export default {
 
       let winner;
 
+      // Check for tie
       if (selectedAnimal1.speed > selectedAnimal2.speed) {
         winner = selectedAnimal1;
         this.currentTie = false;
@@ -150,12 +151,7 @@ export default {
         this.currentWinner = winner.commonName;
         this.currentWinnerObj = winner;
         this.currentWinnerObj.image = winner.img;
-        // console.log(this.currentWinnerObj.image);
       }
-
-      // if (event) {
-      //   console.log(event.target.tagName);
-      // }
     },
     getAnimalImg(animalId) {
       let animalImg;
@@ -175,7 +171,6 @@ export default {
         let animal = animals.find(x => x.id === animalId);
         selectedAnimal = animal;
       }
-      // console.log(selectedAnimal);
       return selectedAnimal;
     }
   }
