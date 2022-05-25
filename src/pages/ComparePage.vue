@@ -214,8 +214,9 @@ export default {
 
 h2 {
   margin: 0 auto;
-
   padding: 1vmin 0 2vmin 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   font-family: merriweather, serif;
   font-style: normal;
   font-size: var(--large-size);
@@ -224,8 +225,6 @@ h2 {
 
   text-align: center;
   color: #fefefe;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 h3 {
