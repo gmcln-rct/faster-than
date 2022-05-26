@@ -237,13 +237,13 @@ h3 {
 
 .vs {
   padding: 1vmin 2vmin;
-  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: 700;
-  color: #fff;
 
+  color: #fff;
   background-color: var(--subheader-blue);
   border-radius: 50%;
-  /* border: 4px solid #fff; */
+
+  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 700;
 }
 
 .animal-invalid {
@@ -267,7 +267,7 @@ h3 {
     brightness(97%) contrast(101%);
 }
 
-/* Transition */
+/* Transitions */
 .winner-enter-from {
   opacity: 0;
   transform: translateY(-50px) scale(0.4);

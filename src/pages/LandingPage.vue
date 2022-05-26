@@ -30,8 +30,6 @@ main {
   justify-content: center;
   align-items: center;
 
-  /* width: 100vw; */
-  /* margin: 0 auto; */
   color: #fff;
 }
 
@@ -44,16 +42,18 @@ h1 {
 p {
   margin: 0 auto;
   padding: 0 20vw 2vh;
+
   font-size: var(--large-size);
   line-height: var(--large-line);
 }
 
 .yellow {
   padding: 0 1vmin 0 0;
-  font-style: italic;
-  font-weight: 700;
 
   color: var(--amber);
+  
+  font-style: italic;
+  font-weight: 700;
 }
 
 .icon-block {
