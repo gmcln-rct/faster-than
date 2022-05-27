@@ -107,24 +107,6 @@ export default {
           this.animalPairs.push(animalNum);
         } else if (!this.animalPairs.includes(animalNum)) {
           this.animalPairs.push(animalNum);
-          // if (this.animalPairs.length % 2 === 0) {
-          //   lastAnimalNum = this.animalPairs[this.animalPairs.length - 1];
-          //   console.log('Vurrenbt speed ' + this.animals[animalNum].speed);
-          //   console.log(
-          //     'Vurrenbt speed 2nd  ' + this.animals[lastAnimalNum].speed
-          //   );
-          //   console.log(
-          //     'Same? ' + this.animals[animalNum].speed !==
-          //       this.animals[lastAnimalNum].speed
-          //   );
-          //   if (
-          //     this.animals[animalNum].speed !==
-          //     this.animals[lastAnimalNum].speed
-          //   ) {
-          //     console.log('Inside dunction');
-          //     this.animalPairs.push(animalNum);
-          //   }
-          // }
         }
       }
       // console.log('Animal pairs ' + this.animalPairs);
@@ -142,11 +124,6 @@ export default {
       // Once user clicks, disable card
       this.cardClass = 'quiz-card disabled';
 
-      // console.log('Selected Animal ' + selectedAnimal);
-
-      // console.log('Animal 1 speed: ' + animals[this.currentPair[0]].speed);
-      // console.log('Animal 2 speed: ' + animals[this.currentPair[1]].speed);
-
       // Check if question has already been answered
       if (this.answerCounter === this.questionCounter) {
         return;
@@ -162,9 +139,6 @@ export default {
         this.currentWinner = animals[this.currentPair[1]];
         this.currentLoser = animals[this.currentPair[0]];
       }
-      // console.log('Question ounter ' + this.questionCounter);
-      // console.log('Answer ounter ' + this.answerCounter);
-      // console.log('current winner ' + this.currentWinner.commonName);
 
       // Check if selected animal is correct and reconfirm question ahs not been answered already
       if (
