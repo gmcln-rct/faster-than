@@ -118,8 +118,6 @@ p {
 @media screen and (max-width: 720px) {
 }
 main {
-  /* width: 80vw; */
-  /* margin: 0 auto; */
   color: #fff;
 }
 

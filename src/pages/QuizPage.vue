@@ -145,12 +145,10 @@ export default {
         selectedAnimal === winnerIndex &&
         this.answerCounter < this.questionCounter
       ) {
-        // console.log('You are correct');
         this.isCorrect = true;
         this.userScore++;
         this.answerCounter++;
       } else {
-        // console.log('Incorrect');
         this.isCorrect = false;
         this.answerCounter++;
       }
@@ -159,7 +157,6 @@ export default {
       this.cardClass = 'quiz-card';
       if (this.animalPairs > 0) {
         this.currentPair = this.animalPairs.splice(0, 2);
-        // console.log('Current Pair ' + this.currentPair);
       } else if (this.animalPairs === 0) {
         this.quizEnded = true;
       }

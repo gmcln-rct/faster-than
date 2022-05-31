@@ -105,7 +105,6 @@ export default {
   },
   methods: {
     validateSelects() {
-      // console.log('This is validating');
       this.duplicateAnimal = false;
 
       if (this.animal1 === 'noanimal') {
@@ -207,7 +206,6 @@ export default {
   height: 200px;
   width: auto;
   max-width: 200px;
-  /* max-height: 300px; */
   filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(163deg)
     brightness(50%) contrast(101%);
 }
