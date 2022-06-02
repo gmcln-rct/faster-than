@@ -233,7 +233,6 @@ p {
   margin: 1vmin 0 2vmin 0;
   padding: 1vmin 2vmin;
   background-color: rgba(0, 0, 0, 0.26);
-  /* background-color: var(--dark-green); */
   border: 2px solid #fff;
   border-radius: 10px;
 }
@@ -284,7 +283,6 @@ p {
   height: 200px;
   margin: 0 auto;
   padding: 2vmin 1vmin;
-  /* max-width: 200px; */
 
   filter: invert(43%) sepia(91%) saturate(1042%) hue-rotate(120deg)
     brightness(50%) contrast(101%);
@@ -377,20 +375,6 @@ p.incorrect {
   color: var(--alert);
 }
 
-/* Transition */
-/* .animal-enter-from {
-  opacity: 0;
-  transform: translateX(-100px) scale(0.4);
-}
-
-.animal-enter-active {
-  transition: all 3s ease-in;
-}
-.animal-enter-to {
-  opacity: 1;
-  transform: translateX(0) scale(1);
-} */
-
 .animalmove-enter {
   opacity: 0;
   transform: translateY(-50px) scale(0.4);
@@ -399,10 +383,6 @@ p.incorrect {
 .animalmove-enter-active {
   transition: all 0.5s ease-out;
 }
-/* .animal-enter-to {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-} */
 
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
