@@ -2,23 +2,27 @@
   <main>
     <h1>What is <span class="yellow">Faster Than</span>?</h1>
     <p>
-      <em>Faster Than</em> is a web app created to help kids and parents explore
-      the top speeds of different animals throughout the Animal Kingdom.
+      A web app created to help kids and parents explore
+      the top speeds of animals throughout the Animal Kingdom.
     </p>
     <p>
-      You can compare top speeds or take a quiz to test your animal-speed
+      Compare top speeds or take a quiz to test your animal-speed
       knowledge:
     </p>
 
     <section class="icon-block">
-      <router-link to="/compare">
-        <span class="icon icon-compare"></span>
-        <p>Compare</p>
-      </router-link>
-      <router-link to="/quiz">
-        <span class="icon icon-quiz"></span>
-        <p>Quiz</p>
-      </router-link>
+      <transition name="slideinleft" appear>
+        <router-link to="/compare">
+          <span class="icon icon-compare"></span>
+          <p>Compare</p>
+        </router-link>
+      </transition>
+      <transition name="slideinright" appear>
+        <router-link to="/quiz">
+          <span class="icon icon-quiz"></span>
+          <p>Quiz</p>
+        </router-link>
+      </transition>
     </section>
   </main>
 </template>
@@ -80,13 +84,12 @@ p {
   background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-compare.svg);
   border-radius: 20px;
   filter: invert(1);
-  transition: 0.3s;
 }
 
 .icon-compare:hover,
 .icon-compare:focus {
-  filter: invert(43%) sepia(91%) saturate(2042%) hue-rotate(163deg)
-    brightness(120%) contrast(101%);
+  filter: invert(43%) sepia(80%) saturate(1800%) hue-rotate(-90deg)
+    brightness(120%) contrast(90%);
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -95,7 +98,6 @@ p {
   background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
   filter: invert(1);
   border-radius: 20px;
-  transition: 0.3s;
 }
 
 .icon-quiz:hover,

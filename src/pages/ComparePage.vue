@@ -293,7 +293,7 @@ h3 {
 }
 
 /* Transition - SlideIn */
-.slideinleft-enter-from {
+/* .slideinleft-enter-from {
   opacity: 0;
   transform: translateX(-500px);
 }
@@ -317,7 +317,7 @@ h3 {
 .slideinright-enter-to {
   opacity: 1;
   transform: translateX(0);
-}
+} */
 
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.

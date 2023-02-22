@@ -257,6 +257,33 @@ button:active {
   opacity: 1;
   /* transform: translateY(0) scale(1); */
 }
+
+/* Transition - SlideIn */
+.slideinleft-enter-from {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+.slideinleft-enter-active {
+  transition: all 1s ease-in-out;
+}
+.slideinleft-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slideinright-enter-from {
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+.slideinright-enter-active {
+  transition: all 1s ease-in-out;
+}
+.slideinright-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
  *    |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
