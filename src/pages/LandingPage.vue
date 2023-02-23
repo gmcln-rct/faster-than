@@ -88,8 +88,8 @@ p {
 
 .icon-compare:hover,
 .icon-compare:focus {
-  filter: invert(43%) sepia(80%) saturate(1800%) hue-rotate(-90deg)
-    brightness(120%) contrast(90%);
+  filter: invert(43%) sepia(80%) saturate(1000%) hue-rotate(-90deg)
+    brightness(200%) contrast(90%);
   transform: scale(1.1);
   transition: 0.3s;
 }
