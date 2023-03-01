@@ -472,6 +472,14 @@ export const animals = [
      "img": "https:///faster-than.s3.amazonaws.com/lion.svg"
     },
     {
+     "id": "animal076",
+     "commonName": "Mako Shark",
+     "scientificName": "Isurus oxyrinchus",
+     "speed": 45,
+     "siteLink": "https:///en.wikipedia.org/wiki/Shortfin_mako_shark",
+     "img": "https:///faster-than.s3.amazonaws.com/makoshark.svg"
+    },
+    {
      "id": "animal060",
      "commonName": "Mexican Free-Tailed Bat",
      "scientificName": "Tadarida brasiliensis",
@@ -598,14 +606,6 @@ export const animals = [
      "speed": 18,
      "siteLink": "https:///en.wikipedia.org/wiki/Saltwater_crocodile",
      "img": "https:///faster-than.s3.amazonaws.com/saltwatercrocodile.svg"
-    },
-    {
-     "id": "animal076",
-     "commonName": "Shortfin Mako Shark",
-     "scientificName": "Isurus oxyrinchus",
-     "speed": 45,
-     "siteLink": "https:///en.wikipedia.org/wiki/Shortfin_mako_shark",
-     "img": "https:///faster-than.s3.amazonaws.com/makoshark.svg"
     },
     {
      "id": "animal077",

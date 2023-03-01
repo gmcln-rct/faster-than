@@ -1,6 +1,5 @@
 <template>
   <header>
-    <!-- <div > -->
     <router-link to="/" class="logo-block">
       <img
         class="logo"
@@ -9,7 +8,6 @@
       />
       <span class="site-name"> Faster Than</span>
     </router-link>
-    <!-- </div> -->
     <nav>
       <ul>
         <li>
@@ -21,9 +19,6 @@
         <li>
           <router-link to="/about">
             <span class="icon icon-about"></span>
-            <!-- <img
-              class="about"
-              src="https://faster-than.s3.amazonaws.com/faster-about-icon.png" -->
           </router-link>
         </li>
       </ul>
