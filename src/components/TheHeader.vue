@@ -1,11 +1,10 @@
 <template>
   <header>
     <router-link to="/" class="logo-block">
-      <img
-        class="logo"
-        src="https://faster-than.s3.amazonaws.com/faster-than-logo-3.png"
-        alt="logo"
-      />
+      <picture class="logo" alt="Faster Than Logo">
+        <source media="(min-width: 400px)" srcset="https://faster-than.s3.amazonaws.com/logo/faster-than-logo-small.webp"  />
+        <img src="https://faster-than.s3.amazonaws.com/logo/faster-than-logo-small.png" alt="Faster Than Logo - png"/>
+      </picture>
       <span class="site-name"> Faster Than</span>
     </router-link>
     <nav>
