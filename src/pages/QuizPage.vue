@@ -32,13 +32,13 @@
       <div class="quiz-options">
         <transition name="animalmove">
           <base-card @click.prevent="checkQuestion(0)" :class="cardClass">
-            <img :src="animals[currentPair[0]].img" alt="animal 1" />
+            <img :src="animals[currentPair[0]].img" :alt="`Animal 1 - ` + `${ animals[currentPair[0]].commonName }`" />
             <p>{{ animals[currentPair[0]].commonName }}</p>
           </base-card>
         </transition>
         <span class="or">or</span>
         <base-card @click.stop="checkQuestion(1)" :class="cardClass">
-          <img :src="animals[currentPair[1]].img" class="flip" alt="animal 2" />
+          <img :src="animals[currentPair[1]].img" class="flip" :alt="`Animal 2 -` + `${ animals[currentPair[1]].commonName }`" />
           <p>{{ animals[currentPair[1]].commonName }}</p>
         </base-card>
       </div>
@@ -230,7 +230,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1vmin 0 2vmin 0;
+  margin: 2vmin 0 2vmin 0;
   padding: 1vmin 2vmin;
   background-color: rgba(0, 0, 0, 0.26);
   border: 2px solid #fff;
