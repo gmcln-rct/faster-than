@@ -28,85 +28,85 @@
 </template>
 
 <style scoped>
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  color: #fff;
-}
+    color: #fff;
+  }
 
-h1 {
-  margin: 5vmin 0 0 0;
+  h1 {
+    margin: 5vmin 0 0 0;
 
-  text-align: center;
-  font-size: var(--extra-large-size);
-}
-p {
-  margin: 0 auto;
-  padding: 0 20vw 2vh;
+    text-align: center;
+    font-size: var(--extra-large-size);
+  }
+  p {
+    margin: 0 auto;
+    padding: 0 20vw 2vh;
 
-  font-size: var(--large-size);
-  line-height: var(--large-line);
-}
+    font-size: var(--large-size);
+    line-height: var(--large-line);
+  }
 
-.yellow {
-  padding: 0 1vmin 0 0;
+  .yellow {
+    padding: 0 1vmin 0 0;
 
-  color: var(--amber);
-  
-  font-style: italic;
-  font-weight: 700;
-}
+    color: var(--amber);
+    
+    font-style: italic;
+    font-weight: 700;
+  }
 
-.icon-block {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0 20vw 2vh;
-}
+  .icon-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20vw 2vh;
+  }
 
-.icon-block a {
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  line-height: 18px;
-  color: #fff;
-}
+  .icon-block a {
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+  }
 
-.icon-block a p {
-  line-height: 18px;
-  color: var(--amber);
-}
+  .icon-block a p {
+    line-height: 18px;
+    color: var(--amber);
+  }
 
-.icon-compare {
-  background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-compare.svg);
-  border-radius: 20px;
-  filter: invert(1);
-}
+  .icon-compare {
+    background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-compare.svg);
+    border-radius: 20px;
+    filter: invert(1);
+  }
 
-.icon-compare:hover,
-.icon-compare:focus {
-  filter: invert(43%) sepia(80%) saturate(1000%) hue-rotate(-90deg)
-    brightness(200%) contrast(90%);
-  transform: scale(1.1);
-  transition: 0.3s;
-}
+  .icon-compare:hover,
+  .icon-compare:focus {
+    filter: invert(43%) sepia(80%) saturate(1000%) hue-rotate(-90deg)
+      brightness(200%) contrast(90%);
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 
-.icon-quiz {
-  background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
-  filter: invert(1);
-  border-radius: 20px;
-}
+  .icon-quiz {
+    background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
+    filter: invert(1);
+    border-radius: 20px;
+  }
 
-.icon-quiz:hover,
-.icon-quiz:focus {
-  filter: invert(62%) sepia(10%) saturate(1948%) hue-rotate(95deg)
-    brightness(120%) contrast(90%);
-  transform: scale(1.1);
-  transition: 0.3s;
-}
+  .icon-quiz:hover,
+  .icon-quiz:focus {
+    filter: invert(62%) sepia(10%) saturate(1948%) hue-rotate(95deg)
+      brightness(120%) contrast(90%);
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 
 /***
  *    .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.

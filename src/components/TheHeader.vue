@@ -3,7 +3,7 @@
     <router-link to="/" class="logo-block">
       <picture class="logo" alt="Faster Than Logo">
         <source media="(min-width: 400px)" srcset="https://faster-than.s3.amazonaws.com/logo/faster-than-logo-small.webp"  />
-        <img src="https://faster-than.s3.amazonaws.com/logo/faster-than-logo-small.png" alt="Faster Than Logo - png"/>
+        <img src="https://faster-than.s3.amazonaws.com/logo/faster-than-logo-small.png" alt="Faster Than Logo - png" />
       </picture>
       <span class="site-name"> Faster Than</span>
     </router-link>
@@ -72,6 +72,7 @@ header {
   font-weight: 700;
   font-style: italic;
   font-size: var(--huge-size);
+  font-display: swap;
   text-align: left;
 
   vertical-align: middle;
@@ -164,9 +165,9 @@ li a.router-link-active {
     padding: 0.01vmin 0;
   }
   .logo {
-    margin: 1vmin;
-    width: 50px;
-    height: 50px;
+    padding-top: 2vmin;
+    /* width: 50px;
+    height: 50px; */
   }
 
   .site-name {

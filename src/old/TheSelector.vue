@@ -174,6 +174,7 @@ h2 {
   font-style: normal;
   font-size: var(--large-size);
   font-weight: 600;
+  font-display: swap;
 
   text-align: center;
   color: #fefefe;
