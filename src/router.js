@@ -39,6 +39,9 @@ const router = createRouter({
       component: AboutPage,
       meta: {
         title: 'About Page'
+      },
+      link: {
+        rel: 'canonical', href:'https://fasterthan.net/about'
       }
     }
   ]
