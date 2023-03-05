@@ -4,7 +4,9 @@
     <div class="compare-selects">
       <transition name="slideinleft" appear>
         <span class="animal-card">
-          <img class="animal-img" :src="getAnimalImg(animal1)" :alt="getAnimalName1" />
+          <img class="animal-img" 
+              :src="getAnimalImg(animal1)" 
+              :alt="getAnimalName1" />
           <base-select
             :options="animals"
             :selectText="selectText1"
@@ -22,7 +24,7 @@
           <img
             class="animal-img flip"
             :src="getAnimalImg(animal2)"
-            alt="animal 2"
+            :alt="getAnimalName2" 
           />
           <base-select
             :options="animals"
@@ -106,8 +108,12 @@ export default {
   computed: {
     getAnimalName1() {
       let animal = this.getAnimal(this.animal1);
-      return animal.commonName;
-      }
+      return this.animal1 !== 'noanimal' ? "Animal 1 - " + animal.commonName : 'no animal selected';
+    },
+    getAnimalName2() {
+      let animal = this.getAnimal(this.animal2);
+      return this.animal2 !== 'noanimal' ? "Animal 2 - " + animal.commonName : 'no animal selected';
+    }
   },
   methods: {
     validateSelects() {
