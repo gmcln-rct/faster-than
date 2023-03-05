@@ -3,7 +3,6 @@
     <h2>Select animals and find out which is faster.</h2>
     <div class="compare-selects">
       <span class="animal-card">
-        <!-- <h3>Animal 1</h3> -->
         <img class="animal-img" :src="getAnimalImg(animal1)" />
         <base-select
           :options="animals"
@@ -15,7 +14,6 @@
       </span>
       <span class="vs">vs.</span>
       <span class="animal-card">
-        <!-- <h3>Animal 2</h3> -->
         <img class="animal-img flip" :src="getAnimalImg(animal2)" />
         <base-select
           :options="animals"
