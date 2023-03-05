@@ -18,7 +18,6 @@
         <li>
           <router-link to="/about" aria-label="About Page">
             <span class="icon icon-about" aria-hidden="true" ></span>
-            <span class="sr-only">About Page link </span>
           </router-link>
         </li>
       </ul>
