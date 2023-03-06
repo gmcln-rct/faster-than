@@ -199,7 +199,7 @@ h2 {
 }
 
 h3 {
-  margin: 1vmin 0;
+  margin: 2vmin 0 1vmin 0;
   font-size: var(--extra-large-size);
   line-height: var(--extra-large-size);
 }

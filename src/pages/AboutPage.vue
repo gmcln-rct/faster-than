@@ -2,12 +2,12 @@
   <section>
     <h2>About <span class="yellow">Faster Than</span></h2>
     <p>
-      Cheetah vs. lion? Rabbit vs. tortoise? <em>Faster Than</em> helps you
+      Cheetah vs. lion? Tortoise vs. hare? <em>Faster Than</em> helps you
       answer the question: which animal is faster? Just selct the animals you
-      want to compare and click "Compare."
+      want to compare and click "Compare," or select a "Quiz"
     </p>
     <p>
-      The comparisons are based each animal's top speed, with data compiled from
+      The comparisons are based animals' top speeds, with data compiled from
       these sources:
     </p>
     <ul>

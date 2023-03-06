@@ -227,7 +227,7 @@ h2 {
   padding: 1vmin 0 2vmin 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: merriweather, serif;
+
   font-style: normal;
   font-size: var(--large-size);
   font-weight: 600;
