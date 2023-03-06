@@ -155,6 +155,7 @@ li a.router-link-active {
 @media screen and (max-width: 720px) {
   header {
     flex-direction: column;
+    background-color: var(--dark-accent)
   }
 
   h3 {
@@ -180,7 +181,7 @@ li a.router-link-active {
     padding: 0.5vmin 0;
 
     line-height: 16px;
-    background-color: var(--subheader-blue);
+    background-color: var(--header-blue);
   }
 
   li {

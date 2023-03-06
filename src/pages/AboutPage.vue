@@ -149,6 +149,7 @@ a {
 
   .copyright-mobile {
     display: block;
+    font-size: 13px;
   }
 }
 </style>

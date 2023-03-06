@@ -2,12 +2,11 @@
   <main>
     <h1>What is <span class="yellow">Faster Than</span>?</h1>
     <p>
-      A web app created to help kids and parents explore
-      the top speeds of animals throughout the Animal Kingdom.
+      An educational site created to help kids and parents explore
+      the fastest speeds of animals throughout the Animal Kingdom.
     </p>
     <p>
-      Compare top speeds or take a quiz to test your animal-speed
-      knowledge:
+      Compare top speeds or take a Quiz to test your knowledge. Have fun!
     </p>
 
     <section class="icon-block">

@@ -4,7 +4,7 @@
     <!-- Quiz Start -->
     <section v-if="!quizStarted" class="center">
       <h2>
-        Five pairs of animals. <br />Can you pick which one in each pair is
+        Five pairs of animals. <br /><br />Do you know which is
         faster?
       </h2>
       <button
