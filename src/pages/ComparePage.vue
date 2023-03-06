@@ -246,10 +246,10 @@ h3 {
 }
 
 .vs {
-  padding: 1vmin 2vmin;
+  padding: 1.5vmin 2vmin;
 
-  color: #fff;
-  background-color: var(--subheader-blue);
+  color: var(--subheader-blue);
+  background-color: #fff;
   border-radius: 50%;
 
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
@@ -372,6 +372,7 @@ h3 {
   }
 
   .vs {
+    padding: 1vmin 2vmin;
     margin: 2vmin 0;
   }
 }

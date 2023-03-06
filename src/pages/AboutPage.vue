@@ -35,7 +35,8 @@
       <a href="https://www.glennmcclanan.com/" target="_blank">Glenn McClanan</a
       >, who also created apps
       <a href="http://writeword.site/" target="_blank">The Write Word</a> and
-      <a href="https://www.copoecolher.com/" target="_blank">Copo e colher</a>.
+      <a href="https://www.copoecolher.com/" target="_blank">Copo e colher</a>.</p>
+      <p>
       The idea for Faster Than came after his daughters spent weeks
       quizzing him about which animals are faster or slower than a cheetah.
       <span class="desktop-only"

@@ -320,7 +320,7 @@ p {
 
 .or {
   margin: 0 2vmin;
-  padding: 1vmin 2vmin;
+  padding: 1.5vmin 2vmin;
   font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
 
@@ -428,6 +428,7 @@ p.incorrect {
 
   .or {
     margin: 2vmin 0;
+    padding: 1vmin 2vmin;
     border: none;
     color: green;
     background-color: #fff;
