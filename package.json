@@ -9,21 +9,21 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "is-svg": "^4.3.1",
-    "joi": "^17.4.1",
+    "core-js": "^3.37.0",
+    "is-svg": "^4.4.0",
+    "joi": "^17.13.0",
     "ssri": "^8.0.1",
-    "vue": "^3.0.0",
+    "vue": "^3.4.24",
     "vue-gtag": "^2.0.1",
     "vue-meta": "^2.4.0",
-    "vue-router": "^4.0.5",
-    "vuex": "^4.0.0"
+    "vue-router": "^4.3.2",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.4",
-    "@vue/cli-plugin-eslint": "^5.0.4",
-    "@vue/cli-service": "^5.0.4",
-    "@vue/compiler-sfc": "^3.0.0-0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/compiler-sfc": "^3.4.24",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
     "eslint-plugin-vue": "^7.0.0-0"
