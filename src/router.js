@@ -13,7 +13,8 @@ const router = createRouter({
       name: 'home',
       component: LandingPage,
       meta: {
-        title: 'Landing Page'
+        title: 'Faster Than - Which Animal Is Faster?',
+        description: 'Faster Than is an educational science tool that helps kids and parents explore the fastest speeds of animals from around the world. Compare speeds or take a quiz to test your knowledge.'
       }
     },
     {
@@ -21,7 +22,8 @@ const router = createRouter({
       name: 'compare',
       component: ComparePage,
       meta: {
-        title: 'Compare Page'
+        title: 'Compare Animal Speeds - Faster Than',
+        description: 'Select two animals and compare their top speeds. Discover which animal is faster with side-by-side speed comparisons from across the Animal Kingdom.'
       }
     },
 
@@ -30,7 +32,8 @@ const router = createRouter({
       name: 'quiz',
       component: QuizPage,
       meta: {
-        title: 'Quiz Page'
+        title: 'Animal Speed Quiz - Faster Than',
+        description: 'Test your animal speed knowledge with a five-question quiz. Can you guess which animal is faster?'
       }
     },
     {
@@ -38,13 +41,18 @@ const router = createRouter({
       name: 'about',
       component: AboutPage,
       meta: {
-        title: 'About Page'
+        title: 'About - Faster Than',
+        description: 'Learn about Faster Than, an educational site that helps kids and parents explore the fastest speeds of animals throughout the Animal Kingdom.'
       },
       link: {
         rel: 'canonical', href:'https://fasterthan.net/about'
       }
     }
   ]
+});
+
+router.afterEach((to) => {
+  document.title = to.meta.title || 'Faster Than - Which Animal Is Faster?';
 });
 
 export default router;

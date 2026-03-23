@@ -14,17 +14,17 @@
       <li>
         <a
           href="https://tpwd.texas.gov/publications/nonpwdpubs/young_naturalist/animals/animal_speeds/"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           >Young Naturalist - Texas A&M Press</a
         >
       </li>
       <li>
-        <a href="https://www.speedofanimals.com/" target="_blank"
+        <a href="https://www.speedofanimals.com/" target="_blank" rel="noopener noreferrer"
           >Speed of Animals</a
         >
       </li>
       <li>
-        <a href="https://en.wikipedia.org/wiki/Fastest_animals" target="_blank"
+        <a href="https://en.wikipedia.org/wiki/Fastest_animals" target="_blank" rel="noopener noreferrer"
           >Wikipedia - Fastest Animals</a
         >
       </li>
@@ -32,10 +32,10 @@
     <p>
       The app was built using Vue.js and CSS3 and designed. It was created,
       designed and developed by New York-based Front End Developer
-      <a href="https://www.glennmcclanan.com/" target="_blank">Glenn McClanan</a
+      <a href="https://www.glennmcclanan.com/" target="_blank" rel="noopener noreferrer">Glenn McClanan</a
       >, who also created apps
-      <a href="http://writeword.site/" target="_blank">The Write Word</a> and
-      <a href="https://www.copoecolher.com/" target="_blank">Copo e colher</a>.</p>
+      <a href="http://writeword.site/" target="_blank" rel="noopener noreferrer">The Write Word</a> and
+      <a href="https://www.copoecolher.com/" target="_blank" rel="noopener noreferrer">Copo e colher</a>.</p>
       <p>
       The idea for Faster Than came after his daughters spent weeks
       quizzing him about which animals are faster or slower than a cheetah.
