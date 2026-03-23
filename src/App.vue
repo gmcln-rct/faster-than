@@ -232,7 +232,7 @@ button:active {
   margin: 10px 0 0 0;
   width: 40px;
   height: 40px;
-  background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-about.svg);
+  background-image: url(./assets/icons/icon-about.svg);
   filter: invert(1);
 }
 

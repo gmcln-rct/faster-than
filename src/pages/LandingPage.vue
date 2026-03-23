@@ -80,7 +80,7 @@
   }
 
   .icon-compare {
-    background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-compare.svg);
+    background-image: url(../assets/icons/icon-compare.svg);
     border-radius: 20px;
     filter: invert(1);
   }
@@ -94,7 +94,7 @@
   }
 
   .icon-quiz {
-    background-image: url(https://faster-than.s3.amazonaws.com/icons/icon-quiz.svg);
+    background-image: url(../assets/icons/icon-quiz.svg);
     filter: invert(1);
     border-radius: 20px;
   }

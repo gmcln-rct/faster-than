@@ -8,7 +8,7 @@
       aria-label="share on facebook"
     >
       <img
-        src="https://faster-than.s3.amazonaws.com/social/fb.svg"
+        src="/images/social/fb.svg"
         alt="Share on Facebook"
         class="share-icon"
         aria-label="Share on Facebook Icon"
@@ -23,7 +23,7 @@
       aria-label="share on twitter"
     >
       <img
-        src="https://faster-than.s3.amazonaws.com/social/twitter.svg"
+        src="/images/social/twitter.svg"
         alt="Share on Twitter"
         class="share-icon"
         aria-label="Share on Twitter Icon"
@@ -36,7 +36,7 @@
       aria-label="share via email"
     >
       <img
-        src="https://faster-than.s3.amazonaws.com/social/email.svg"
+        src="/images/social/email.svg"
         class="share-icon"
         alt="Share via Email"
       />

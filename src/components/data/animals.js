@@ -5,7 +5,7 @@ export const animals = [
      "scientificName": "Lycaon pictus",
      "speed": 45,
      "siteLink": "https:///en.wikipedia.org/wiki/African_wild_dog",
-     "img": "https:///faster-than.s3.amazonaws.com/wilddog.svg"
+     "img": "/images/animals/wilddog.svg"
     },
     {
      "id": "animal002",
@@ -13,7 +13,7 @@ export const animals = [
      "scientificName": "Periplaneta americana",
      "speed": 3.4,
      "siteLink": "https:///en.wikipedia.org/wiki/American_cockroach",
-     "img": "https:///faster-than.s3.amazonaws.com/americancockroach.svg"
+     "img": "/images/animals/americancockroach.svg"
     },
     {
      "id": "animal003",
@@ -21,7 +21,7 @@ export const animals = [
      "scientificName": "Calypte anna",
      "speed": 61.06,
      "siteLink": "https:///en.wikipedia.org/wiki/Anna%27s_hummingbird",
-     "img": "https:///faster-than.s3.amazonaws.com/annahummingbird.svg"
+     "img": "/images/animals/annahummingbird.svg"
     },
     {
      "id": "animal004",
@@ -29,7 +29,7 @@ export const animals = [
      "scientificName": "Thunnus thynnus",
      "speed": 43.51,
      "siteLink": "https:///en.wikipedia.org/wiki/Atlantic_bluefin_tuna",
-     "img": "https:///faster-than.s3.amazonaws.com/bluefin.svg"
+     "img": "/images/animals/bluefin.svg"
     },
     {
      "id": "animal005",
@@ -37,7 +37,7 @@ export const animals = [
      "scientificName": "Haliaeetus leucocephalus",
      "speed": 99,
      "siteLink": "https:///en.wikipedia.org/wiki/Bald_eagle",
-     "img": "https:///faster-than.s3.amazonaws.com/baldeagle.svg"
+     "img": "/images/animals/baldeagle.svg"
     },
     {
      "id": "animal006",
@@ -45,7 +45,7 @@ export const animals = [
      "scientificName": "Eptesicus fuscus",
      "speed": 40,
      "siteLink": "https:///en.wikipedia.org/wiki/Big_brown_bat",
-     "img": "https:///faster-than.s3.amazonaws.com/bigbrownbat.svg"
+     "img": "/images/animals/bigbrownbat.svg"
     },
     {
      "id": "animal007",
@@ -53,7 +53,7 @@ export const animals = [
      "scientificName": "Bison",
      "speed": 35,
      "siteLink": "https:///en.wikipedia.org/wiki/Bison",
-     "img": "https:///faster-than.s3.amazonaws.com/bison.svg"
+     "img": "/images/animals/bison.svg"
     },
     {
      "id": "animal008",
@@ -61,7 +61,7 @@ export const animals = [
      "scientificName": "Dendroaspis polylepis",
      "speed": 12.9,
      "siteLink": "https:///en.wikipedia.org/wiki/Black_mamba",
-     "img": "https:///faster-than.s3.amazonaws.com/blackmamba.svg"
+     "img": "/images/animals/blackmamba.svg"
     },
     {
      "id": "animal009",
@@ -69,7 +69,7 @@ export const animals = [
      "scientificName": "Istiompax indica",
      "speed": 82,
      "siteLink": "https:///en.wikipedia.org/wiki/Black_marlin",
-     "img": "https:///faster-than.s3.amazonaws.com/blackmarlin.svg"
+     "img": "/images/animals/blackmarlin.svg"
     },
     {
      "id": "animal010",
@@ -77,7 +77,7 @@ export const animals = [
      "scientificName": "Diceros bicornis",
      "speed": 34,
      "siteLink": "https:///en.wikipedia.org/wiki/Black_rhinoceros",
-     "img": "https:///faster-than.s3.amazonaws.com/blackrhinoceros.svg"
+     "img": "/images/animals/blackrhinoceros.svg"
     },
     {
      "id": "animal011",
@@ -85,7 +85,7 @@ export const animals = [
      "scientificName": "Cyanocitta cristata",
      "speed": 25,
      "siteLink": "https:///en.wikipedia.org/wiki/Blue_jay",
-     "img": "https:///faster-than.s3.amazonaws.com/bluejay.svg"
+     "img": "/images/animals/bluejay.svg"
     },
     {
      "id": "animal012",
@@ -93,7 +93,7 @@ export const animals = [
      "scientificName": "Prionace glauca",
      "speed": 42.88,
      "siteLink": "https:///en.wikipedia.org/wiki/Blue_shark",
-     "img": "https:///faster-than.s3.amazonaws.com/blueshark.svg"
+     "img": "/images/animals/blueshark.svg"
     },
     {
      "id": "animal013",
@@ -101,7 +101,7 @@ export const animals = [
      "scientificName": "Carukia barnesi",
      "speed": 4.6,
      "siteLink": "https:///en.wikipedia.org/wiki/Box_jellyfish",
-     "img": "https:///faster-than.s3.amazonaws.com/boxjellyfish.svg"
+     "img": "/images/animals/boxjellyfish.svg"
     },
     {
      "id": "animal014",
@@ -109,7 +109,7 @@ export const animals = [
      "scientificName": "Ursus arctos",
      "speed": 21.7,
      "siteLink": "https:///en.wikipedia.org/wiki/Brown_bear",
-     "img": "https:///faster-than.s3.amazonaws.com/brownbear.svg"
+     "img": "/images/animals/brownbear.svg"
     },
     {
      "id": "animal015",
@@ -117,7 +117,7 @@ export const animals = [
      "scientificName": "Rattus norvegicus",
      "speed": 8,
      "siteLink": "https:///en.wikipedia.org/wiki/Brown_rat",
-     "img": "https:///faster-than.s3.amazonaws.com/brownrat.svg"
+     "img": "/images/animals/brownrat.svg"
     },
     {
      "id": "animal016",
@@ -125,7 +125,7 @@ export const animals = [
      "scientificName": "Aptenodytes forsteri",
      "speed": 0.15,
      "siteLink": "https:///en.wikipedia.org/wiki/Brown-throated_sloth",
-     "img": "https:///faster-than.s3.amazonaws.com/sloth.svg"
+     "img": "/images/animals/sloth.svg"
     },
     {
      "id": "animal017",
@@ -133,7 +133,7 @@ export const animals = [
      "scientificName": "Bombus",
      "speed": 33.6,
      "siteLink": "https:///en.wikipedia.org/wiki/Bumblebee",
-     "img": "https:///faster-than.s3.amazonaws.com/bumblebee.svg"
+     "img": "/images/animals/bumblebee.svg"
     },
     {
      "id": "animal018",
@@ -141,7 +141,7 @@ export const animals = [
      "scientificName": "Camelus",
      "speed": 40,
      "siteLink": "https:///en.wikipedia.org/wiki/Camel",
-     "img": "https:///faster-than.s3.amazonaws.com/camel.svg"
+     "img": "/images/animals/camel.svg"
     },
     {
      "id": "animal019",
@@ -149,7 +149,7 @@ export const animals = [
      "scientificName": "Branta canadensis",
      "speed": 60,
      "siteLink": "https:///en.wikipedia.org/wiki/Canada_goose",
-     "img": "https:///faster-than.s3.amazonaws.com/goose.svg"
+     "img": "/images/animals/goose.svg"
     },
     {
      "id": "animal020",
@@ -157,7 +157,7 @@ export const animals = [
      "scientificName": "Hydrochoerus hydrochaeris",
      "speed": 21,
      "siteLink": "https:///en.wikipedia.org/wiki/Capybara",
-     "img": "https:///faster-than.s3.amazonaws.com/capybera.svg"
+     "img": "/images/animals/capybera.svg"
     },
     {
      "id": "animal021",
@@ -165,7 +165,7 @@ export const animals = [
      "scientificName": "Camponotus",
      "speed": 0.0005,
      "siteLink": "https:///en.wikipedia.org/wiki/Carpenter_ant",
-     "img": "https:///faster-than.s3.amazonaws.com/ant.svg"
+     "img": "/images/animals/ant.svg"
     },
     {
      "id": "animal022",
@@ -173,7 +173,7 @@ export const animals = [
      "scientificName": "Felis catus",
      "speed": 30,
      "siteLink": "https:///en.wikipedia.org/wiki/Cat",
-     "img": "https:///faster-than.s3.amazonaws.com/cat.svg"
+     "img": "/images/animals/cat.svg"
     },
     {
      "id": "animal023",
@@ -181,7 +181,7 @@ export const animals = [
      "scientificName": "Acinonyx jubatus",
      "speed": 74.6,
      "siteLink": "https:///en.wikipedia.org/wiki/Cheetah",
-     "img": "https:///faster-than.s3.amazonaws.com/cheetah.svg"
+     "img": "/images/animals/cheetah.svg"
     },
     {
      "id": "animal024",
@@ -189,7 +189,7 @@ export const animals = [
      "scientificName": "Gallus gallus domesticus",
      "speed": 9,
      "siteLink": "https:///en.wikipedia.org/wiki/Chicken",
-     "img": "https:///faster-than.s3.amazonaws.com/chicken.svg"
+     "img": "/images/animals/chicken.svg"
     },
     {
      "id": "animal025",
@@ -197,7 +197,7 @@ export const animals = [
      "scientificName": "Delphinus delphis",
      "speed": 37,
      "siteLink": "https:///en.wikipedia.org/wiki/Common_dolphin",
-     "img": "https:///faster-than.s3.amazonaws.com/commondolphin.svg"
+     "img": "/images/animals/commondolphin.svg"
     },
     {
      "id": "animal026",
@@ -205,7 +205,7 @@ export const animals = [
      "scientificName": "Struthio camelus",
      "speed": 43.5,
      "siteLink": "https:///en.wikipedia.org/wiki/Common_ostrich",
-     "img": "https:///faster-than.s3.amazonaws.com/commonostrich.svg"
+     "img": "/images/animals/commonostrich.svg"
     },
     {
      "id": "animal027",
@@ -213,7 +213,7 @@ export const animals = [
      "scientificName": "Phacochoerus africanus",
      "speed": 30,
      "siteLink": "https:///en.wikipedia.org/wiki/Common_warthog",
-     "img": "https:///faster-than.s3.amazonaws.com/warthog.svg"
+     "img": "/images/animals/warthog.svg"
     },
     {
      "id": "animal028",
@@ -221,7 +221,7 @@ export const animals = [
      "scientificName": "Vombatidae",
      "speed": 25,
      "siteLink": "https:///en.wikipedia.org/wiki/Common_wombat",
-     "img": "https:///faster-than.s3.amazonaws.com/commonwombat.svg"
+     "img": "/images/animals/commonwombat.svg"
     },
     {
      "id": "animal029",
@@ -229,7 +229,7 @@ export const animals = [
      "scientificName": "Oryctolagus cuniculus",
      "speed": 35,
      "siteLink": "https:///en.wikipedia.org/wiki/European_rabbit",
-     "img": "https:///faster-than.s3.amazonaws.com/cottontailrabbit.svg"
+     "img": "/images/animals/cottontailrabbit.svg"
     },
     {
      "id": "animal030",
@@ -237,7 +237,7 @@ export const animals = [
      "scientificName": "Bos taurus",
      "speed": 25,
      "siteLink": "https:///en.wikipedia.org/wiki/Cattle",
-     "img": "https:///faster-than.s3.amazonaws.com/cow.svg"
+     "img": "/images/animals/cow.svg"
     },
     {
      "id": "animal031",
@@ -245,7 +245,7 @@ export const animals = [
      "scientificName": "Canis latrans",
      "speed": 43,
      "siteLink": "https:///en.wikipedia.org/wiki/Coyote",
-     "img": "https:///faster-than.s3.amazonaws.com/coyote.svg"
+     "img": "/images/animals/coyote.svg"
     },
     {
      "id": "animal032",
@@ -253,7 +253,7 @@ export const animals = [
      "scientificName": "Sciurus carolinensis",
      "speed": 12.4,
      "siteLink": "https:///en.wikipedia.org/wiki/Eastern_gray_squirrel",
-     "img": "https:///faster-than.s3.amazonaws.com/squirrel.svg"
+     "img": "/images/animals/squirrel.svg"
     },
     {
      "id": "animal033",
@@ -261,7 +261,7 @@ export const animals = [
      "scientificName": "Loxodonta",
      "speed": 24.9,
      "siteLink": "https:///en.wikipedia.org/wiki/African_elephant",
-     "img": "https:///faster-than.s3.amazonaws.com/elephant.svg"
+     "img": "/images/animals/elephant.svg"
     },
     {
      "id": "animal034",
@@ -269,7 +269,7 @@ export const animals = [
      "scientificName": "Aptenodytes forsteri",
      "speed": 5.6,
      "siteLink": "https:///en.wikipedia.org/wiki/Emperor_penguin",
-     "img": "https:///faster-than.s3.amazonaws.com/empirepenguin.svg"
+     "img": "/images/animals/empirepenguin.svg"
     },
     {
      "id": "animal035",
@@ -277,7 +277,7 @@ export const animals = [
      "scientificName": "Exocoetidae",
      "speed": 34.8,
      "siteLink": "https:///en.wikipedia.org/wiki/Flying_fish",
-     "img": "https:///faster-than.s3.amazonaws.com/flyingfish.svg"
+     "img": "/images/animals/flyingfish.svg"
     },
     {
      "id": "animal036",
@@ -285,7 +285,7 @@ export const animals = [
      "scientificName": "Chelonoidis nigra",
      "speed": 0.2,
      "siteLink": "https:///en.wikipedia.org/wiki/Gal%C3%A1pagos_tortoise",
-     "img": "https:///faster-than.s3.amazonaws.com/galapagostortoise.svg"
+     "img": "/images/animals/galapagostortoise.svg"
     },
     {
      "id": "animal037",
@@ -293,7 +293,7 @@ export const animals = [
      "scientificName": "Cornu aspersum",
      "speed": 0.03,
      "siteLink": "https:///en.wikipedia.org/wiki/Cornu_aspersum",
-     "img": "https:///faster-than.s3.amazonaws.com/snail.svg"
+     "img": "/images/animals/snail.svg"
     },
     {
      "id": "animal038",
@@ -301,7 +301,7 @@ export const animals = [
      "scientificName": "Ocypodinae",
      "speed": 10,
      "siteLink": "https:///en.wikipedia.org/wiki/Ghost_crab",
-     "img": "https:///faster-than.s3.amazonaws.com/ghostcrab.svg"
+     "img": "/images/animals/ghostcrab.svg"
     },
     {
      "id": "animal039",
@@ -309,7 +309,7 @@ export const animals = [
      "scientificName": "Eratigena atrica",
      "speed": 1.2,
      "siteLink": "https:///en.wikipedia.org/wiki/Giant_house_spider",
-     "img": "https:///faster-than.s3.amazonaws.com/gianthousespider.svg"
+     "img": "/images/animals/gianthousespider.svg"
     },
     {
      "id": "animal040",
@@ -317,7 +317,7 @@ export const animals = [
      "scientificName": "Giraffa",
      "speed": 32.3,
      "siteLink": "https:///en.wikipedia.org/wiki/Giraffe",
-     "img": "https:///faster-than.s3.amazonaws.com/giraffe.svg"
+     "img": "/images/animals/giraffe.svg"
     },
     {
      "id": "animal041",
@@ -325,7 +325,7 @@ export const animals = [
      "scientificName": "Aquila chrysaetos",
      "speed": 200,
      "siteLink": "https:///en.wikipedia.org/wiki/Golden_eagle",
-     "img": "https:///faster-than.s3.amazonaws.com/goldeneagle.svg"
+     "img": "/images/animals/goldeneagle.svg"
     },
     {
      "id": "animal042",
@@ -333,7 +333,7 @@ export const animals = [
      "scientificName": "Urocyon cinereoargenteus",
      "speed": 42,
      "siteLink": "https:///en.wikipedia.org/wiki/Gray_fox",
-     "img": "https:///faster-than.s3.amazonaws.com/grayfox.svg"
+     "img": "/images/animals/grayfox.svg"
     },
     {
      "id": "animal043",
@@ -341,7 +341,7 @@ export const animals = [
      "scientificName": "Carcharodon carcharias",
      "speed": 35,
      "siteLink": "https:///en.wikipedia.org/wiki/Great_white_shark",
-     "img": "https:///faster-than.s3.amazonaws.com/greatwhiteshark.svg"
+     "img": "/images/animals/greatwhiteshark.svg"
     },
     {
      "id": "animal044",
@@ -349,7 +349,7 @@ export const animals = [
      "scientificName": "Iguana iguana",
      "speed": 21,
      "siteLink": "https:///en.wikipedia.org/wiki/Green_iguana",
-     "img": "https:///faster-than.s3.amazonaws.com/greeniguana.svg"
+     "img": "/images/animals/greeniguana.svg"
     },
     {
      "id": "animal045",
@@ -357,7 +357,7 @@ export const animals = [
      "scientificName": "Canis lupus familiaris",
      "speed": 45,
      "siteLink": "https:///en.wikipedia.org/wiki/Greyhound",
-     "img": "https:///faster-than.s3.amazonaws.com/greyhound.svg"
+     "img": "/images/animals/greyhound.svg"
     },
     {
      "id": "animal046",
@@ -365,7 +365,7 @@ export const animals = [
      "scientificName": "Falco rusticolus",
      "speed": 130,
      "siteLink": "https:///en.wikipedia.org/wiki/Gyrfalcon",
-     "img": "https:///faster-than.s3.amazonaws.com/gyrfalcon.svg"
+     "img": "/images/animals/gyrfalcon.svg"
     },
     {
      "id": "animal047",
@@ -373,7 +373,7 @@ export const animals = [
      "scientificName": "Hippopotamus amphibius",
      "speed": 19,
      "siteLink": "https:///en.wikipedia.org/wiki/Hippopotamus",
-     "img": "https:///faster-than.s3.amazonaws.com/hippopotamus.svg"
+     "img": "/images/animals/hippopotamus.svg"
     },
     {
      "id": "animal048",
@@ -381,7 +381,7 @@ export const animals = [
      "scientificName": "Columba livia domestica",
      "speed": 95,
      "siteLink": "https:///en.wikipedia.org/wiki/Homing_pigeon",
-     "img": "https:///faster-than.s3.amazonaws.com/homingpigeon.svg"
+     "img": "/images/animals/homingpigeon.svg"
     },
     {
      "id": "animal049",
@@ -389,7 +389,7 @@ export const animals = [
      "scientificName": "Mellivora capensis",
      "speed": 19,
      "siteLink": "https:///en.wikipedia.org/wiki/Honey_badger",
-     "img": "https:///faster-than.s3.amazonaws.com/honeybadger.svg"
+     "img": "/images/animals/honeybadger.svg"
     },
     {
      "id": "animal050",
@@ -397,7 +397,7 @@ export const animals = [
      "scientificName": "Equus ferus caballus",
      "speed": 54.7,
      "siteLink": "https:///en.wikipedia.org/wiki/Horse",
-     "img": "https:///faster-than.s3.amazonaws.com/horse.svg"
+     "img": "/images/animals/horse.svg"
     },
     {
      "id": "animal051",
@@ -405,7 +405,7 @@ export const animals = [
      "scientificName": "Mus musculus",
      "speed": 8.1,
      "siteLink": "https:///en.wikipedia.org/wiki/House_mouse",
-     "img": "https:///faster-than.s3.amazonaws.com/housemouse.svg"
+     "img": "/images/animals/housemouse.svg"
     },
     {
      "id": "animal052",
@@ -413,7 +413,7 @@ export const animals = [
      "scientificName": "Homo sapien",
      "speed": 27.9,
      "siteLink": "https:///en.wikipedia.org/wiki/Early_modern_human",
-     "img": "https:///faster-than.s3.amazonaws.com/human.svg"
+     "img": "/images/animals/human.svg"
     },
     {
      "id": "animal053",
@@ -421,7 +421,7 @@ export const animals = [
      "scientificName": "Orcinus orca",
      "speed": 35,
      "siteLink": "https:///en.wikipedia.org/wiki/Killer_whale",
-     "img": "https:///faster-than.s3.amazonaws.com/killerwhale.svg"
+     "img": "/images/animals/killerwhale.svg"
     },
     {
      "id": "animal054",
@@ -429,7 +429,7 @@ export const animals = [
      "scientificName": "Phascolarctos cinereus",
      "speed": 18.6,
      "siteLink": "https:///en.wikipedia.org/wiki/Koala",
-     "img": "https:///faster-than.s3.amazonaws.com/koala.svg"
+     "img": "/images/animals/koala.svg"
     },
     {
      "id": "animal055",
@@ -437,7 +437,7 @@ export const animals = [
      "scientificName": "Varanus komodoensis",
      "speed": 13,
      "siteLink": "https:///en.wikipedia.org/wiki/Komodo_dragon",
-     "img": "https:///faster-than.s3.amazonaws.com/komododragon.svg"
+     "img": "/images/animals/komododragon.svg"
     },
     {
      "id": "animal056",
@@ -445,7 +445,7 @@ export const animals = [
      "scientificName": "Dermochelys coriacea",
      "speed": 21.9,
      "siteLink": "https:///en.wikipedia.org/wiki/Leatherback_sea_turtle",
-     "img": "https:///faster-than.s3.amazonaws.com/leatherbackseaturtle.svg"
+     "img": "/images/animals/leatherbackseaturtle.svg"
     },
     {
      "id": "animal057",
@@ -453,7 +453,7 @@ export const animals = [
      "scientificName": "Panthera pardus",
      "speed": 36,
      "siteLink": "https:///en.wikipedia.org/wiki/Leopard",
-     "img": "https:///faster-than.s3.amazonaws.com/leopard.svg"
+     "img": "/images/animals/leopard.svg"
     },
     {
      "id": "animal058",
@@ -461,7 +461,7 @@ export const animals = [
      "scientificName": "Stigmochelys pardalis",
      "speed": 0.62,
      "siteLink": "https:///en.wikipedia.org/wiki/Leopard_tortoise",
-     "img": "https:///faster-than.s3.amazonaws.com/tortoise.svg"
+     "img": "/images/animals/tortoise.svg"
     },
     {
      "id": "animal059",
@@ -469,7 +469,7 @@ export const animals = [
      "scientificName": "Panthera leo",
      "speed": 49.7,
      "siteLink": "https:///en.wikipedia.org/wiki/Lion",
-     "img": "https:///faster-than.s3.amazonaws.com/lion.svg"
+     "img": "/images/animals/lion.svg"
     },
     {
      "id": "animal076",
@@ -477,7 +477,7 @@ export const animals = [
      "scientificName": "Isurus oxyrinchus",
      "speed": 45,
      "siteLink": "https:///en.wikipedia.org/wiki/Shortfin_mako_shark",
-     "img": "https:///faster-than.s3.amazonaws.com/makoshark.svg"
+     "img": "/images/animals/makoshark.svg"
     },
     {
      "id": "animal060",
@@ -485,7 +485,7 @@ export const animals = [
      "scientificName": "Tadarida brasiliensis",
      "speed": 60,
      "siteLink": "https:///en.wikipedia.org/wiki/Mexican_free-tailed_bat",
-     "img": "https:///faster-than.s3.amazonaws.com/mexicanbat.svg"
+     "img": "/images/animals/mexicanbat.svg"
     },
     {
      "id": "animal061",
@@ -493,7 +493,7 @@ export const animals = [
      "scientificName": "Danaus plexippus",
      "speed": 6,
      "siteLink": "https:///en.wikipedia.org/wiki/Monarch_butterfly",
-     "img": "https:///faster-than.s3.amazonaws.com/monarchbutterfly.svg"
+     "img": "/images/animals/monarchbutterfly.svg"
     },
     {
      "id": "animal062",
@@ -501,7 +501,7 @@ export const animals = [
      "scientificName": "Alces alces",
      "speed": 35,
      "siteLink": "https:///en.wikipedia.org/wiki/Moose",
-     "img": "https:///faster-than.s3.amazonaws.com/moose.svg"
+     "img": "/images/animals/moose.svg"
     },
     {
      "id": "animal063",
@@ -509,7 +509,7 @@ export const animals = [
      "scientificName": "Bolitoglossa altamazonica",
      "speed": 15,
      "siteLink": "https:///en.wikipedia.org/wiki/Nauta_salamander",
-     "img": "https:///faster-than.s3.amazonaws.com/nautasalamander.svg"
+     "img": "/images/animals/nautasalamander.svg"
     },
     {
      "id": "animal064",
@@ -517,7 +517,7 @@ export const animals = [
      "scientificName": "Pholidota",
      "speed": 3.1,
      "siteLink": "https:///en.wikipedia.org/wiki/Pangolin",
-     "img": "https:///faster-than.s3.amazonaws.com/pangolin.svg"
+     "img": "/images/animals/pangolin.svg"
     },
     {
      "id": "animal065",
@@ -525,7 +525,7 @@ export const animals = [
      "scientificName": "Pelecanus onocrotalus",
      "speed": 30,
      "siteLink": "https:///en.wikipedia.org/wiki/Pelican",
-     "img": "https:///faster-than.s3.amazonaws.com/pelican.svg"
+     "img": "/images/animals/pelican.svg"
     },
     {
      "id": "animal066",
@@ -533,7 +533,7 @@ export const animals = [
      "scientificName": "Falco peregrinus",
      "speed": 242,
      "siteLink": "https:///en.wikipedia.org/wiki/Peregrine_falcon",
-     "img": "https:///faster-than.s3.amazonaws.com/falcon.svg"
+     "img": "/images/animals/falcon.svg"
     },
     {
      "id": "animal067",
@@ -541,7 +541,7 @@ export const animals = [
      "scientificName": "Varanus giganteus",
      "speed": 25,
      "siteLink": "https:///en.wikipedia.org/wiki/Perentie",
-     "img": "https:///faster-than.s3.amazonaws.com/perentie.svg"
+     "img": "/images/animals/perentie.svg"
     },
     {
      "id": "animal068",
@@ -549,7 +549,7 @@ export const animals = [
      "scientificName": "Sus domesticus",
      "speed": 11,
      "siteLink": "https:///en.wikipedia.org/wiki/Pig",
-     "img": "https:///faster-than.s3.amazonaws.com/pig.svg"
+     "img": "/images/animals/pig.svg"
     },
     {
      "id": "animal069",
@@ -557,7 +557,7 @@ export const animals = [
      "scientificName": "Equus quagga",
      "speed": 40,
      "siteLink": "https:///en.wikipedia.org/wiki/Plains_zebra",
-     "img": "https:///faster-than.s3.amazonaws.com/zebra.svg"
+     "img": "/images/animals/zebra.svg"
     },
     {
      "id": "animal070",
@@ -565,7 +565,7 @@ export const animals = [
      "scientificName": "Ursus maritimus",
      "speed": 25,
      "siteLink": "https:///en.wikipedia.org/wiki/Polar_bear",
-     "img": "https:///faster-than.s3.amazonaws.com/polarbear.svg"
+     "img": "/images/animals/polarbear.svg"
     },
     {
      "id": "animal071",
@@ -573,7 +573,7 @@ export const animals = [
      "scientificName": "Antilocapra americana",
      "speed": 61,
      "siteLink": "https:///en.wikipedia.org/wiki/Pronghorn",
-     "img": "https:///faster-than.s3.amazonaws.com/pronghorn.svg"
+     "img": "/images/animals/pronghorn.svg"
     },
     {
      "id": "animal072",
@@ -581,7 +581,7 @@ export const animals = [
      "scientificName": "Macropus rufus",
      "speed": 43.5,
      "siteLink": "https:///en.wikipedia.org/wiki/Red_kangaroo",
-     "img": "https:///faster-than.s3.amazonaws.com/kangaroo.svg"
+     "img": "/images/animals/kangaroo.svg"
     },
     {
      "id": "animal073",
@@ -589,7 +589,7 @@ export const animals = [
      "scientificName": "Rangifer tarandus",
      "speed": 50,
      "siteLink": "https:///en.wikipedia.org/wiki/Reindeer",
-     "img": "https:///faster-than.s3.amazonaws.com/reindeer.svg"
+     "img": "/images/animals/reindeer.svg"
     },
     {
      "id": "animal074",
@@ -597,7 +597,7 @@ export const animals = [
      "scientificName": "Geococcyx californianus",
      "speed": 19.9,
      "siteLink": "https:///en.wikipedia.org/wiki/Greater_roadrunner",
-     "img": "https:///faster-than.s3.amazonaws.com/roadrunner.svg"
+     "img": "/images/animals/roadrunner.svg"
     },
     {
      "id": "animal075",
@@ -605,7 +605,7 @@ export const animals = [
      "scientificName": "Crocodylus porosus",
      "speed": 18,
      "siteLink": "https:///en.wikipedia.org/wiki/Saltwater_crocodile",
-     "img": "https:///faster-than.s3.amazonaws.com/saltwatercrocodile.svg"
+     "img": "/images/animals/saltwatercrocodile.svg"
     },
     {
      "id": "animal077",
@@ -613,7 +613,7 @@ export const animals = [
      "scientificName": "Crotalus cerastes",
      "speed": 18,
      "siteLink": "https:///en.wikipedia.org/wiki/Crotalus_cerastes",
-     "img": "https:///faster-than.s3.amazonaws.com/sidewinder.svg"
+     "img": "/images/animals/sidewinder.svg"
     },
     {
      "id": "animal078",
@@ -621,7 +621,7 @@ export const animals = [
      "scientificName": "Aspidoscelis sexlineata",
      "speed": 18,
      "siteLink": "https:///en.wikipedia.org/wiki/Six-lined_racerunner",
-     "img": "https:///faster-than.s3.amazonaws.com/racerunner.svg"
+     "img": "/images/animals/racerunner.svg"
     },
     {
      "id": "animal079",
@@ -629,7 +629,7 @@ export const animals = [
      "scientificName": "Crocuta crocuta",
      "speed": 39.8,
      "siteLink": "https:///en.wikipedia.org/wiki/Spotted_hyena",
-     "img": "https:///faster-than.s3.amazonaws.com/spottedhyena.svg"
+     "img": "/images/animals/spottedhyena.svg"
     },
     {
      "id": "animal080",
@@ -637,7 +637,7 @@ export const animals = [
      "scientificName": "Xiphias gladius",
      "speed": 62.1,
      "siteLink": "https:///en.wikipedia.org/wiki/Swordfish",
-     "img": "https:///faster-than.s3.amazonaws.com/swordfish.svg"
+     "img": "/images/animals/swordfish.svg"
     },
     {
      "id": "animal081",
@@ -645,7 +645,7 @@ export const animals = [
      "scientificName": "Sarcophilus harrisii",
      "speed": 8.1,
      "siteLink": "https:///en.wikipedia.org/wiki/Tasmanian_devil",
-     "img": "https:///faster-than.s3.amazonaws.com/tasmanian.svg"
+     "img": "/images/animals/tasmanian.svg"
     },
     {
      "id": "animal082",
@@ -653,7 +653,7 @@ export const animals = [
      "scientificName": "Eudorcas thomsonii",
      "speed": 40.4,
      "siteLink": "https:///en.wikipedia.org/wiki/Thomson's_gazelle",
-     "img": "https:///faster-than.s3.amazonaws.com/thomsonsgazelle.svg"
+     "img": "/images/animals/thomsonsgazelle.svg"
     },
     {
      "id": "animal083",
@@ -661,7 +661,7 @@ export const animals = [
      "scientificName": "Panthera tigris",
      "speed": 40,
      "siteLink": "https:///en.wikipedia.org/wiki/Tiger",
-     "img": "https:///faster-than.s3.amazonaws.com/tiger.svg"
+     "img": "/images/animals/tiger.svg"
     },
     {
      "id": "animal084",
@@ -669,7 +669,7 @@ export const animals = [
      "scientificName": "Cicindelinae",
      "speed": 5,
      "siteLink": "https:///en.wikipedia.org/wiki/Tiger_beetle",
-     "img": "https:///faster-than.s3.amazonaws.com/tigerbeetle.svg"
+     "img": "/images/animals/tigerbeetle.svg"
     },
     {
      "id": "animal085",
@@ -677,7 +677,7 @@ export const animals = [
      "scientificName": "Odocoileus virginianus",
      "speed": 30,
      "siteLink": "https:///en.wikipedia.org/wiki/White-tailed_deer",
-     "img": "https:///faster-than.s3.amazonaws.com/whitetaileddeer.svg"
+     "img": "/images/animals/whitetaileddeer.svg"
     },
     {
      "id": "animal086",
@@ -685,6 +685,6 @@ export const animals = [
      "scientificName": "Connochaetes",
      "speed": 39.8,
      "siteLink": "https:///en.wikipedia.org/wiki/Wildebeest",
-     "img": "https:///faster-than.s3.amazonaws.com/wildebeest.svg"
+     "img": "/images/animals/wildebeest.svg"
     }
    ];

@@ -2,8 +2,8 @@
   <header>
     <router-link to="/" class="logo-block">
       <picture class="logo" alt="Faster Than Logo">
-        <source media="(min-width: 400px)" srcset="https://faster-than.s3.amazonaws.com/logo/faster-than-logo-small.webp" alt="Faster Than Logo - webp" />
-        <img src="https://faster-than.s3.amazonaws.com/logo/faster-than-logo-small.png" alt="Faster Than Logo - png" />
+        <source media="(min-width: 400px)" srcset="/images/logo/faster-than-logo-small.webp" alt="Faster Than Logo - webp" />
+        <img src="/images/logo/faster-than-logo-small.png" alt="Faster Than Logo - png" />
       </picture>
       <span class="site-name"> Faster Than</span>
     </router-link>
