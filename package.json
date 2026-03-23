@@ -10,9 +10,6 @@
   },
   "dependencies": {
     "core-js": "^3.37.0",
-    "is-svg": "^5.1.0",
-    "joi": "^17.13.0",
-    "ssri": "^8.0.1",
     "vue": "^3.4.24",
     "vue-gtag": "^2.0.1",
     "vue-meta": "^2.4.0",
@@ -30,7 +27,8 @@
   },
 "overrides": {
     "webpack-dev-server": "5.2.3",
-    "fast-xml-parser": "5.3.6",
+    "fast-xml-parser": "5.6.0",
+    "cross-spawn": "^6.0.6",
     "serialize-javascript": "7.0.4",
     "postcss": "8.4.40",
     "webpack-dev-middleware": "5.3.4"
