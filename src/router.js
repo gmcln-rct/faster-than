@@ -44,15 +44,22 @@ const router = createRouter({
         title: 'About - Faster Than',
         description: 'Learn about Faster Than, an educational site that helps kids and parents explore the fastest speeds of animals throughout the Animal Kingdom.'
       },
-      link: {
-        rel: 'canonical', href:'https://fasterthan.net/about'
-      }
     }
   ]
 });
 
 router.afterEach((to) => {
   document.title = to.meta.title || 'Faster Than - Which Animal Is Faster?';
+
+  const descriptionTag = document.querySelector('meta[name="description"]');
+  if (descriptionTag && to.meta.description) {
+    descriptionTag.setAttribute('content', to.meta.description);
+  }
+
+  let canonicalTag = document.querySelector('link[rel="canonical"]');
+  if (canonicalTag) {
+    canonicalTag.setAttribute('href', 'https://fasterthan.net' + to.path);
+  }
 });
 
 export default router;
